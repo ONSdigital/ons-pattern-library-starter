@@ -1,0 +1,18 @@
+pre[class*="language-"] {
+    padding: 8px 24px 24px 24px;
+    /*padding: 24px 24px 48px 24px;*/
+    margin: 0;
+    border-radius: 0;
+}
+
+/*code[class*="language-"] {
+	white-space: pre-wrap;
+}*/
+
+/*.tag {
+    display: block;
+}
+
+.tag > .tag {
+    display: inline;
+}*/

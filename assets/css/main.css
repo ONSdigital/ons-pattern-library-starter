@@ -1,0 +1,102 @@
+/*  pl prefix for all patter library items to avoid clashing with ons.gov.uk classes*/
+body {
+	background: #fff;
+	margin: 0;
+	padding: 0 10px;
+}
+
+.pl-wrap {
+	min-width: 1012px;
+}
+
+.pl-wrap__inner {
+	width: 992px;
+	margin: 0 auto;
+}
+
+
+
+
+@media screen and (max-width: 991px) {
+	.pl-wrap {
+		min-width: 848px;
+	}
+
+    .pl-wrap__inner {
+		width: 828px;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.pl-wrap {
+		min-width: auto;
+		padding: 0 10px;
+	}
+
+    .pl-wrap__inner {
+		width: auto;
+		margin: 0 auto;
+	}
+}
+
+.pl-item {
+	padding: 10px 0px 20px 0px;
+}
+
+
+
+.pl-example {
+	position: relative;
+	border: 1px solid #ECE8E6;
+	margin: 50px 0 0 0;
+}
+
+.pl-example__rendered {
+	background: #fff;
+	border-bottom: 1px solid #ECE8E6;
+	position: relative;
+}
+
+.pl-example__rendered:before {
+	position: absolute;
+	top: -40px;
+	left: -1px;
+	font-size: 12px;
+	font-weight: 300;
+	color: #959595;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	content: "Example";
+	padding: 10px 0px;
+	height: 20px;
+}
+
+.pl-example__rendered--grid:after {
+	background: url(../img/grid.png) center 0 repeat-y;
+	content: "";
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+
+.pl-page-content__main-content {
+	border-top: 1px solid transparent;
+}
+
+.pl-example__code {
+	/*background: #efefef;
+	padding: 30px;*/
+}
+
+.pl-tag {
+	display: block;
+}
+
+.pl-block {
+	display: block;
+}
+
+
