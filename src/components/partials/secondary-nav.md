@@ -1,33 +1,30 @@
 ---
-title: Header
-template: test.html
+title: Secondary nav
+template:
 type: partial
 ---
 [snippet]
-<nav>
-	<div class="wrapper">
-		<div class="header col-wrap">
-			<div class="col col--lg-one-third col--md-one-third">
-				<a href="/">
-					<img class="main-logo" src="https://beta.ons.gov.uk/node_modules/ONS-Pattern-Library/dist/img/ons-logo.png" alt="Office for National Statistics">
-				</a>
-			</div>
-			<div class="col col--lg-two-thirds col--md-two-thirds print--hide">&nbsp;</div>
-			<nav class="secondary-nav col col--lg-two-thirds col--md-two-thirds print--hide">
-				<ul class="secondary-nav__list">
-					<li class="secondary-nav__item">
-						<a class="secondary-nav__link" href="/methodology">Methodology</a>
-					</li>
-					<li class="secondary-nav__item">
-						<a class="secondary-nav__link" href="/aboutus">
-							About
-						</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	</div>
-</nav>
+<div class="nav-secondary-wrap">
+    <div class="wrapper">
+        <div class="col-wrap">
+            <nav class="nav-secondary nav-secondary--border-right-lg col col--lg-half">
+                <h2 class="nav-secondary__title">On this page:</h2>
+                <ul class="nav-secondary__list">
+                    <li class="nav-secondary__item"><a href="#datasets" class="jsEnhanceAnimateScroll">Datasets</a></li>
+                    <li class="nav-secondary__item"><a href="#publications" class="jsEnhanceAnimateScroll">Publications</a></li>
+                    <li class="nav-secondary__item"><a href="#methodology" class="jsEnhanceAnimateScroll">Methodology</a></li>
+                </ul>
+            </nav>
+            <nav class="nav-secondary col col--lg-half">
+                <h2 class="nav-secondary__title">View all content related to this topic:</h2>
+                <ul class="nav-secondary__list">
+                    <li class="nav-secondary__item"><a href="/economy/environmentalaccounts/datalist">All data</a></li>
+                    <li class="nav-secondary__item"><a href="/economy/environmentalaccounts/publications">All publications</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
 [/snippet]
 
-Description about the header file...
+Description about the secondary nav file...

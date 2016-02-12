@@ -2,14 +2,18 @@
 <html>
 	<head>
 		<title>ONS Pattern Library - Components</title>
-		<link href="../assets/css/main.css" rel="stylesheet" type="text/css" />
-		<link href="../assets/css/prism.css" rel="stylesheet" type="text/css" />
-		<link href="../assets/css/prismCustom.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/css/main.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/css/prism.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/css/prismCustom.css" rel="stylesheet" type="text/css" />
 		<link href="https://beta.ons.gov.uk/node_modules/sixteens/dist/css/main.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body class="pl-listpage">
-		<div class="pl-wrap">
+		<div class="pl-head">
 			<div class="pl-wrap__inner">
+				<img class="pl-logo" src="/assets/img/ons-logo.png" />
+			</div>
+		</div>
+
 				<!-- <nav>
 					<div class="header col-wrap">
 						<div class="col col--lg-one-third col--md-one-third">
@@ -18,41 +22,51 @@
 							</a>
 						</div>
 					</div>
-				</nav> --><ol class="breadcrumb__list">
-	<li class="breadcrumb__item">
-		<a class="breadcrumb__link" href="/">Home</a>
-	</li>
-	<li class="breadcrumb__item">
-		Components
-	</li>
-</ol>
-				<h1>Components</h1>
-				<p class="page-intro__content">Groups of elements that together make components.</p>
+				</nav> -->			<div class="page-intro background--gallery">
+				<div class="pl-wrap__inner">
+					<nav class="breadcrumb">
+						<ol class="breadcrumb__list">
+							<li class="breadcrumb__item">
+								<a class="breadcrumb__link" href="/">Home</a>
+							</li>
+							<li class="breadcrumb__item">
+								Components
+							</li>
+						</ol>
+					</nav>					<h1 class="page-intro__title">Components</h1>
+					<p class="page-intro__content">Groups of elements that together make components.</p>
 
 
 
-				<div class="table-of-contents print--avoid-break">
-					<h2 class="table-of-contents__title">Table of contents</h2>
-					<ol id="toc" class="table-of-contents__list">
-						<li class="table-of-contents__item">
-							<a href="#Header" class="jsEnhanceAnimateScroll">Header</a>
-						</li>
-						<li class="table-of-contents__item">
-							<a href="#Intro" class="jsEnhanceAnimateScroll">Intro</a>
-						</li>
-						<li class="table-of-contents__item">
-							<a href="#test" class="jsEnhanceAnimateScroll">test</a>
-						</li>
-					</ol>
 				</div>
-				<div class="page-content__main-content pl-page-content__main-content">
-					<div class="pl-item" id="Header">
-						<h2>Header</h2>
-						<p>Description about the header file...</p>
+			</div>
+			<div class="pl-wrap">
+				<div class="pl-wrap__inner">
+					<div class="table-of-contents js-sticky-toc padding-bottom-md--3">
+						<h2 class="table-of-contents__title">Table of contents</h2>
+						<ol id="toc" class="table-of-contents__list">
+							<li class="table-of-contents__item">
+								<a href="#Header" class="jsEnhanceAnimateScroll">Header</a>
+							</li>
+							<li class="table-of-contents__item">
+								<a href="#Intro" class="jsEnhanceAnimateScroll">Intro</a>
+							</li>
+							<li class="table-of-contents__item">
+								<a href="#Secondary nav" class="jsEnhanceAnimateScroll">Secondary nav</a>
+							</li>
+							<li class="table-of-contents__item">
+								<a href="#test" class="jsEnhanceAnimateScroll">test</a>
+							</li>
+						</ol>
+					</div>
+					<div class="page-content__main-content pl-page-content__main-content js-sticky-toc__trigger">
+						<div class="pl-item" id="Header">
+							<h2>Header</h2>
+							<p>Description about the header file...</p>
 
-						<div class="pl-example">
-							<div class="pl-example__rendered">
-								
+							<div class="pl-example">
+								<div class="pl-example__rendered">
+									
 <nav>
 	<div class="wrapper">
 		<div class="header col-wrap">
@@ -78,9 +92,9 @@
 	</div>
 </nav>
 
-							</div>
-							<div class="pl-example__code">
-								<pre><code class="language-html">
+								</div>
+								<div class="pl-example__code">
+									<pre><code class="language-html">
 &lt;nav&gt;
 	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
 		&lt;div class&#x3D;&quot;header col-wrap&quot;&gt;
@@ -106,16 +120,16 @@
 	&lt;/div&gt;
 &lt;/nav&gt;
 </code></pre>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="pl-item" id="Intro">
-						<h2>Intro</h2>
-						<p>Description about the page intro file...</p>
+						<div class="pl-item" id="Intro">
+							<h2>Intro</h2>
+							<p>Description about the page intro file...</p>
 
-						<div class="pl-example">
-							<div class="pl-example__rendered">
-								
+							<div class="pl-example">
+								<div class="pl-example__rendered">
+									
 <div class="page-intro background--gallery">
 	<div class="wrapper">
 		<div class="col-wrap">
@@ -145,9 +159,9 @@
 	</div>
 </div>
 
-							</div>
-							<div class="pl-example__code">
-								<pre><code class="language-html">
+								</div>
+								<div class="pl-example__code">
+									<pre><code class="language-html">
 &lt;div class&#x3D;&quot;page-intro background--gallery&quot;&gt;
 	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
 		&lt;div class&#x3D;&quot;col-wrap&quot;&gt;
@@ -177,16 +191,73 @@
 	&lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="pl-item" id="test">
-						<h2>test</h2>
-						<p>Just testing how are you?</p>
+						<div class="pl-item" id="Secondary nav">
+							<h2>Secondary nav</h2>
+							<p>Description about the secondary nav file...</p>
 
-						<div class="pl-example">
-							<div class="pl-example__rendered">
-								
+							<div class="pl-example">
+								<div class="pl-example__rendered">
+									
+<div class="nav-secondary-wrap">
+    <div class="wrapper">
+        <div class="col-wrap">
+            <nav class="nav-secondary nav-secondary--border-right-lg col col--lg-half">
+                <h2 class="nav-secondary__title">On this page:</h2>
+                <ul class="nav-secondary__list">
+                    <li class="nav-secondary__item"><a href="#datasets" class="jsEnhanceAnimateScroll">Datasets</a></li>
+                    <li class="nav-secondary__item"><a href="#publications" class="jsEnhanceAnimateScroll">Publications</a></li>
+                    <li class="nav-secondary__item"><a href="#methodology" class="jsEnhanceAnimateScroll">Methodology</a></li>
+                </ul>
+            </nav>
+            <nav class="nav-secondary col col--lg-half">
+                <h2 class="nav-secondary__title">View all content related to this topic:</h2>
+                <ul class="nav-secondary__list">
+                    <li class="nav-secondary__item"><a href="/economy/environmentalaccounts/datalist">All data</a></li>
+                    <li class="nav-secondary__item"><a href="/economy/environmentalaccounts/publications">All publications</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+								</div>
+								<div class="pl-example__code">
+									<pre><code class="language-html">
+&lt;div class&#x3D;&quot;nav-secondary-wrap&quot;&gt;
+    &lt;div class&#x3D;&quot;wrapper&quot;&gt;
+        &lt;div class&#x3D;&quot;col-wrap&quot;&gt;
+            &lt;nav class&#x3D;&quot;nav-secondary nav-secondary--border-right-lg col col--lg-half&quot;&gt;
+                &lt;h2 class&#x3D;&quot;nav-secondary__title&quot;&gt;On this page:&lt;/h2&gt;
+                &lt;ul class&#x3D;&quot;nav-secondary__list&quot;&gt;
+                    &lt;li class&#x3D;&quot;nav-secondary__item&quot;&gt;&lt;a href&#x3D;&quot;#datasets&quot; class&#x3D;&quot;jsEnhanceAnimateScroll&quot;&gt;Datasets&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class&#x3D;&quot;nav-secondary__item&quot;&gt;&lt;a href&#x3D;&quot;#publications&quot; class&#x3D;&quot;jsEnhanceAnimateScroll&quot;&gt;Publications&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class&#x3D;&quot;nav-secondary__item&quot;&gt;&lt;a href&#x3D;&quot;#methodology&quot; class&#x3D;&quot;jsEnhanceAnimateScroll&quot;&gt;Methodology&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/nav&gt;
+            &lt;nav class&#x3D;&quot;nav-secondary col col--lg-half&quot;&gt;
+                &lt;h2 class&#x3D;&quot;nav-secondary__title&quot;&gt;View all content related to this topic:&lt;/h2&gt;
+                &lt;ul class&#x3D;&quot;nav-secondary__list&quot;&gt;
+                    &lt;li class&#x3D;&quot;nav-secondary__item&quot;&gt;&lt;a href&#x3D;&quot;/economy/environmentalaccounts/datalist&quot;&gt;All data&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class&#x3D;&quot;nav-secondary__item&quot;&gt;&lt;a href&#x3D;&quot;/economy/environmentalaccounts/publications&quot;&gt;All publications&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/nav&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+								</div>
+							</div>
+						</div>
+						<div class="pl-item" id="test">
+							<h2>test</h2>
+							<p>Just testing how are you?</p>
+
+							<div class="pl-example">
+								<div class="pl-example__rendered">
+									
 <ul>
 	<li>Item 1</li>
 	<li>Item 2</li>
@@ -195,9 +266,9 @@
 	<li>Item 5</li>
 </ul>
 
-							</div>
-							<div class="pl-example__code">
-								<pre><code class="language-html">
+								</div>
+								<div class="pl-example__code">
+									<pre><code class="language-html">
 &lt;ul&gt;
 	&lt;li&gt;Item 1&lt;/li&gt;
 	&lt;li&gt;Item 2&lt;/li&gt;
@@ -206,14 +277,14 @@
 	&lt;li&gt;Item 5&lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<script type="text/javascript" src="../assets/js/prism.js"></script>
+		<script type="text/javascript" src="/assets/js/prism.js"></script>
 		<script type="text/javascript" src="https://beta.ons.gov.uk/node_modules/sixteens/dist/js/main.js"></script>
 		<!--<script type="text/javascript" src="../assets/js/jquery.js"></script>
 		<script type="text/javascript" src="../assets/js/main.js"></script>-->

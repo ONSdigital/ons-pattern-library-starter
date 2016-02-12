@@ -1,33 +1,39 @@
 {{> header}}
-{{> listpagebreadcrumb}}
-
-				<h1>{{ title }}</h1>
-				{{{ contents }}}
-				<div class="table-of-contents print--avoid-break">
-					<h2 class="table-of-contents__title">Table of contents</h2>
-					<ol id="toc" class="table-of-contents__list">
-						{{#each collections.components}}
-						<li class="table-of-contents__item">
-							<a href="#{{ this.title }}" class="jsEnhanceAnimateScroll">{{ this.title }}</a>
-						</li>
-						{{/each}}
-					</ol>
+			<div class="page-intro background--gallery">
+				<div class="pl-wrap__inner">
+					{{> listpagebreadcrumb}}
+					<h1 class="page-intro__title">{{ title }}</h1>
+					{{{ contents }}}
 				</div>
-				<div class="page-content__main-content pl-page-content__main-content">
-					{{#each collections.components}}
-					<div class="pl-item" id="{{ this.title }}">
-						<h2>{{ this.title }}</h2>
-						{{{ this.contents }}}
-						<div class="pl-example">
-							<div class="pl-example__rendered">
-								{{{ this.snippet }}}
-							</div>
-							<div class="pl-example__code">
-								<pre><code class="language-html">{{ this.snippet }}</code></pre>
+			</div>
+			<div class="pl-wrap">
+				<div class="pl-wrap__inner">
+					<div class="table-of-contents js-sticky-toc padding-bottom-md--3">
+						<h2 class="table-of-contents__title">Table of contents</h2>
+						<ol id="toc" class="table-of-contents__list">
+							{{#each collections.components}}
+							<li class="table-of-contents__item">
+								<a href="#{{ this.title }}" class="jsEnhanceAnimateScroll">{{ this.title }}</a>
+							</li>
+							{{/each}}
+						</ol>
+					</div>
+					<div class="page-content__main-content pl-page-content__main-content js-sticky-toc__trigger">
+						{{#each collections.components}}
+						<div class="pl-item" id="{{ this.title }}">
+							<h2>{{ this.title }}</h2>
+							{{{ this.contents }}}
+							<div class="pl-example">
+								<div class="pl-example__rendered">
+									{{{ this.snippet }}}
+								</div>
+								<div class="pl-example__code">
+									<pre><code class="language-html">{{ this.snippet }}</code></pre>
+								</div>
 							</div>
 						</div>
+						{{/each}}
 					</div>
-					{{/each}}
 				</div>
+			</div>
 {{> footer}}
-

@@ -1,8 +1,17 @@
-/*  pl prefix for all patter library items to avoid clashing with ons.gov.uk classes*/
+/*  pl prefix for all pattern library items to avoid clashing with ons.gov.uk classes*/
 body {
 	background: #fff;
 	margin: 0;
 	padding: 0 10px;
+}
+
+.pl-head {
+	background-color: #FFFFFF;
+}
+
+.pl-logo {
+	height: 39px;
+	margin: 10px 0;
 }
 
 .pl-wrap {
@@ -12,9 +21,11 @@ body {
 .pl-wrap__inner {
 	width: 992px;
 	margin: 0 auto;
+	overflow: hidden;
 }
-
-
+.pl-home {
+	background: #EAEAEA;
+}
 
 
 @media screen and (max-width: 991px) {
@@ -45,7 +56,6 @@ body {
 }
 
 
-
 .pl-example {
 	position: relative;
 	border: 1px solid #ECE8E6;
@@ -55,7 +65,8 @@ body {
 .pl-example__rendered {
 	background: #fff;
 	border-bottom: 1px solid #ECE8E6;
-	position: relative;
+	/*position: relative;*/
+	overflow: hidden;
 }
 
 .pl-example__rendered:before {
