@@ -9,7 +9,7 @@ type: partial
 		<div class="header col-wrap">
 			<div class="col col--lg-one-third col--md-one-third">
 				<a href="/">
-					<img class="main-logo" src="https://beta.ons.gov.uk/node_modules/ONS-Pattern-Library/dist/img/ons-logo.png" alt="Office for National Statistics">
+					<img class="main-logo" src="https://beta.ons.gov.uk/assets/img/ons-logo.png" alt="Office for National Statistics">
 				</a>
 			</div>
 			<div class="col col--lg-two-thirds col--md-two-thirds print--hide">&nbsp;</div>
