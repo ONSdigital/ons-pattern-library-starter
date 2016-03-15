@@ -27,9 +27,11 @@
 								<div class="pl-example__rendered pl-example__rendered--grid">
 									{{{ this.snippet }}}
 								</div>
+								{{#if this.show-snippet}}
 								<div class="pl-example__code">
 									<pre><code class="language-html">{{ this.snippet }}</code></pre>
 								</div>
+								{{/if}}
 							</div>
 						</div>
 						{{/each}}
