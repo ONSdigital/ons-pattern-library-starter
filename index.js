@@ -14,6 +14,7 @@ var deletePartialMarkdownFiles = function(files, metalsmith, done) {
 		var type = files[file].type;
 		if (type == "partial" || type == "code") {
 			delete files[file];
+			console.log("Deleted partial: " + file);
 		}
 	}
 	done();
@@ -65,14 +66,27 @@ Handlebars.registerPartial('header', fs.readFileSync(__dirname + '/templates/par
 Handlebars.registerPartial('footer', fs.readFileSync(__dirname + '/templates/partials/footer.html').toString());
 Handlebars.registerPartial('listpagebreadcrumb', fs.readFileSync(__dirname + '/templates/partials/listpagebreadcrumb.html').toString());
 
+// helper to slugify strings
+Handlebars.registerHelper('slug', function(content){
+	var removeSpaces = content.split(' ').join('-').toLowerCase();
+	var removeChars = removeSpaces.replace(/[^a-zA-Z0-9\- ]/g, "");
+	return removeChars;
+});
+
 Metalsmith(__dirname)
 	.use(parseContentForSnippet)
 	.use(collections({
 		elements: {
-			pattern: 'elements/partials/*.md'
+			pattern: 'elements/partials/*.md',
+			sortBy: 'order'
 		},
 		components: {
-			pattern: 'components/partials/*.md'
+			pattern: 'components/partials/*.md',
+			sortBy: 'order'
+		},
+		colour: {
+			pattern: 'colour/partials/*.md',
+			sortBy: 'order'
 		}
 	}))
 	.use(markdown())
