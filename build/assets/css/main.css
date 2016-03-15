@@ -1,17 +1,18 @@
 /*  pl prefix for all pattern library items to avoid clashing with ons.gov.uk classes*/
 body {
-	background: #fff;
+	background: #FFFFFF;
 	margin: 0;
 	padding: 0 10px;
 }
 
 .pl-head {
 	background-color: #FFFFFF;
+	height: 72px;
 }
 
 .pl-logo {
-	height: 39px;
-	margin: 10px 0;
+	height: 40px;
+	margin: 16px 0;
 }
 
 .pl-wrap {
@@ -63,7 +64,7 @@ body {
 }
 
 .pl-example__rendered {
-	background: #fff;
+	background: #FFFFFF;
 	border-bottom: 1px solid #ECE8E6;
 	/*position: relative;*/
 	overflow: hidden;
