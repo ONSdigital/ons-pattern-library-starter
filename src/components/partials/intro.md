@@ -2,6 +2,8 @@
 title: Intro
 template: test.html
 type: partial
+order: 2
+show-snippet: true
 ---
 [snippet]
 <div class="page-intro background--gallery">

@@ -2,6 +2,8 @@
 title: Secondary nav
 template:
 type: partial
+order: 3
+show-snippet: true
 ---
 [snippet]
 <div class="nav-secondary-wrap">

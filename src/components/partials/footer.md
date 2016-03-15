@@ -1,37 +1,79 @@
 ---
-title: Intro
+title: Footer
 template: test.html
 type: partial
+order: 4
+show-snippet: true
 ---
 [snippet]
-<div class="page-intro background--gallery">
-	<div class="wrapper">
-		<div class="col-wrap">
-			<div class="col">
-				<nav class="breadcrumb print--hide">
-					<ol class="breadcrumb__list">
-						<li class="breadcrumb__item">
-							<a class="breadcrumb__link" href="/">
-								Home
-							</a>
-						</li>
-						<li class="breadcrumb__item">
-							Economy
-						</li>
-					</ol>
-				</nav>
-				<div class="col col--md-47 col--lg-48">
-					<h1 class="page-intro__title ">
-						Economy
-					</h1>
-					<p class="page-intro__content">
-						UK economic activity covering production, distribution, consumption and trade of goods and services. Individuals, businesses, organisations and governments all affect the development of the economy.
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+<footer class="print--hide">
+    <h2 class="visuallyhidden">Footer links</h2>
+        <div class="footer">
+            <div class="wrapper">
+                <nav class="footer-nav col-wrap">
+                    <div class="col col--lg-one-third col--md-one-third">
+                        <h3 class="footer-nav__heading">Help</h3>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item">
+                                <a href="/help/accessibility">Accessibility</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="/help/cookiesandprivacy">Cookies and privacy</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="/help/termsandconditions">Terms and conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col col--lg-one-third col--md-one-third">
+                        <h3 class="footer-nav__heading">About ONS</h3>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item">
+                                <a href="/aboutus/whatwedo">What we do</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="/aboutus/careers">Careers</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="/aboutus/contactus">Contact us</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="/news">News</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="/aboutus/transparencyandgovernance/freedomofinformationfoi">Freedom of Information</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col col--lg-one-third col--md-one-third">
+                        <h3 class="footer-nav__heading">Connect with us</h3>
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item">
+                                <a href="https://twitter.com/ONS" class="icon--hide">Twitter</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="https://www.facebook.com/ONS" class="icon--hide">Facebook</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="https://www.linkedin.com/company/office-for-national-statistics" class="icon--hide">LinkedIn</a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a href="https://public.govdelivery.com/accounts/UKONS/subscribers/new" class="icon--hide">Email alerts</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="wrapper">
+                <div class="footer-license">
+                    <img class="footer-license__img" alt="OGL" width="60" src="https://www.ons.gov.uk/img/ogl.png">
+                    <p class="footer-license__text margin-left-sm--0">
+                        All content is available under the <a class="icon--hide" href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0</a> <span class="icon icon-external--light-small"></span>, except where otherwise stated
+                </p>
+            </div>
+        </div>
+    </div>
+ </footer>
 [/snippet]
 
-Description about the page intro file...
+Description here...
