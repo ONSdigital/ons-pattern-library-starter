@@ -5,7 +5,8 @@
 		<link href="/assets/css/main.css" rel="stylesheet" type="text/css" />
 		<link href="/assets/css/prism.css" rel="stylesheet" type="text/css" />
 		<link href="/assets/css/prismCustom.css" rel="stylesheet" type="text/css" />
-		<link href="https://www.ons.gov.uk/assets/css/main.css" rel="stylesheet" type="text/css" />
+		<!--<link href="https://www.ons.gov.uk/assets/css/main.css" rel="stylesheet" type="text/css" />-->
+		<link href="http://localhost:9000/dist/css/main.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body class="pl-listpage">
 		<div class="pl-head">
@@ -34,7 +35,9 @@
 						</li>
 					</ol>
 				</nav>				<h1 class="page-intro__title">Layout</h1>
-				<p>Use white space to create a visual hierarchy on the page.</p>
+				<p class="page-intro__content">Use white space to create a visual hierarchy on the page.</p>
+
+
 
 			</div>
 		</div>
@@ -46,9 +49,12 @@
 						<li class="table-of-contents__item">
 							<a href="#simple-grid" class="jsEnhanceAnimateScroll">Simple grid</a>
 						</li>
+						<li class="table-of-contents__item">
+							<a href="#complex-grid" class="jsEnhanceAnimateScroll">Complex grid</a>
+						</li>
 					</ol>
 				</div>
-				<div class="page-content__main-content pl-page-content__main-content js-sticky-toc__triggers">
+				<div class="page-content__main-content pl-page-content__main-content js-sticky-toc__trigger">
 					<div class="pl-item" id="simple-grid">
 						<h2>Simple grid</h2>
 						<p>Description here...</p>
@@ -56,32 +62,153 @@
 						<div class="pl-example">
 							<div class="pl-example__rendered">
 								
+<!-- full column -->
 <div class="col-wrap">
-    <div class="col col--md-one col--lg-one">full column</div>
+    <div class="col col--md-one col--lg-one">
+        <p>full column</p>
+    </div>
 </div>
+
+<!-- half columns -->
 <div class="col-wrap">
-    <div class="col col--md-half col--lg-half">half column</div>
-    <div class="col col--md-half col--lg-half">half column</div>
+    <div class="col col--md-half col--lg-half">
+        <p>half column</p>
+    </div>
+    <div class="col col--md-half col--lg-half">
+        <p>half column</p>
+    </div>
 </div>
+
+<!-- third columns -->
 <div class="col-wrap">
-    <div class="col col--md-two-thirds col--lg-two-thirds">two thirds column</div>
-    <div class="col col--md-one-third col--lg-one-third">one third column</div>
+    <div class="col col--md-two-thirds col--lg-two-thirds">
+        <p>two thirds column</p>
+    </div>
+    <div class="col col--md-one-third col--lg-one-third">
+        <p>one third column</p>
+    </div>
+</div>
+
+<!-- quarter columns -->
+<div class="col-wrap">
+    <div class="col col--md-three-quarters col--lg-three-quarters">
+        <p>three quarters column</p>
+    </div>
+    <div class="col col--md-one-quarter col--lg-one-quarter">
+        <p>one quarter column</p>
+    </div>
 </div>
 
 							</div>
 							<div class="pl-example__code">
 								<pre><code class="language-html">
+&lt;!-- full column --&gt;
 &lt;div class&#x3D;&quot;col-wrap&quot;&gt;
-    &lt;div class&#x3D;&quot;col col--md-one col--lg-one&quot;&gt;full column&lt;/div&gt;
+    &lt;div class&#x3D;&quot;col col--md-one col--lg-one&quot;&gt;
+        &lt;p&gt;full column&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- half columns --&gt;
+&lt;div class&#x3D;&quot;col-wrap&quot;&gt;
+    &lt;div class&#x3D;&quot;col col--md-half col--lg-half&quot;&gt;
+        &lt;p&gt;half column&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;col col--md-half col--lg-half&quot;&gt;
+        &lt;p&gt;half column&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- third columns --&gt;
+&lt;div class&#x3D;&quot;col-wrap&quot;&gt;
+    &lt;div class&#x3D;&quot;col col--md-two-thirds col--lg-two-thirds&quot;&gt;
+        &lt;p&gt;two thirds column&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;col col--md-one-third col--lg-one-third&quot;&gt;
+        &lt;p&gt;one third column&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- quarter columns --&gt;
+&lt;div class&#x3D;&quot;col-wrap&quot;&gt;
+    &lt;div class&#x3D;&quot;col col--md-three-quarters col--lg-three-quarters&quot;&gt;
+        &lt;p&gt;three quarters column&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;col col--md-one-quarter col--lg-one-quarter&quot;&gt;
+        &lt;p&gt;one quarter column&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+							</div>
+						</div>
+					</div>
+					<div class="pl-item" id="complex-grid">
+						<h2>Complex grid</h2>
+						<p>Description here...</p>
+
+						<div class="pl-example">
+							<div class="pl-example__rendered">
+								
+<div class="col-wrap">
+    <div class="col col--md-1 col--lg-1 margin-left--1">
+        <p>1</p>
+    </div>
+    <div class="col col--md-46 col--lg-58">
+        <p>46 on medium, 58 on large</p>
+    </div>
+</div>
+<div class="col-wrap">
+    <div class="col col--md-10 col--lg-14 margin-left--1">
+        <p>10 on medium, 14 on large</p>
+    </div>
+    <div class="col col--md-36 col--lg-45">
+        <p>36 on medium, 45 on large</p>
+    </div>
+</div>
+<div class="col-wrap">
+    <div class="col col--md-10 col--lg-15 margin-left--1">
+        <p>10 on medium, 15 on large</p>
+    </div>
+    <div class="col col--md-15 col--lg-15">
+        <p>15 on medium and  large</p>
+    </div>
+    <div class="col col--md-22 col--lg-29">
+        <p>22 on medium, 29 on large</p>
+    </div>
+</div>
+
+
+							</div>
+							<div class="pl-example__code">
+								<pre><code class="language-html">
+&lt;div class&#x3D;&quot;col-wrap&quot;&gt;
+    &lt;div class&#x3D;&quot;col col--md-1 col--lg-1 margin-left--1&quot;&gt;
+        &lt;p&gt;1&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;col col--md-46 col--lg-58&quot;&gt;
+        &lt;p&gt;46 on medium, 58 on large&lt;/p&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class&#x3D;&quot;col-wrap&quot;&gt;
-    &lt;div class&#x3D;&quot;col col--md-half col--lg-half&quot;&gt;half column&lt;/div&gt;
-    &lt;div class&#x3D;&quot;col col--md-half col--lg-half&quot;&gt;half column&lt;/div&gt;
+    &lt;div class&#x3D;&quot;col col--md-10 col--lg-14 margin-left--1&quot;&gt;
+        &lt;p&gt;10 on medium, 14 on large&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;col col--md-36 col--lg-45&quot;&gt;
+        &lt;p&gt;36 on medium, 45 on large&lt;/p&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class&#x3D;&quot;col-wrap&quot;&gt;
-    &lt;div class&#x3D;&quot;col col--md-two-thirds col--lg-two-thirds&quot;&gt;two thirds column&lt;/div&gt;
-    &lt;div class&#x3D;&quot;col col--md-one-third col--lg-one-third&quot;&gt;one third column&lt;/div&gt;
+    &lt;div class&#x3D;&quot;col col--md-10 col--lg-15 margin-left--1&quot;&gt;
+        &lt;p&gt;10 on medium, 15 on large&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;col col--md-15 col--lg-15&quot;&gt;
+        &lt;p&gt;15 on medium and  large&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;col col--md-22 col--lg-29&quot;&gt;
+        &lt;p&gt;22 on medium, 29 on large&lt;/p&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
+
 </code></pre>
 							</div>
 						</div>

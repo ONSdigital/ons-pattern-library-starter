@@ -3,6 +3,7 @@ title: Layout
 template: listpagelayout.html
 type: listpage
 ---
-Use white space to create a visual hierarchy on the page.
+
+<p class="page-intro__content">Use white space to create a visual hierarchy on the page.</p>
 
 
