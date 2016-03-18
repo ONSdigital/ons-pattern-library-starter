@@ -8,7 +8,7 @@ show-snippet: true
 [snippet]
 <div class="col-wrap">
     <div class="col col--md-1 col--lg-1 margin-left--1">
-        <p>1</p>
+        <p>1 on medium and large</p>
     </div>
     <div class="col col--md-46 col--lg-58">
         <p>46 on medium, 58 on large</p>

@@ -76,10 +76,6 @@ Handlebars.registerHelper('slug', function(content){
 Metalsmith(__dirname)
 	.use(parseContentForSnippet)
 	.use(collections({
-		components: {
-			pattern: 'components/partials/*.md',
-			sortBy: 'order'
-		},
 		colour: {
 			pattern: 'colour/partials/*.md',
 			sortBy: 'order'
@@ -92,6 +88,10 @@ Metalsmith(__dirname)
 			pattern: 'layout/partials/*.md',
 			sortBy: 'order'
 		},
+		patterns: {
+			pattern: 'patterns/partials/*.md',
+			sortBy: 'order'
+		}
 	}))
 	.use(markdown())
 	.use(templates('handlebars'))
