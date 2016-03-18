@@ -5,8 +5,8 @@
 		<link href="/assets/css/main.css" rel="stylesheet" type="text/css" />
 		<link href="/assets/css/prism.css" rel="stylesheet" type="text/css" />
 		<link href="/assets/css/prismCustom.css" rel="stylesheet" type="text/css" />
-		<link href="https://www.ons.gov.uk/assets/css/main.css" rel="stylesheet" type="text/css" />
-		<!--<link href="http://localhost:9000/dist/css/main.css" rel="stylesheet" type="text/css" />-->
+		<!--<link href="https://www.ons.gov.uk/assets/css/main.css" rel="stylesheet" type="text/css" />-->
+		<link href="http://localhost:9000/dist/css/main.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body class="pl-listpage">
 		<div class="pl-head">
@@ -23,7 +23,8 @@
 							</a>
 						</div>
 					</div>
-				</nav> -->			<div class="page-intro background--gallery">
+				</nav> -->
+			<div class="page-intro background--gallery">
 				<div class="pl-wrap__inner">
 					<nav class="breadcrumb">
 						<ol class="breadcrumb__list">
@@ -50,10 +51,25 @@
 								<a href="#header" class="jsEnhanceAnimateScroll">Header</a>
 							</li>
 							<li class="table-of-contents__item">
+								<a href="#navigation" class="jsEnhanceAnimateScroll">Navigation</a>
+							</li>
+							<li class="table-of-contents__item">
+								<a href="#global-search" class="jsEnhanceAnimateScroll">Global search</a>
+							</li>
+							<li class="table-of-contents__item">
+								<a href="#search-on-search-page" class="jsEnhanceAnimateScroll">Search on search page</a>
+							</li>
+							<li class="table-of-contents__item">
+								<a href="#tabs" class="jsEnhanceAnimateScroll">Tabs</a>
+							</li>
+							<li class="table-of-contents__item">
 								<a href="#intro" class="jsEnhanceAnimateScroll">Intro</a>
 							</li>
 							<li class="table-of-contents__item">
 								<a href="#secondary-nav" class="jsEnhanceAnimateScroll">Secondary nav</a>
+							</li>
+							<li class="table-of-contents__item">
+								<a href="#showhide" class="jsEnhanceAnimateScroll">Show/hide</a>
 							</li>
 							<li class="table-of-contents__item">
 								<a href="#footer" class="jsEnhanceAnimateScroll">Footer</a>
@@ -62,7 +78,7 @@
 					</div>
 					<div class="page-content__main-content pl-page-content__main-content js-sticky-toc__trigger">
 						<div class="pl-item" id="header">
-							<h2>Header</h2>
+							<h2>Header</h2> 
 							<p>Description about the header file...</p>
 
 							<div class="pl-example">
@@ -124,8 +140,438 @@
 								</div>
 							</div>
 						</div>
+						<div class="pl-item" id="navigation">
+							<h2>Navigation</h2> 
+							<p>Description about the header file...</p>
+
+							<div class="pl-example">
+								<div class="pl-example__rendered">
+									
+<div class="primary-nav print--hide">
+	<nav>
+		<ul class="nav--controls">
+			<li class="nav--controls__item">
+				<a href="#nav-primary" id="menu-toggle" aria-controls="nav-primary" class="nav--controls__menu">
+					<span class="nav--controls__text">Menu</span>
+				</a>
+			</li>
+			<li class="nav--controls__item ">
+				<a href="#nav-search" id="search-toggle" aria-controls="nav-search" class="nav--controls__search">
+					<span class="nav--controls__text">Search</span>
+				</a>
+			</li>
+		</ul>
+		<div class="wrapper nav-main--hidden" id="nav-primary" aria-expanded="false">
+			<ul class="primary-nav__list">
+				<li class="primary-nav__item  js-nav hide--mobile old-ie--display-block"><a class="primary-nav__link col col--md-7 col--lg-9" href="/">Home</a></li>
+				<li class="primary-nav__item js-nav js-expandable">
+					<a class="primary-nav__link col col--md-8 col--lg-10" href="/businessindustryandtrade" aria-haspopup="true">Business, industry and trade</a>
+					<ul class="primary-nav__child-list col col--md-16 col--lg-20 js-expandable__content js-nav-hidden jsEnhance" aria-expanded="false" aria-label="submenu">
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/business">Business</a>
+						</li>
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/changestobusiness">Changes to business</a>
+						</li>
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/constructionindustry">Construction industry</a>
+						</li>
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/itandinternetindustry">IT and internet industry</a>
+						</li>
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/internationaltrade">International trade</a>
+						</li>
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/manufacturingandproductionindustry">Manufacturing and production industry</a>
+						</li>
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/retailindustry">Retail industry</a>
+						</li>
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/tourismindustry">Tourism industry</a>
+						</li>
+					</ul>
+				</li>
+				<li class="primary-nav__item js-nav js-expandable">
+					<a class="primary-nav__link col col--md-8 col--lg-10" href="/economy" aria-haspopup="true">Economy</a>
+					<ul class="primary-nav__child-list col col--md-16 col--lg-20 js-expandable__content js-nav-hidden jsEnhance" aria-expanded="false" aria-label="submenu">
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/economy/economicoutputandproductivity">Economic output and productivity</a>
+						</li>
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/economy/environmentalaccounts">Environmental accounts</a>
+						</li>
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/economy/governmentpublicsectorandtaxes">Government, public sector and taxes</a>
+						</li>
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/economy/grossdomesticproductgdp">Gross Domestic Product (GDP)</a>
+						</li>
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/economy/grossvalueaddedgva">Gross Value Added (GVA)</a>
+						</li>
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/economy/inflationandpriceindices">Inflation and price indices</a>
+						</li>
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/economy/investmentspensionsandtrusts">Investments, pensions and trusts</a>
+						</li>
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/economy/nationalaccounts">National accounts</a>
+						</li>
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/economy/regionalaccounts">Regional accounts</a>
+						</li>
+					</ul>
+				</li>
+				<li class="primary-nav__item js-nav js-expandable">
+					<a class="primary-nav__link col col--md-8 col--lg-10" href="/employmentandlabourmarket" aria-haspopup="true">Employment and labour market</a>
+					<ul class="primary-nav__child-list col col--md-16 col--lg-20 js-expandable__content js-nav-hidden jsEnhance" aria-expanded="false" aria-label="submenu">
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/employmentandlabourmarket/peopleinwork">People in work</a>
+						</li>
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/employmentandlabourmarket/peoplenotinwork">People not in work</a>
+						</li>
+					</ul>
+				</li>
+				<li class="primary-nav__item js-nav js-expandable">
+					<a class="primary-nav__link col col--md-8 col--lg-10" href="/peoplepopulationandcommunity" aria-haspopup="true">People, population and community</a>
+					<ul class="primary-nav__child-list col col--md-16 col--lg-20 js-expandable__content js-nav-hidden jsEnhance" aria-expanded="false" aria-label="submenu">
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/birthsdeathsandmarriages">Births, deaths and marriages</a>
+						</li>
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/crimeandjustice">Crime and justice</a>
+						</li>
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/culturalidentity">Cultural identity</a>
+						</li>
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/educationandchildcare">Education and childcare</a>
+						</li>
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/elections">Elections</a>
+						</li>
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/healthandsocialcare">Health and social care</a>
+						</li>
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/householdcharacteristics">Household characteristics</a>
+						</li>
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/housing">Housing</a>
+						</li>
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/leisureandtourism">Leisure and tourism</a>
+						</li>
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/personalandhouseholdfinances">Personal and household finances</a>
+						</li>
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/populationandmigration">Population and migration</a>
+						</li>
+						<li class="primary-nav__child-item  js-expandable__child">
+							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/wellbeing">Well-being</a>
+						</li>
+					</ul>
+				</li>
+				<li class="primary-nav__item  js-nav">
+					<a class="primary-nav__link  col col--md-8 col--lg-10" href="/surveys">
+						Taking part in a survey?
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</div>
+
+								</div>
+								<div class="pl-example__code">
+									<pre><code class="language-html">
+&lt;div class&#x3D;&quot;primary-nav print--hide&quot;&gt;
+	&lt;nav&gt;
+		&lt;ul class&#x3D;&quot;nav--controls&quot;&gt;
+			&lt;li class&#x3D;&quot;nav--controls__item&quot;&gt;
+				&lt;a href&#x3D;&quot;#nav-primary&quot; id&#x3D;&quot;menu-toggle&quot; aria-controls&#x3D;&quot;nav-primary&quot; class&#x3D;&quot;nav--controls__menu&quot;&gt;
+					&lt;span class&#x3D;&quot;nav--controls__text&quot;&gt;Menu&lt;/span&gt;
+				&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li class&#x3D;&quot;nav--controls__item &quot;&gt;
+				&lt;a href&#x3D;&quot;#nav-search&quot; id&#x3D;&quot;search-toggle&quot; aria-controls&#x3D;&quot;nav-search&quot; class&#x3D;&quot;nav--controls__search&quot;&gt;
+					&lt;span class&#x3D;&quot;nav--controls__text&quot;&gt;Search&lt;/span&gt;
+				&lt;/a&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;div class&#x3D;&quot;wrapper nav-main--hidden&quot; id&#x3D;&quot;nav-primary&quot; aria-expanded&#x3D;&quot;false&quot;&gt;
+			&lt;ul class&#x3D;&quot;primary-nav__list&quot;&gt;
+				&lt;li class&#x3D;&quot;primary-nav__item  js-nav hide--mobile old-ie--display-block&quot;&gt;&lt;a class&#x3D;&quot;primary-nav__link col col--md-7 col--lg-9&quot; href&#x3D;&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+				&lt;li class&#x3D;&quot;primary-nav__item js-nav js-expandable&quot;&gt;
+					&lt;a class&#x3D;&quot;primary-nav__link col col--md-8 col--lg-10&quot; href&#x3D;&quot;/businessindustryandtrade&quot; aria-haspopup&#x3D;&quot;true&quot;&gt;Business, industry and trade&lt;/a&gt;
+					&lt;ul class&#x3D;&quot;primary-nav__child-list col col--md-16 col--lg-20 js-expandable__content js-nav-hidden jsEnhance&quot; aria-expanded&#x3D;&quot;false&quot; aria-label&#x3D;&quot;submenu&quot;&gt;
+						&lt;li class&#x3D;&quot;primary-nav__child-item  js-expandable__child&quot;&gt;
+							&lt;a class&#x3D;&quot;primary-nav__child-link&quot; tabindex&#x3D;&quot;-1&quot; href&#x3D;&quot;/businessindustryandtrade/business&quot;&gt;Business&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;primary-nav__child-item  js-expandable__child&quot;&gt;
+							&lt;a class&#x3D;&quot;primary-nav__child-link&quot; tabindex&#x3D;&quot;-1&quot; href&#x3D;&quot;/businessindustryandtrade/changestobusiness&quot;&gt;Changes to business&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;primary-nav__child-item  js-expandable__child&quot;&gt;
+							&lt;a class&#x3D;&quot;primary-nav__child-link&quot; tabindex&#x3D;&quot;-1&quot; href&#x3D;&quot;/businessindustryandtrade/constructionindustry&quot;&gt;Construction industry&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;primary-nav__child-item  js-expandable__child&quot;&gt;
+							&lt;a class&#x3D;&quot;primary-nav__child-link&quot; tabindex&#x3D;&quot;-1&quot; href&#x3D;&quot;/businessindustryandtrade/itandinternetindustry&quot;&gt;IT and internet industry&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;primary-nav__child-item  js-expandable__child&quot;&gt;
+							&lt;a class&#x3D;&quot;primary-nav__child-link&quot; tabindex&#x3D;&quot;-1&quot; href&#x3D;&quot;/businessindustryandtrade/internationaltrade&quot;&gt;International trade&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;primary-nav__child-item  js-expandable__child&quot;&gt;
+							&lt;a class&#x3D;&quot;primary-nav__child-link&quot; tabindex&#x3D;&quot;-1&quot; href&#x3D;&quot;/businessindustryandtrade/manufacturingandproductionindustry&quot;&gt;Manufacturing and production industry&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;primary-nav__child-item  js-expandable__child&quot;&gt;
+							&lt;a class&#x3D;&quot;primary-nav__child-link&quot; tabindex&#x3D;&quot;-1&quot; href&#x3D;&quot;/businessindustryandtrade/retailindustry&quot;&gt;Retail industry&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;primary-nav__child-item  js-expandable__child&quot;&gt;
+							&lt;a class&#x3D;&quot;primary-nav__child-link&quot; tabindex&#x3D;&quot;-1&quot; href&#x3D;&quot;/businessindustryandtrade/tourismindustry&quot;&gt;Tourism industry&lt;/a&gt;
+						&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/li&gt;
+				&lt;li class&#x3D;&quot;primary-nav__item js-nav js-expandable&quot;&gt;
+					&lt;a class&#x3D;&quot;primary-nav__link col col--md-8 col--lg-10&quot; href&#x3D;&quot;/economy&quot; aria-haspopup&#x3D;&quot;true&quot;&gt;Economy&lt;/a&gt;
+					&lt;ul class&#x3D;&quot;primary-nav__child-list col col--md-16 col--lg-20 js-expandable__content js-nav-hidden jsEnhance&quot; aria-expanded&#x3D;&quot;false&quot; aria-label&#x3D;&quot;submenu&quot;&gt;
+						&lt;li class&#x3D;&quot;primary-nav__child-item  js-expandable__child&quot;&gt;
+							&lt;a class&#x3D;&quot;primary-nav__child-link&quot; tabindex&#x3D;&quot;-1&quot; href&#x3D;&quot;/economy/economicoutputandproductivity&quot;&gt;Economic output and productivity&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;primary-nav__child-item  js-expandable__child&quot;&gt;
+							&lt;a class&#x3D;&quot;primary-nav__child-link&quot; tabindex&#x3D;&quot;-1&quot; href&#x3D;&quot;/economy/environmentalaccounts&quot;&gt;Environmental accounts&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;primary-nav__child-item  js-expandable__child&quot;&gt;
+							&lt;a class&#x3D;&quot;primary-nav__child-link&quot; tabindex&#x3D;&quot;-1&quot; href&#x3D;&quot;/economy/governmentpublicsectorandtaxes&quot;&gt;Government, public sector and taxes&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;primary-nav__child-item  js-expandable__child&quot;&gt;
+							&lt;a class&#x3D;&quot;primary-nav__child-link&quot; tabindex&#x3D;&quot;-1&quot; href&#x3D;&quot;/economy/grossdomesticproductgdp&quot;&gt;Gross Domestic Product (GDP)&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;primary-nav__child-item  js-expandable__child&quot;&gt;
+							&lt;a class&#x3D;&quot;primary-nav__child-link&quot; tabindex&#x3D;&quot;-1&quot; href&#x3D;&quot;/economy/grossvalueaddedgva&quot;&gt;Gross Value Added (GVA)&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;primary-nav__child-item  js-expandable__child&quot;&gt;
+							&lt;a class&#x3D;&quot;primary-nav__child-link&quot; tabindex&#x3D;&quot;-1&quot; href&#x3D;&quot;/economy/inflationandpriceindices&quot;&gt;Inflation and price indices&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;primary-nav__child-item  js-expandable__child&quot;&gt;
+							&lt;a class&#x3D;&quot;primary-nav__child-link&quot; tabindex&#x3D;&quot;-1&quot; href&#x3D;&quot;/economy/investmentspensionsandtrusts&quot;&gt;Investments, pensions and trusts&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;primary-nav__child-item  js-expandable__child&quot;&gt;
+							&lt;a class&#x3D;&quot;primary-nav__child-link&quot; tabindex&#x3D;&quot;-1&quot; href&#x3D;&quot;/economy/nationalaccounts&quot;&gt;National accounts&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;primary-nav__child-item  js-expandable__child&quot;&gt;
+							&lt;a class&#x3D;&quot;primary-nav__child-link&quot; tabindex&#x3D;&quot;-1&quot; href&#x3D;&quot;/economy/regionalaccounts&quot;&gt;Regional accounts&lt;/a&gt;
+						&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/li&gt;
+				&lt;li class&#x3D;&quot;primary-nav__item js-nav js-expandable&quot;&gt;
+					&lt;a class&#x3D;&quot;primary-nav__link col col--md-8 col--lg-10&quot; href&#x3D;&quot;/employmentandlabourmarket&quot; aria-haspopup&#x3D;&quot;true&quot;&gt;Employment and labour market&lt;/a&gt;
+					&lt;ul class&#x3D;&quot;primary-nav__child-list col col--md-16 col--lg-20 js-expandable__content js-nav-hidden jsEnhance&quot; aria-expanded&#x3D;&quot;false&quot; aria-label&#x3D;&quot;submenu&quot;&gt;
+						&lt;li class&#x3D;&quot;primary-nav__child-item  js-expandable__child&quot;&gt;
+							&lt;a class&#x3D;&quot;primary-nav__child-link&quot; tabindex&#x3D;&quot;-1&quot; href&#x3D;&quot;/employmentandlabourmarket/peopleinwork&quot;&gt;People in work&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;primary-nav__child-item  js-expandable__child&quot;&gt;
+							&lt;a class&#x3D;&quot;primary-nav__child-link&quot; tabindex&#x3D;&quot;-1&quot; href&#x3D;&quot;/employmentandlabourmarket/peoplenotinwork&quot;&gt;People not in work&lt;/a&gt;
+						&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/li&gt;
+				&lt;li class&#x3D;&quot;primary-nav__item js-nav js-expandable&quot;&gt;
+					&lt;a class&#x3D;&quot;primary-nav__link col col--md-8 col--lg-10&quot; href&#x3D;&quot;/peoplepopulationandcommunity&quot; aria-haspopup&#x3D;&quot;true&quot;&gt;People, population and community&lt;/a&gt;
+					&lt;ul class&#x3D;&quot;primary-nav__child-list col col--md-16 col--lg-20 js-expandable__content js-nav-hidden jsEnhance&quot; aria-expanded&#x3D;&quot;false&quot; aria-label&#x3D;&quot;submenu&quot;&gt;
+						&lt;li class&#x3D;&quot;primary-nav__child-item  js-expandable__child&quot;&gt;
+							&lt;a class&#x3D;&quot;primary-nav__child-link&quot; tabindex&#x3D;&quot;-1&quot; href&#x3D;&quot;/peoplepopulationandcommunity/birthsdeathsandmarriages&quot;&gt;Births, deaths and marriages&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;primary-nav__child-item  js-expandable__child&quot;&gt;
+							&lt;a class&#x3D;&quot;primary-nav__child-link&quot; tabindex&#x3D;&quot;-1&quot; href&#x3D;&quot;/peoplepopulationandcommunity/crimeandjustice&quot;&gt;Crime and justice&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;primary-nav__child-item  js-expandable__child&quot;&gt;
+							&lt;a class&#x3D;&quot;primary-nav__child-link&quot; tabindex&#x3D;&quot;-1&quot; href&#x3D;&quot;/peoplepopulationandcommunity/culturalidentity&quot;&gt;Cultural identity&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;primary-nav__child-item  js-expandable__child&quot;&gt;
+							&lt;a class&#x3D;&quot;primary-nav__child-link&quot; tabindex&#x3D;&quot;-1&quot; href&#x3D;&quot;/peoplepopulationandcommunity/educationandchildcare&quot;&gt;Education and childcare&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;primary-nav__child-item  js-expandable__child&quot;&gt;
+							&lt;a class&#x3D;&quot;primary-nav__child-link&quot; tabindex&#x3D;&quot;-1&quot; href&#x3D;&quot;/peoplepopulationandcommunity/elections&quot;&gt;Elections&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;primary-nav__child-item  js-expandable__child&quot;&gt;
+							&lt;a class&#x3D;&quot;primary-nav__child-link&quot; tabindex&#x3D;&quot;-1&quot; href&#x3D;&quot;/peoplepopulationandcommunity/healthandsocialcare&quot;&gt;Health and social care&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;primary-nav__child-item  js-expandable__child&quot;&gt;
+							&lt;a class&#x3D;&quot;primary-nav__child-link&quot; tabindex&#x3D;&quot;-1&quot; href&#x3D;&quot;/peoplepopulationandcommunity/householdcharacteristics&quot;&gt;Household characteristics&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;primary-nav__child-item  js-expandable__child&quot;&gt;
+							&lt;a class&#x3D;&quot;primary-nav__child-link&quot; tabindex&#x3D;&quot;-1&quot; href&#x3D;&quot;/peoplepopulationandcommunity/housing&quot;&gt;Housing&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;primary-nav__child-item  js-expandable__child&quot;&gt;
+							&lt;a class&#x3D;&quot;primary-nav__child-link&quot; tabindex&#x3D;&quot;-1&quot; href&#x3D;&quot;/peoplepopulationandcommunity/leisureandtourism&quot;&gt;Leisure and tourism&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;primary-nav__child-item  js-expandable__child&quot;&gt;
+							&lt;a class&#x3D;&quot;primary-nav__child-link&quot; tabindex&#x3D;&quot;-1&quot; href&#x3D;&quot;/peoplepopulationandcommunity/personalandhouseholdfinances&quot;&gt;Personal and household finances&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;primary-nav__child-item  js-expandable__child&quot;&gt;
+							&lt;a class&#x3D;&quot;primary-nav__child-link&quot; tabindex&#x3D;&quot;-1&quot; href&#x3D;&quot;/peoplepopulationandcommunity/populationandmigration&quot;&gt;Population and migration&lt;/a&gt;
+						&lt;/li&gt;
+						&lt;li class&#x3D;&quot;primary-nav__child-item  js-expandable__child&quot;&gt;
+							&lt;a class&#x3D;&quot;primary-nav__child-link&quot; tabindex&#x3D;&quot;-1&quot; href&#x3D;&quot;/peoplepopulationandcommunity/wellbeing&quot;&gt;Well-being&lt;/a&gt;
+						&lt;/li&gt;
+					&lt;/ul&gt;
+				&lt;/li&gt;
+				&lt;li class&#x3D;&quot;primary-nav__item  js-nav&quot;&gt;
+					&lt;a class&#x3D;&quot;primary-nav__link  col col--md-8 col--lg-10&quot; href&#x3D;&quot;/surveys&quot;&gt;
+						Taking part in a survey?
+					&lt;/a&gt;
+				&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+	&lt;/nav&gt;
+&lt;/div&gt;
+</code></pre>
+								</div>
+							</div>
+						</div>
+						<div class="pl-item" id="global-search">
+							<h2>Global search</h2> 
+							<p>Description about the header file...</p>
+
+							<div class="pl-example">
+								<div class="pl-example__rendered">
+									
+<div class="search nav-search--hidden print--hide" id="searchBar">
+	<div class="wrapper" role="search">
+		<form class="col-wrap search__form" action="/search">
+			<label class="search__label col col--md-23 col--lg-24" for="nav-search">
+				Search for a keyword(s) or time series ID
+			</label>
+			<input type="search" autocomplete="off" class="search__input col col--md-21 col--lg-32" id="nav-search" name="q" value="">
+			<button type="submit" class="search__button col--md-3 col--lg-3" id="nav-search-submit">
+				<span class="visuallyhidden">Search</span>
+				<span class="icon icon-search--light"></span>
+			</button>
+		</form>
+	</div>
+</div>
+
+								</div>
+								<div class="pl-example__code">
+									<pre><code class="language-html">
+&lt;div class&#x3D;&quot;search nav-search--hidden print--hide&quot; id&#x3D;&quot;searchBar&quot;&gt;
+	&lt;div class&#x3D;&quot;wrapper&quot; role&#x3D;&quot;search&quot;&gt;
+		&lt;form class&#x3D;&quot;col-wrap search__form&quot; action&#x3D;&quot;/search&quot;&gt;
+			&lt;label class&#x3D;&quot;search__label col col--md-23 col--lg-24&quot; for&#x3D;&quot;nav-search&quot;&gt;
+				Search for a keyword(s) or time series ID
+			&lt;/label&gt;
+			&lt;input type&#x3D;&quot;search&quot; autocomplete&#x3D;&quot;off&quot; class&#x3D;&quot;search__input col col--md-21 col--lg-32&quot; id&#x3D;&quot;nav-search&quot; name&#x3D;&quot;q&quot; value&#x3D;&quot;&quot;&gt;
+			&lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;search__button col--md-3 col--lg-3&quot; id&#x3D;&quot;nav-search-submit&quot;&gt;
+				&lt;span class&#x3D;&quot;visuallyhidden&quot;&gt;Search&lt;/span&gt;
+				&lt;span class&#x3D;&quot;icon icon-search--light&quot;&gt;&lt;/span&gt;
+			&lt;/button&gt;
+		&lt;/form&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+								</div>
+							</div>
+						</div>
+						<div class="pl-item" id="search-on-search-page">
+							<h2>Search on search page</h2> 
+							<p>Description about the header file...</p>
+
+							<div class="pl-example">
+								<div class="pl-example__rendered">
+									
+<div class="search search--results-page print--hide" id="searchBar">
+	<div class="wrapper">
+		<form class="col-wrap search__form" action="/search">
+			<h1>Search our website</h1>
+			<label class="font-size--16 block" for="nav-search">Keyword(s) or time series ID</label>
+			<input type="search" autocomplete="off" class="search__input search__input--results-page col col--md-29 col--lg-29" id="nav-search" name="q" value="">
+			<button type="submit" class="search__button search__button--results-page col--md-3 col--lg-3" id="nav-search-submit">
+				<span class="visuallyhidden">Search</span>
+				<span class="icon icon-search--light"></span>
+			</button>
+		</form>
+	</div>
+</div>
+
+								</div>
+								<div class="pl-example__code">
+									<pre><code class="language-html">
+&lt;div class&#x3D;&quot;search search--results-page print--hide&quot; id&#x3D;&quot;searchBar&quot;&gt;
+	&lt;div class&#x3D;&quot;wrapper&quot;&gt;
+		&lt;form class&#x3D;&quot;col-wrap search__form&quot; action&#x3D;&quot;/search&quot;&gt;
+			&lt;h1&gt;Search our website&lt;/h1&gt;
+			&lt;label class&#x3D;&quot;font-size--16 block&quot; for&#x3D;&quot;nav-search&quot;&gt;Keyword(s) or time series ID&lt;/label&gt;
+			&lt;input type&#x3D;&quot;search&quot; autocomplete&#x3D;&quot;off&quot; class&#x3D;&quot;search__input search__input--results-page col col--md-29 col--lg-29&quot; id&#x3D;&quot;nav-search&quot; name&#x3D;&quot;q&quot; value&#x3D;&quot;&quot;&gt;
+			&lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;search__button search__button--results-page col--md-3 col--lg-3&quot; id&#x3D;&quot;nav-search-submit&quot;&gt;
+				&lt;span class&#x3D;&quot;visuallyhidden&quot;&gt;Search&lt;/span&gt;
+				&lt;span class&#x3D;&quot;icon icon-search--light&quot;&gt;&lt;/span&gt;
+			&lt;/button&gt;
+		&lt;/form&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+								</div>
+							</div>
+						</div>
+						<div class="pl-item" id="tabs">
+							<h2>Tabs</h2> 
+							<p>Description about the header file...</p>
+
+							<div class="pl-example">
+								<div class="pl-example__rendered">
+									
+<div class="background--ship-gray padding-top-md--1">
+    <nav class="tabs--js">
+        <ul class="list--neutral flush">
+            <li class="tab__item width-sm--6">
+                <span class="tab__link tab__link--active">All results (3,869)</span>
+            </li>
+            <li class="tab__item width-sm--6">
+                <a href="#" class="tab__link">
+                    Data (3,715)
+                </a>
+            </li>
+            <li class="tab__item width-sm--6">
+                <a href="#" class="tab__link">
+                    Publications (110)
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+								</div>
+								<div class="pl-example__code">
+									<pre><code class="language-html">
+&lt;div class&#x3D;&quot;background--ship-gray padding-top-md--1&quot;&gt;
+    &lt;nav class&#x3D;&quot;tabs--js&quot;&gt;
+        &lt;ul class&#x3D;&quot;list--neutral flush&quot;&gt;
+            &lt;li class&#x3D;&quot;tab__item width-sm--6&quot;&gt;
+                &lt;span class&#x3D;&quot;tab__link tab__link--active&quot;&gt;All results (3,869)&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class&#x3D;&quot;tab__item width-sm--6&quot;&gt;
+                &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;tab__link&quot;&gt;
+                    Data (3,715)
+                &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class&#x3D;&quot;tab__item width-sm--6&quot;&gt;
+                &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;tab__link&quot;&gt;
+                    Publications (110)
+                &lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/div&gt;
+</code></pre>
+								</div>
+							</div>
+						</div>
 						<div class="pl-item" id="intro">
-							<h2>Intro</h2>
+							<h2>Intro</h2> 
 							<p>Description about the page intro file...</p>
 
 							<div class="pl-example">
@@ -196,7 +642,7 @@
 							</div>
 						</div>
 						<div class="pl-item" id="secondary-nav">
-							<h2>Secondary nav</h2>
+							<h2>Secondary nav</h2> 
 							<p>Description about the secondary nav file...</p>
 
 							<div class="pl-example">
@@ -252,8 +698,47 @@
 								</div>
 							</div>
 						</div>
+						<div class="pl-item" id="showhide">
+							<h2>Show/hide</h2> JS
+							<p>Description about the page intro file...</p>
+
+							<div class="pl-example">
+								<div class="pl-example__rendered">
+									
+<div class="show-hide show-hide--light">
+    <div class="js-show-hide__title">
+        <button class="js-show-hide__button" type="button" aria-expanded="false" aria-controls="collapsible-0">
+        <h2 class="show-hide__title">
+            Lorem Ipsum
+        </h2>
+        </button>
+    </div>
+    <div class="js-show-hide__content margin-bottom--4" id="collapsible-0" aria-hidden="true">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas pharetra nunc in aliquam. Duis malesuada euismod libero at ultricies. Morbi elementum sodales magna, quis fermentum est lobortis ut. Nulla eu pellentesque purus, et molestie dolor. Nulla ex augue, tincidunt in molestie sodales, pharetra et nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. In faucibus consectetur nulla, auctor facilisis libero rutrum non.</p>
+    </div>
+</div>
+
+								</div>
+								<div class="pl-example__code">
+									<pre><code class="language-html">
+&lt;div class&#x3D;&quot;show-hide show-hide--light&quot;&gt;
+    &lt;div class&#x3D;&quot;js-show-hide__title&quot;&gt;
+        &lt;button class&#x3D;&quot;js-show-hide__button&quot; type&#x3D;&quot;button&quot; aria-expanded&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;collapsible-0&quot;&gt;
+        &lt;h2 class&#x3D;&quot;show-hide__title&quot;&gt;
+            Lorem Ipsum
+        &lt;/h2&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;js-show-hide__content margin-bottom--4&quot; id&#x3D;&quot;collapsible-0&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas pharetra nunc in aliquam. Duis malesuada euismod libero at ultricies. Morbi elementum sodales magna, quis fermentum est lobortis ut. Nulla eu pellentesque purus, et molestie dolor. Nulla ex augue, tincidunt in molestie sodales, pharetra et nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. In faucibus consectetur nulla, auctor facilisis libero rutrum non.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+								</div>
+							</div>
+						</div>
 						<div class="pl-item" id="footer">
-							<h2>Footer</h2>
+							<h2>Footer</h2> 
 							<p>Description here...</p>
 
 							<div class="pl-example">
@@ -411,5 +896,11 @@
 		<script type="text/javascript" src="https://www.ons.gov.uk/assets/js/main.js"></script>
 		<!--<script type="text/javascript" src="../assets/js/jquery.js"></script>
 		<script type="text/javascript" src="../assets/js/main.js"></script>-->
+
+		<div class="pl-footer background--ship-gray">
+			<div class="pl-wrap__inner">
+				<p class="margin-top-md--0">Updated on: 18 Mar 2016</p>
+			</div>
+		</div>
   </body>
 </html>
