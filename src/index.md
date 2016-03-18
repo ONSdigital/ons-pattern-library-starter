@@ -39,7 +39,7 @@ type: home
                         </li>
                         <li class="col col--md-22 col--lg-18 margin-right-md--1 margin-bottom-md--2 padding-left-md--1 padding-right-md--1 height-sm--20 height-md--20 height-lg--20 background--white js-hover-click">
                             <h2 class="margin-top-md--2">
-                                <a href="#">Buttons and links</a>
+                                <a href="/buttons/">Buttons and links</a>
                             </h2>
                             <p class="margin-top-sm--0 margin-top-md--0 margin-bottom-sm--2 margin-bottom-md--0">Button text, button alignment, creating buttons.</p>
                         </li>

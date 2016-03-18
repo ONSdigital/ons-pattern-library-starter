@@ -78,18 +78,18 @@ Handlebars.registerHelper('date', function(){
 	var date = new Date();
 	var day = date.getDate();
 	var month = [];
-	month[0] = "Jan";
-	month[1] = "Feb";
-	month[2] = "Mar";
-	month[3] = "Apr";
+	month[0] = "January";
+	month[1] = "February";
+	month[2] = "March";
+	month[3] = "April";
 	month[4] = "May";
-	month[5] = "Jun";
-	month[6] = "Jul";
-	month[7] = "Aug";
-	month[8] = "Sep";
-	month[9] = "Oct";
-	month[10] = "Nov";
-	month[11] = "Dec";
+	month[5] = "June";
+	month[6] = "July";
+	month[7] = "August";
+	month[8] = "September";
+	month[9] = "October";
+	month[10] = "November";
+	month[11] = "December";
 	var year = date.getFullYear();
 	var str = day + ' ' + month[date.getMonth()] + ' ' + year;
 	return str;
@@ -98,6 +98,10 @@ Handlebars.registerHelper('date', function(){
 Metalsmith(__dirname)
 	.use(parseContentForSnippet)
 	.use(collections({
+		buttons: {
+			pattern: 'buttons/partials/*.md',
+			sortBy: 'order'
+		},
 		colour: {
 			pattern: 'colour/partials/*.md',
 			sortBy: 'order'

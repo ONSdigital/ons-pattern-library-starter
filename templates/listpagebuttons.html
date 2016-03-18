@@ -1,4 +1,4 @@
-{{> header class="hello"}}
+{{> header}}
 			<div class="page-intro background--gallery">
 				<div class="pl-wrap__inner">
 					{{> listpagebreadcrumb}}
@@ -11,7 +11,7 @@
 					<div class="table-of-contents js-sticky-toc padding-bottom-md--3">
 						<h2 class="table-of-contents__title">Table of contents</h2>
 						<ol id="toc" class="table-of-contents__list">
-							{{#each collections.colour}}
+							{{#each collections.buttons}}
 							<li class="table-of-contents__item">
 								<a href="#{{ slug this.title }}" class="jsEnhanceAnimateScroll">{{ this.title }}</a>
 							</li>
@@ -19,13 +19,13 @@
 						</ol>
 					</div>
 					<div class="page-content__main-content pl-page-content__main-content js-sticky-toc__trigger">
-						{{#each collections.colour}}
+						{{#each collections.buttons}}
 						<div class="pl-item" id="{{ slug this.title }}">
 							<h2>{{ this.title }}</h2>
 							{{{ this.contents }}}
 							{{#if this.show-snippet}}
 							<div class="pl-example">
-								<div class="pl-example__rendered pl-example__rendered--grid">
+								<div class="pl-example__rendered">
 									{{{ this.snippet }}}
 								</div>
 								<div class="pl-example__code">
