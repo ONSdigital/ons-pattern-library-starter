@@ -1,35 +1,25 @@
 ---
-title: Header
+title: Global search
 template: test.html
 type: partial
-order: 1
+order: 3
 show-snippet: true
 ---
 [snippet]
-<nav>
-	<div class="wrapper">
-		<div class="header col-wrap">
-			<div class="col col--lg-one-third col--md-one-third">
-				<a href="/">
-					<img class="main-logo" src="https://www.ons.gov.uk/assets/img/ons-logo.png" alt="Office for National Statistics">
-				</a>
-			</div>
-			<div class="col col--lg-two-thirds col--md-two-thirds print--hide">&nbsp;</div>
-			<nav class="secondary-nav col col--lg-two-thirds col--md-two-thirds print--hide">
-				<ul class="secondary-nav__list">
-					<li class="secondary-nav__item">
-						<a class="secondary-nav__link" href="/methodology">Methodology</a>
-					</li>
-					<li class="secondary-nav__item">
-						<a class="secondary-nav__link" href="/aboutus">
-							About
-						</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
+<div class="search nav-search--hidden print--hide" id="searchBar">
+	<div class="wrapper" role="search">
+		<form class="col-wrap search__form" action="/search">
+			<label class="search__label col col--md-23 col--lg-24" for="nav-search">
+				Search for a keyword(s) or time series ID
+			</label>
+			<input type="search" autocomplete="off" class="search__input col col--md-21 col--lg-32" id="nav-search" name="q" value="">
+			<button type="submit" class="search__button col--md-3 col--lg-3" id="nav-search-submit">
+				<span class="visuallyhidden">Search</span>
+				<span class="icon icon-search--light"></span>
+			</button>
+		</form>
 	</div>
-</nav>
+</div>
 [/snippet]
 
 Description about the header file...

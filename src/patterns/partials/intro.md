@@ -2,7 +2,7 @@
 title: Intro
 template: test.html
 type: partial
-order: 2
+order: 6
 show-snippet: true
 ---
 [snippet]

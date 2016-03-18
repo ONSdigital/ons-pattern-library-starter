@@ -1,38 +1,23 @@
 ---
-title: Intro
+title: Show/hide
 template: test.html
 type: partial
-order: 2
+order: 9
 show-snippet: true
+js: true
 ---
 [snippet]
-<div class="page-intro background--gallery">
-	<div class="wrapper">
-		<div class="col-wrap">
-			<div class="col">
-				<nav class="breadcrumb print--hide">
-					<ol class="breadcrumb__list">
-						<li class="breadcrumb__item">
-							<a class="breadcrumb__link" href="/">
-								Home
-							</a>
-						</li>
-						<li class="breadcrumb__item">
-							Economy
-						</li>
-					</ol>
-				</nav>
-				<div class="col col--md-47 col--lg-48">
-					<h1 class="page-intro__title ">
-						Economy
-					</h1>
-					<p class="page-intro__content">
-						UK economic activity covering production, distribution, consumption and trade of goods and services. Individuals, businesses, organisations and governments all affect the development of the economy.
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
+<div class="show-hide show-hide--light">
+    <div class="js-show-hide__title">
+        <button class="js-show-hide__button" type="button" aria-expanded="false" aria-controls="collapsible-0">
+        <h2 class="show-hide__title">
+            Lorem Ipsum
+        </h2>
+        </button>
+    </div>
+    <div class="js-show-hide__content margin-bottom--4" id="collapsible-0" aria-hidden="true">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In egestas pharetra nunc in aliquam. Duis malesuada euismod libero at ultricies. Morbi elementum sodales magna, quis fermentum est lobortis ut. Nulla eu pellentesque purus, et molestie dolor. Nulla ex augue, tincidunt in molestie sodales, pharetra et nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. In faucibus consectetur nulla, auctor facilisis libero rutrum non.</p>
+    </div>
 </div>
 [/snippet]
 

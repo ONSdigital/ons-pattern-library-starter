@@ -2,7 +2,7 @@
 title: Footer
 template: test.html
 type: partial
-order: 4
+order: 999
 show-snippet: true
 ---
 [snippet]

@@ -2,7 +2,7 @@
 title: Secondary nav
 template:
 type: partial
-order: 3
+order: 7
 show-snippet: true
 ---
 [snippet]
