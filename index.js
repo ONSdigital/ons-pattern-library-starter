@@ -14,7 +14,7 @@ var deletePartialMarkdownFiles = function(files, metalsmith, done) {
 		var type = files[file].type;
 		if (type == "partial" || type == "code") {
 			delete files[file];
-			console.log("Deleted partial: " + file);
+			//console.log("Deleted partial: " + file);
 		}
 	}
 	done();
@@ -68,9 +68,31 @@ Handlebars.registerPartial('listpagebreadcrumb', fs.readFileSync(__dirname + '/t
 
 // helper to slugify strings
 Handlebars.registerHelper('slug', function(content){
-	var removeSpaces = content.split(' ').join('-').toLowerCase();
-	var removeChars = removeSpaces.replace(/[^a-zA-Z0-9\- ]/g, "");
+	var spacesToDashes = content.split(' ').join('-').toLowerCase();
+	var removeChars = spacesToDashes.replace(/[^a-zA-Z0-9\- ]/g, "");
 	return removeChars;
+});
+
+// helper to update date, format: 10 Mar 2014
+Handlebars.registerHelper('date', function(){
+	var date = new Date();
+	var day = date.getDate();
+	var month = [];
+	month[0] = "Jan";
+	month[1] = "Feb";
+	month[2] = "Mar";
+	month[3] = "Apr";
+	month[4] = "May";
+	month[5] = "Jun";
+	month[6] = "Jul";
+	month[7] = "Aug";
+	month[8] = "Sep";
+	month[9] = "Oct";
+	month[10] = "Nov";
+	month[11] = "Dec";
+	var year = date.getFullYear();
+	var str = day + ' ' + month[date.getMonth()] + ' ' + year;
+	return str;
 });
 
 Metalsmith(__dirname)
