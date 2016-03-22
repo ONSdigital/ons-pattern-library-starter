@@ -95,6 +95,14 @@ Handlebars.registerHelper('date', function(){
 	return str;
 });
 
+// if equals helper
+Handlebars.registerHelper('if_eq', function(a, b, opts) {
+	if(a == b)
+		return opts.fn(this);
+	else
+		return opts.inverse(this);
+});
+
 Metalsmith(__dirname)
 	.use(parseContentForSnippet)
 	.use(collections({
