@@ -67,7 +67,7 @@ body {
 	background: #FFFFFF;
 	border-bottom: 1px solid #ECE8E6;
 	/*position: relative;*/
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 .pl-example__rendered:before {
@@ -101,6 +101,14 @@ body {
 .pl-example__code {
 	/*background: #efefef;
 	padding: 30px;*/
+}
+
+.pl-btn {}
+.pl-btn--show-grid {
+	position: absolute;
+	top: 0;
+	right: 0;
+
 }
 
 .pl-tag {
