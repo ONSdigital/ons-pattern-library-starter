@@ -2,7 +2,7 @@
 title: Show/hide
 template: test.html
 type: partial
-order: 9
+order: 10
 show-snippet: true
 js: true
 ---

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>ONS Pattern Library - Colour</title>
+		<title>ONS Pattern Library - Typography</title>
 		<link href="/assets/css/main.css" rel="stylesheet" type="text/css" />
 		<link href="/assets/css/prism.css" rel="stylesheet" type="text/css" />
 		<link href="/assets/css/prismCustom.css" rel="stylesheet" type="text/css" />
@@ -37,11 +37,11 @@
 								<a class="breadcrumb__link" href="/">Home</a>
 							</li>
 							<li class="breadcrumb__item">
-								Colour
+								Typography
 							</li>
 						</ol>
-					</nav>					<h1 class="page-intro__title">Colour</h1>
-					<p class="page-intro__content">Always use the ONS.GOV.UK colour palette.</p>
+					</nav>					<h1 class="page-intro__title">Typography</h1>
+					<p class="page-intro__content">An 8px baseline to provide consistent vertical spacing.</p>
 				</div>
 			</div>
 			<div class="pl-wrap">
@@ -50,34 +50,63 @@
 						<h2 class="table-of-contents__title">Table of contents</h2>
 						<ol id="toc" class="table-of-contents__list">
 							<li class="table-of-contents__item">
-								<a href="#sass-variables" class="jsEnhanceAnimateScroll">Sass variables</a>
+								<a href="#baseline-vertical-rhythm" class="jsEnhanceAnimateScroll">Baseline (vertical rhythm)</a>
+							</li>
+							<li class="table-of-contents__item">
+								<a href="#font" class="jsEnhanceAnimateScroll">Font</a>
+							</li>
+							<li class="table-of-contents__item">
+								<a href="#headings" class="jsEnhanceAnimateScroll">Headings</a>
 							</li>
 						</ol>
 					</div>
 					<div class="page-content__main-content pl-page-content__main-content js-sticky-toc__trigger">
-						<div class="pl-item" id="sass-variables">
-							<h2>Sass variables</h2>
-							<p>&lt;p class=margin-top-md--0&quot;&gt;Colour grid like GOV.UK elements.</p></p>
-<div class="pl-wrap__inner">
-    <div class="col col--md-10 col--lg-11 margin-right-md--1 margin-bottom-md--1">
-        colours
-    </div>
-    <div class="col col--md-10 col--lg-11 margin-right-md--1 margin-bottom-md--1">
-        more colours
-    </div>
-    <div class="col col--md-10 col--lg-11 margin-right-md--1 margin-bottom-md--1">
-        other
-    </div>
-    <div class="col col--md-10 col--lg-11 margin-right-md--1 margin-bottom-md--1">
-        some
-    </div>
-    <div class="col col--md-10 col--lg-11 margin-right-md--1 margin-bottom-md--1">
-        stuff
-    </div>
-    <div class="col col--md-10 col--lg-11 margin-right-md--1 margin-bottom-md--1">
-        hello
-    </div>
-</div>
+						<div class="pl-item" id="baseline-vertical-rhythm">
+							<h2>Baseline (vertical rhythm)</h2>
+							<p>All text is on an 8px vertical baseline and uses a 24px line height. This helps achieve consistent vertical spacing between text and patterns. Zell Liew discusses the <a href="http://zellwk.com/blog/why-vertical-rhythms/">benefits of implementing a baseline</a>.</p>
+							<div class="pl-example">
+								<div class="pl-example__rendered">
+									
+<p>All elements in this pattern library are built to compliment the 8px baseline.</p>
+
+								</div>
+								<div class="pl-example__code">
+									<pre><code class="language-html">
+&lt;p&gt;All elements in this pattern library are built to compliment the 8px baseline.&lt;/p&gt;
+</code></pre>
+								</div>
+							</div>
+						</div>
+						<div class="pl-item" id="font">
+							<h2>Font</h2>
+							<p>Helvetica is the prioritised font, then Arial will be used if Helvetica is not available on the user’s machine. If neither are available it’ll default to sans serif.</p>
+
+						</div>
+						<div class="pl-item" id="headings">
+							<h2>Headings</h2>
+							
+							<div class="pl-example">
+								<div class="pl-example__rendered">
+									
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+
+								</div>
+								<div class="pl-example__code">
+									<pre><code class="language-html">
+&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;
+</code></pre>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

@@ -23,13 +23,18 @@ show-snippet: true
     </div>
 </div>
 <div class="col-wrap">
-    <div class="col col--md-10 col--lg-15 margin-left--1">
+    <div class="col col--md-15 col--lg-15 margin-left--1">
         <p>10 on medium, 15 on large</p>
     </div>
-    <div class="col col--md-15 col--lg-15">
-        <p>15 on medium and  large</p>
-    </div>
     <div class="col col--md-22 col--lg-29">
+        <div class="col col--md-11 col--lg-14">
+            <p>15 on medium and  large</p>
+        </div>
+        <div class="col col--md-11 col--lg-15">
+            <p>15 on medium and  large</p>
+        </div>
+    </div>
+    <div class="col col--md-10 col--lg-15">
         <p>22 on medium, 29 on large</p>
     </div>
 </div>

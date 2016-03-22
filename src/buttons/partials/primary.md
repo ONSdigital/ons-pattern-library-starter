@@ -9,6 +9,10 @@ show-snippet: true
 <button class="btn btn--primary">
     Primary button
 </button>
+
+<button class="btn btn--primary btn--primary--disabled">
+    Primary button (disabled)
+</button>
 [/snippet]
 
 CTA buttons
