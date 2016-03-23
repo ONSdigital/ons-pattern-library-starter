@@ -129,6 +129,10 @@ Metalsmith(__dirname)
 		typography: {
 			pattern: 'typography/partials/*.md',
 			sortBy: 'order'
+		},
+		utilities: {
+			pattern: 'utilities/partials/*.md',
+			sortBy: 'order'
 		}
 	}))
 	.use(markdown())

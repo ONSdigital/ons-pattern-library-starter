@@ -85,7 +85,7 @@ body {
 }
 
 .pl-example__rendered--grid:after {
-	background: url(../img/grid.png) center 0 repeat-y;
+	background: url(../img/grid.png) 15px -1px repeat-y;
 	content: "";
 	position: absolute;
 	top: 0px;
@@ -132,5 +132,3 @@ body {
 	height: 200px;
 	float: left;
 }*/
-
-
