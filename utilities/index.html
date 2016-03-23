@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ONS Pattern Library - Utilities</title>
+		<link href="/assets/css/main.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/css/prism.css" rel="stylesheet" type="text/css" />
+		<link href="/assets/css/prismCustom.css" rel="stylesheet" type="text/css" />
+		<!--<link href="https://www.ons.gov.uk/assets/css/main.css" rel="stylesheet" type="text/css" />-->
+		<link href="http://localhost:9000/dist/css/main.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body class="pl-listpage">
+		<div class="beta-banner">
+			<div class="pl-wrap__inner">
+				<p class="margin-top-md--0">Updated on: 23 March 2016</p>
+			</div>
+		</div>
+		<div class="pl-head">
+			<div class="pl-wrap__inner">
+				<img class="pl-logo" src="/assets/img/ons-logo.png" />
+			</div>
+		</div>
+
+				<!-- <nav>
+					<div class="header col-wrap">
+						<div class="col col--lg-one-third col--md-one-third">
+							<a href="/">
+								<img class="main-logo" src="https://beta.ons.gov.uk/node_modules/ONS-Pattern-Library/dist/img/ons-logo.png" alt="Office for National Statistics">
+							</a>
+						</div>
+					</div>
+				</nav> -->
+			<div class="page-intro background--gallery">
+				<div class="pl-wrap__inner">
+					<nav class="breadcrumb">
+						<ol class="breadcrumb__list">
+							<li class="breadcrumb__item">
+								<a class="breadcrumb__link" href="/">Home</a>
+							</li>
+							<li class="breadcrumb__item">
+								Utilities
+							</li>
+						</ol>
+					</nav>					<h1 class="page-intro__title">Utilities</h1>
+					<p class="page-intro__content">Utilities intro...</p>
+				</div>
+			</div>
+			<div class="pl-wrap">
+				<div class="pl-wrap__inner">
+					<div class="table-of-contents js-sticky-toc padding-bottom-md--3">
+						<h2 class="table-of-contents__title">Table of contents</h2>
+						<ol id="toc" class="table-of-contents__list">
+							<li class="table-of-contents__item">
+								<a href="#background-colour" class="jsEnhanceAnimateScroll">Background colour</a>
+							</li>
+							<li class="table-of-contents__item">
+								<a href="#width" class="jsEnhanceAnimateScroll">Width</a>
+							</li>
+							<li class="table-of-contents__item">
+								<a href="#height" class="jsEnhanceAnimateScroll">Height</a>
+							</li>
+							<li class="table-of-contents__item">
+								<a href="#margin" class="jsEnhanceAnimateScroll">Margin</a>
+							</li>
+							<li class="table-of-contents__item">
+								<a href="#padding" class="jsEnhanceAnimateScroll">Padding</a>
+							</li>
+							<li class="table-of-contents__item">
+								<a href="#ellipsis" class="jsEnhanceAnimateScroll">Ellipsis</a>
+							</li>
+						</ol>
+					</div>
+					<div class="page-content__main-content pl-page-content__main-content js-sticky-toc__trigger">
+						<div class="pl-item" id="background-colour">
+							<h2>Background colour</h2> 
+							<p>Apply a background colour to an element. Works with any of our <a href="../colour/">colours</a>. Font colour is set to light/dark depending on background colour.</p>
+							<div class="pl-example">
+								<div class="pl-example__rendered">
+									
+<div class="background--astral">
+    Astral
+</div>
+
+<div class="background--ship-gray">
+    Ship gray
+</div>
+
+<div class="background--poppy">
+    Poppy
+</div>
+
+<div class="background--mercury">
+    Mercury
+</div>
+
+								</div>
+								<div class="pl-example__code">
+									<pre><code class="language-html">
+&lt;div class&#x3D;&quot;background--astral&quot;&gt;
+    Astral
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;background--ship-gray&quot;&gt;
+    Ship gray
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;background--poppy&quot;&gt;
+    Poppy
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;background--mercury&quot;&gt;
+    Mercury
+&lt;/div&gt;
+</code></pre>
+								</div>
+							</div>
+						</div>
+						<div class="pl-item" id="width">
+							<h2>Width</h2> 
+							<p>Set how many columns wide an element should be.</p>
+
+							<div class="pl-example">
+								<div class="pl-example__rendered">
+									
+<div class="background--abbey width--34">
+    34 columns wide
+</div>
+
+<div class="background--iron-light width-sm--10">
+    10 columns wide only on small
+</div>
+
+<div class="background--abbey width-md--25">
+    25 columns wide on medium and up
+</div>
+
+<div class="background--iron-light width-lg--48">
+    48 columns wide on large
+</div>
+
+								</div>
+								<div class="pl-example__code">
+									<pre><code class="language-html">
+&lt;div class&#x3D;&quot;background--abbey width--34&quot;&gt;
+    34 columns wide
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;background--iron-light width-sm--10&quot;&gt;
+    10 columns wide only on small
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;background--abbey width-md--25&quot;&gt;
+    25 columns wide on medium and up
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;background--iron-light width-lg--48&quot;&gt;
+    48 columns wide on large
+&lt;/div&gt;
+</code></pre>
+								</div>
+							</div>
+						</div>
+						<div class="pl-item" id="height">
+							<h2>Height</h2> 
+							<p>Set how many columns wide an element should be. </p>
+
+							<div class="pl-example">
+								<div class="pl-example__rendered">
+									
+<div class="background--abbey height--8">
+    10 height
+</div>
+
+<div class="background--iron-light height-sm--7">
+    7 height only on small
+</div>
+
+<div class="background--abbey height-md--10">
+    10 height on medium and up
+</div>
+
+<div class="background--iron-light height-lg--6">
+    6 height on large
+</div>
+
+								</div>
+								<div class="pl-example__code">
+									<pre><code class="language-html">
+&lt;div class&#x3D;&quot;background--abbey height--8&quot;&gt;
+    10 height
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;background--iron-light height-sm--7&quot;&gt;
+    7 height only on small
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;background--abbey height-md--10&quot;&gt;
+    10 height on medium and up
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;background--iron-light height-lg--6&quot;&gt;
+    6 height on large
+&lt;/div&gt;
+</code></pre>
+								</div>
+							</div>
+						</div>
+						<div class="pl-item" id="margin">
+							<h2>Margin</h2> 
+							<p>Set margin on an element</p>
+
+							<div class="pl-example">
+								<div class="pl-example__rendered">
+									
+<div class="background--abbey margin-left--5">
+    Margin left 5
+</div>
+
+<div class="background--iron-light margin-top-sm--3">
+    Margin top 3, only for small
+</div>
+
+<div class="background--abbey margin-top-md--4 margin-left-md--5">
+    Margin top and left on medium and up
+</div>
+
+<div class="background--iron-light margin-top-lg--2 margin-left-lg--5 margin-right-lg--5">
+    Margin top, left and right on large
+</div>
+
+								</div>
+								<div class="pl-example__code">
+									<pre><code class="language-html">
+&lt;div class&#x3D;&quot;background--abbey margin-left--5&quot;&gt;
+    Margin left 5
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;background--iron-light margin-top-sm--3&quot;&gt;
+    Margin top 3, only for small
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;background--abbey margin-top-md--4 margin-left-md--5&quot;&gt;
+    Margin top and left on medium and up
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;background--iron-light margin-top-lg--2 margin-left-lg--5 margin-right-lg--5&quot;&gt;
+    Margin top, left and right on large
+&lt;/div&gt;
+</code></pre>
+								</div>
+							</div>
+						</div>
+						<div class="pl-item" id="padding">
+							<h2>Padding</h2> 
+							<p>Set margin on an element</p>
+
+							<div class="pl-example">
+								<div class="pl-example__rendered">
+									
+<div class="background--abbey padding-top--2 padding-left--1 padding-right--1 padding-bottom--2">
+    Padded box on all screen sizes
+</div>
+
+<div class="background--iron-light padding-top-sm--2 padding-left-sm--1 padding-right-sm--1 padding-bottom-sm--2">
+    Padded box only on small screens
+</div>
+
+<div class="background--abbey margin-top-md--4 margin-left-md--5">
+    Margin top and left on medium and up
+</div>
+
+<div class="background--iron-light margin-top-lg--2 margin-left-lg--5 margin-right-lg--5">
+    Margin top, left and right on large
+</div>
+
+								</div>
+								<div class="pl-example__code">
+									<pre><code class="language-html">
+&lt;div class&#x3D;&quot;background--abbey padding-top--2 padding-left--1 padding-right--1 padding-bottom--2&quot;&gt;
+    Padded box on all screen sizes
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;background--iron-light padding-top-sm--2 padding-left-sm--1 padding-right-sm--1 padding-bottom-sm--2&quot;&gt;
+    Padded box only on small screens
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;background--abbey margin-top-md--4 margin-left-md--5&quot;&gt;
+    Margin top and left on medium and up
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;background--iron-light margin-top-lg--2 margin-left-lg--5 margin-right-lg--5&quot;&gt;
+    Margin top, left and right on large
+&lt;/div&gt;
+</code></pre>
+								</div>
+							</div>
+						</div>
+						<div class="pl-item" id="ellipsis">
+							<h2>Ellipsis</h2> 
+							
+							<div class="pl-example">
+								<div class="pl-example__rendered">
+									
+<div class="height--31-ellipsis width--15 background--white">
+    <p>Curabitur eget elementum sem. Nam interdum tellus non metus pellentesque sagittis. Sed a sollicitudin velit, vel luctus lorem. Cras facilisis eleifend est. Donec felis quam, varius vitae ligula vel, scelerisque fermentum odio. Mauris tempus ornare diam sit amet condimentum. Aenean odio tellus, maximus ut nibh in, sollicitudin ornare risus. Suspendisse tempus dolor id nunc tempus, quis mattis sapien congue. Donec sem ipsum, sagittis sed elementum at, maximus in erat. Sed ornare sodales tempus. Proin aliquam dapibus sem, id faucibus enim commodo vel. Phasellus lacinia venenatis nisl, egestas luctus turpis pharetra non. Curabitur purus leo, luctus sit amet dolor id, maximus ultricies massa. Donec sit amet diam vitae purus iaculis laoreet vitae cursus nibh. Donec condimentum neque a est facilisis, ac aliquet augue dignissim. Fusce hendrerit consequat odio, in fermentum neque lobortis et.</p>
+</div>
+
+								</div>
+								<div class="pl-example__code">
+									<pre><code class="language-html">
+&lt;div class&#x3D;&quot;height--31-ellipsis width--15 background--white&quot;&gt;
+    &lt;p&gt;Curabitur eget elementum sem. Nam interdum tellus non metus pellentesque sagittis. Sed a sollicitudin velit, vel luctus lorem. Cras facilisis eleifend est. Donec felis quam, varius vitae ligula vel, scelerisque fermentum odio. Mauris tempus ornare diam sit amet condimentum. Aenean odio tellus, maximus ut nibh in, sollicitudin ornare risus. Suspendisse tempus dolor id nunc tempus, quis mattis sapien congue. Donec sem ipsum, sagittis sed elementum at, maximus in erat. Sed ornare sodales tempus. Proin aliquam dapibus sem, id faucibus enim commodo vel. Phasellus lacinia venenatis nisl, egestas luctus turpis pharetra non. Curabitur purus leo, luctus sit amet dolor id, maximus ultricies massa. Donec sit amet diam vitae purus iaculis laoreet vitae cursus nibh. Donec condimentum neque a est facilisis, ac aliquet augue dignissim. Fusce hendrerit consequat odio, in fermentum neque lobortis et.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<script type="text/javascript" src="/assets/js/prism.js"></script>
+		<script type="text/javascript" src="https://www.ons.gov.uk/assets/js/main.js"></script>
+		<script type="text/javascript" src="/assets/js/show-grid.js"></script>
+		<!--<script type="text/javascript" src="../assets/js/jquery.js"></script>
+		<script type="text/javascript" src="../assets/js/main.js"></script>-->
+
+		<div class="pl-footer background--ship-gray">
+			<div class="pl-wrap__inner">
+				<p class="margin-top-md--0">A footer</p>
+			</div>
+		</div>
+  </body>
+</html>
