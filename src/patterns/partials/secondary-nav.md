@@ -12,9 +12,9 @@ show-snippet: true
             <nav class="nav-secondary nav-secondary--border-right-lg col col--lg-half">
                 <h2 class="nav-secondary__title">On this page:</h2>
                 <ul class="nav-secondary__list">
-                    <li class="nav-secondary__item"><a href="#datasets" class="jsEnhanceAnimateScroll">Datasets</a></li>
-                    <li class="nav-secondary__item"><a href="#publications" class="jsEnhanceAnimateScroll">Publications</a></li>
-                    <li class="nav-secondary__item"><a href="#methodology" class="jsEnhanceAnimateScroll">Methodology</a></li>
+                    <li class="nav-secondary__item"><a href="#datasets" class="js-scroll">Datasets</a></li>
+                    <li class="nav-secondary__item"><a href="#publications" class="js-scroll">Publications</a></li>
+                    <li class="nav-secondary__item"><a href="#methodology" class="js-scroll">Methodology</a></li>
                 </ul>
             </nav>
             <nav class="nav-secondary col col--lg-half">

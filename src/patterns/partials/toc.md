@@ -11,32 +11,32 @@ js: true
 	<h2 class="table-of-contents__title">Table of contents</h2>
 	<ol id="toc" class="table-of-contents__list">
 		<li class="table-of-contents__item">
-			<a href="#m" class="jsEnhanceAnimateScroll">
+			<a href="#m" class="js-scroll">
 			    Main points
 			</a>
 		</li>
 		<li class="table-of-contents__item">
-			<a href="#" class="jsEnhanceAnimateScroll">
+			<a href="#" class="js-scroll">
 			    Understanding GDP
 			</a>
 		</li>
 		<li class="table-of-contents__item">
-			<a href="#" class="jsEnhanceAnimateScroll">
+			<a href="#" class="js-scroll">
 			    Headline GDP components and GDP per head
 			</a>
 		</li>
 		<li class="table-of-contents__item">
-			<a href="#" class="jsEnhanceAnimateScroll">
+			<a href="#" class="js-scroll">
 			    Historical context
 			</a>
 		</li>
 		<li class="table-of-contents__item">
-			<a href="#" class="jsEnhanceAnimateScroll">
+			<a href="#" class="js-scroll">
 			    GDP analysed by output categories, chained volume measures, tables B1 and B
 			</a>
 		</li>
 		<li class="table-of-contents__item">
-			<a href="#" class="jsEnhanceAnimateScroll">
+			<a href="#" class="js-scroll">
 			    GDP analysed by expenditure categories, chained volume measures, table C
 			</a>
 		</li>
