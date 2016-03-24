@@ -2,9 +2,9 @@
 <html>
 	<head>
 		<title>ONS Pattern Library - {{{ title }}}</title>
-		<link href="assets/css/main.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/prism.css" rel="stylesheet" type="text/css" />
-		<link href="assets/css/prismCustom.css" rel="stylesheet" type="text/css" />
+		<link href="{{#if_eq type listpage}}../{{/if_eq}}assets/css/main.css" rel="stylesheet" type="text/css" />
+		<link href="{{#if_eq type listpage}}../{{/if_eq}}assets/css/prism.css" rel="stylesheet" type="text/css" />
+		<link href="{{#if_eq type listpage}}../{{/if_eq}}assets/css/prismCustom.css" rel="stylesheet" type="text/css" />
 		<link href="https://www.ons.gov.uk/assets/css/main.css" rel="stylesheet" type="text/css" />
 		<!--<link href="http://localhost:9000/dist/css/main.css" rel="stylesheet" type="text/css" />-->
 	</head>
@@ -16,7 +16,7 @@
 		</div>
 		<div class="pl-head">
 			<div class="pl-wrap__inner">
-				<img class="pl-logo" src="/assets/img/ons-logo.png" />
+				<img class="pl-logo" src="{{#if_eq type listpage}}../{{/if_eq}}assets/img/ons-logo.png" />
 			</div>
 		</div>
 
