@@ -13,14 +13,14 @@
 					<ol id="toc" class="table-of-contents__list">
 						{{#each collections.layout}}
 						<li class="table-of-contents__item">
-							<a href="#{{ slug this.title }}" class="jsEnhanceAnimateScroll">{{ this.title }}</a>
+							<a href="#{{ slug this.title }}" class="js-scroll">{{ this.title }}</a>
 						</li>
 						{{/each}}
 					</ol>
 				</div>
 				<div class="page-content__main-content pl-page-content__main-content js-sticky-toc__trigger">
 					{{#each collections.layout}}
-					<div class="pl-item" id="{{ slug this.title }}">
+					<div class="pl-item js-sticky-toc__section" id="{{ slug this.title }}">
 						<h2>{{ this.title }}</h2>
 						{{{ this.contents }}}
 						{{#if this.show-snippet}}
