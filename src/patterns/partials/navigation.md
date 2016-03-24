@@ -20,119 +20,62 @@ show-snippet: true
 				</a>
 			</li>
 		</ul>
-		<div class="wrapper nav-main--hidden" id="nav-primary" aria-expanded="false">
+		<div class="wrapper nav-main--hidden" id="nav-primary">
 			<ul class="primary-nav__list">
-				<li class="primary-nav__item  js-nav hide--mobile old-ie--display-block"><a class="primary-nav__link col col--md-7 col--lg-9" href="/">Home</a></li>
-				<li class="primary-nav__item js-nav js-expandable">
+				<li class="primary-nav__item js-nav hide--mobile old-ie--display-block"><a class="primary-nav__link col col--md-7 col--lg-9" href="/">Home</a></li>
+				<li class="primary-nav__item js-nav js-expandable ">
 					<a class="primary-nav__link col col--md-8 col--lg-10" href="/businessindustryandtrade" aria-haspopup="true">Business, industry and trade</a>
 					<ul class="primary-nav__child-list col col--md-16 col--lg-20 js-expandable__content js-nav-hidden jsEnhance" aria-expanded="false" aria-label="submenu">
 						<li class="primary-nav__child-item  js-expandable__child">
-							<a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/business">Business</a>
+							<a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/business" >Business</a>
 						</li>
 						<li class="primary-nav__child-item  js-expandable__child">
-							<a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/changestobusiness">Changes to business</a>
+							<a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/changestobusiness" >Changes to business</a>
 						</li>
 						<li class="primary-nav__child-item  js-expandable__child">
-							<a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/constructionindustry">Construction industry</a>
-						</li>
-						<li class="primary-nav__child-item  js-expandable__child">
-							<a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/itandinternetindustry">IT and internet industry</a>
-						</li>
-						<li class="primary-nav__child-item  js-expandable__child">
-							<a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/internationaltrade">International trade</a>
-						</li>
-						<li class="primary-nav__child-item  js-expandable__child">
-							<a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/manufacturingandproductionindustry">Manufacturing and production industry</a>
-						</li>
-						<li class="primary-nav__child-item  js-expandable__child">
-							<a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/retailindustry">Retail industry</a>
-						</li>
-						<li class="primary-nav__child-item  js-expandable__child">
-							<a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/tourismindustry">Tourism industry</a>
+							<a class="primary-nav__child-link" tabindex="-1" href="/businessindustryandtrade/constructionindustry" >Construction industry</a>
 						</li>
 					</ul>
 				</li>
-				<li class="primary-nav__item js-nav js-expandable">
+				<li class="primary-nav__item js-nav js-expandable ">
 					<a class="primary-nav__link col col--md-8 col--lg-10" href="/economy" aria-haspopup="true">Economy</a>
 					<ul class="primary-nav__child-list col col--md-16 col--lg-20 js-expandable__content js-nav-hidden jsEnhance" aria-expanded="false" aria-label="submenu">
 						<li class="primary-nav__child-item  js-expandable__child">
-							<a class="primary-nav__child-link" tabindex="-1" href="/economy/economicoutputandproductivity">Economic output and productivity</a>
+							<a class="primary-nav__child-link" tabindex="-1" href="/economy/economicoutputandproductivity" >Economic output and productivity</a>
 						</li>
 						<li class="primary-nav__child-item  js-expandable__child">
-							<a class="primary-nav__child-link" tabindex="-1" href="/economy/environmentalaccounts">Environmental accounts</a>
+							<a class="primary-nav__child-link" tabindex="-1" href="/economy/environmentalaccounts" >Environmental accounts</a>
 						</li>
 						<li class="primary-nav__child-item  js-expandable__child">
-							<a class="primary-nav__child-link" tabindex="-1" href="/economy/governmentpublicsectorandtaxes">Government, public sector and taxes</a>
-						</li>
-						<li class="primary-nav__child-item  js-expandable__child">
-							<a class="primary-nav__child-link" tabindex="-1" href="/economy/grossdomesticproductgdp">Gross Domestic Product (GDP)</a>
-						</li>
-						<li class="primary-nav__child-item  js-expandable__child">
-							<a class="primary-nav__child-link" tabindex="-1" href="/economy/grossvalueaddedgva">Gross Value Added (GVA)</a>
-						</li>
-						<li class="primary-nav__child-item  js-expandable__child">
-							<a class="primary-nav__child-link" tabindex="-1" href="/economy/inflationandpriceindices">Inflation and price indices</a>
-						</li>
-						<li class="primary-nav__child-item  js-expandable__child">
-							<a class="primary-nav__child-link" tabindex="-1" href="/economy/investmentspensionsandtrusts">Investments, pensions and trusts</a>
-						</li>
-						<li class="primary-nav__child-item  js-expandable__child">
-							<a class="primary-nav__child-link" tabindex="-1" href="/economy/nationalaccounts">National accounts</a>
-						</li>
-						<li class="primary-nav__child-item  js-expandable__child">
-							<a class="primary-nav__child-link" tabindex="-1" href="/economy/regionalaccounts">Regional accounts</a>
+							<a class="primary-nav__child-link" tabindex="-1" href="/economy/governmentpublicsectorandtaxes" >Government, public sector and taxes</a>
 						</li>
 					</ul>
 				</li>
-				<li class="primary-nav__item js-nav js-expandable">
+				<li class="primary-nav__item js-nav js-expandable ">
 					<a class="primary-nav__link col col--md-8 col--lg-10" href="/employmentandlabourmarket" aria-haspopup="true">Employment and labour market</a>
 					<ul class="primary-nav__child-list col col--md-16 col--lg-20 js-expandable__content js-nav-hidden jsEnhance" aria-expanded="false" aria-label="submenu">
 						<li class="primary-nav__child-item  js-expandable__child">
-							<a class="primary-nav__child-link" tabindex="-1" href="/employmentandlabourmarket/peopleinwork">People in work</a>
+							<a class="primary-nav__child-link" tabindex="-1" href="/employmentandlabourmarket/peopleinwork" >People in work</a>
 						</li>
 						<li class="primary-nav__child-item  js-expandable__child">
-							<a class="primary-nav__child-link" tabindex="-1" href="/employmentandlabourmarket/peoplenotinwork">People not in work</a>
+							<a class="primary-nav__child-link" tabindex="-1" href="/employmentandlabourmarket/peoplenotinwork" >People not in work</a>
 						</li>
 					</ul>
 				</li>
-				<li class="primary-nav__item js-nav js-expandable">
+				<li class="primary-nav__item js-nav js-expandable ">
 					<a class="primary-nav__link col col--md-8 col--lg-10" href="/peoplepopulationandcommunity" aria-haspopup="true">People, population and community</a>
 					<ul class="primary-nav__child-list col col--md-16 col--lg-20 js-expandable__content js-nav-hidden jsEnhance" aria-expanded="false" aria-label="submenu">
 						<li class="primary-nav__child-item  js-expandable__child">
-							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/birthsdeathsandmarriages">Births, deaths and marriages</a>
+							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/birthsdeathsandmarriages" >Births, deaths and marriages</a>
 						</li>
 						<li class="primary-nav__child-item  js-expandable__child">
-							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/crimeandjustice">Crime and justice</a>
+							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/community" >Community</a>
 						</li>
 						<li class="primary-nav__child-item  js-expandable__child">
-							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/culturalidentity">Cultural identity</a>
+							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/crimeandjustice" >Crime and justice</a>
 						</li>
 						<li class="primary-nav__child-item  js-expandable__child">
-							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/educationandchildcare">Education and childcare</a>
-						</li>
-						<li class="primary-nav__child-item  js-expandable__child">
-							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/elections">Elections</a>
-						</li>
-						<li class="primary-nav__child-item  js-expandable__child">
-							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/healthandsocialcare">Health and social care</a>
-						</li>
-						<li class="primary-nav__child-item  js-expandable__child">
-							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/householdcharacteristics">Household characteristics</a>
-						</li>
-						<li class="primary-nav__child-item  js-expandable__child">
-							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/housing">Housing</a>
-						</li>
-						<li class="primary-nav__child-item  js-expandable__child">
-							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/leisureandtourism">Leisure and tourism</a>
-						</li>
-						<li class="primary-nav__child-item  js-expandable__child">
-							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/personalandhouseholdfinances">Personal and household finances</a>
-						</li>
-						<li class="primary-nav__child-item  js-expandable__child">
-							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/populationandmigration">Population and migration</a>
-						</li>
-						<li class="primary-nav__child-item  js-expandable__child">
-							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/wellbeing">Well-being</a>
+							<a class="primary-nav__child-link" tabindex="-1" href="/peoplepopulationandcommunity/culturalidentity" >Cultural identity</a>
 						</li>
 					</ul>
 				</li>
