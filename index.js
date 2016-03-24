@@ -133,6 +133,10 @@ Metalsmith(__dirname)
 		utilities: {
 			pattern: 'utilities/partials/*.md',
 			sortBy: 'order'
+		},
+		icons: {
+			pattern: 'icons/partials/*.md',
+			sortBy: 'order'
 		}
 	}))
 	.use(markdown())

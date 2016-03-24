@@ -20,7 +20,7 @@
 					</div>
 					<div class="page-content__main-content pl-page-content__main-content js-sticky-toc__trigger">
 						{{#each collections.colour}}
-						<div class="pl-item" id="{{ slug this.title }}">
+						<div class="pl-item js-sticky-toc__section" id="{{ slug this.title }}">
 							<h2>{{ this.title }}</h2>
 							{{{ this.contents }}}
 							{{#if this.show-snippet}}

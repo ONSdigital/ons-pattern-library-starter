@@ -11,7 +11,7 @@
         <div class="table-of-contents js-sticky-toc padding-bottom-md--3">
             <h2 class="table-of-contents__title">Table of contents</h2>
             <ol id="toc" class="table-of-contents__list">
-                {{#each collections.buttons}}
+                {{#each collections.icons}}
                 <li class="table-of-contents__item">
                     <a href="#{{ slug this.title }}" class="jsEnhanceAnimateScroll">{{ this.title }}</a>
                 </li>
@@ -19,9 +19,9 @@
             </ol>
         </div>
         <div class="page-content__main-content pl-page-content__main-content js-sticky-toc__trigger">
-            {{#each collections.buttons}}
+            {{#each collections.icons}}
             <div class="pl-item js-sticky-toc__section" id="{{ slug this.title }}">
-                <h2>{{ this.title }}</h2>
+                <h2>{{ this.title }}</h2> {{#if js}}JS{{/if}}
                 {{{ this.contents }}}
                 {{#if this.show-snippet}}
                 <div class="pl-example">
