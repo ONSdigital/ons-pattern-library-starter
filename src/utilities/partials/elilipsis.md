@@ -11,3 +11,4 @@ show-snippet: true
 </div>
 [/snippet]
 
+The ellipsis utility needs the element to have a background colour.
