@@ -15,31 +15,31 @@ type: home
                     <ul class="col-wrap padding-left-sm--0 ">
                         <li class="col col--md-22 col--lg-18 margin-right-md--1 margin-bottom-md--2 padding-left-md--1 padding-right-md--1 height-sm--20 height-md--20 height-lg--20 background--white js-hover-click">
                             <h2 class="margin-top-md--2">
-                                <a href="/layout/">Layout</a>
+                                <a href="layout">Layout</a>
                             </h2>
                             <p class="margin-top-sm--0 margin-top-md--0 margin-bottom-sm--2 margin-bottom-md--0">Grid unit proportions, gutters and spacing.</p>
                         </li>
                         <li class="col col--md-22 col--lg-18 margin-right-md--1 margin-bottom-md--2 padding-left-md--1 padding-right-md--1 height-sm--20 height-md--20 height-lg--20 background--white js-hover-click">
                             <h2 class="margin-top-md--2">
-                                <a href="/typography/">Typography</a>
+                                <a href="typography">Typography</a>
                             </h2>
                             <p class="margin-top-sm--0 margin-top-md--0 margin-bottom-sm--2 margin-bottom-md--0">Headings, body text, links, lists, inset text, hidden text.</p>
                         </li>
                         <li class="col col--md-22 col--lg-18 margin-right-md--1 margin-bottom-md--2 padding-left-md--1 padding-right-md--1 height-sm--20 height-md--20 height-lg--20 background--white js-hover-click">
                             <h2 class="margin-top-md--2">
-                                <a href="/colour/">Colour</a>
+                                <a href="colour">Colour</a>
                             </h2>
                             <p class="margin-top-sm--0 margin-top-md--0 margin-bottom-sm--2 margin-bottom-md--0">Colour contrast, Sass variables, colour palettes.</p>
                         </li>
                         <li class="col col--md-22 col--lg-18 margin-right-md--1 margin-bottom-md--2 padding-left-md--1 padding-right-md--1 height-sm--20 height-md--20 height-lg--20 background--white js-hover-click">
                             <h2 class="margin-top-md--2">
-                                <a href="/icons/">Icons</a>
+                                <a href="icons">Icons</a>
                             </h2>
                             <p class="margin-top-sm--0 margin-top-md--0 margin-bottom-sm--2 margin-bottom-md--0">How to use icons.</p>
                         </li>
                         <li class="col col--md-22 col--lg-18 margin-right-md--1 margin-bottom-md--2 padding-left-md--1 padding-right-md--1 height-sm--20 height-md--20 height-lg--20 background--white js-hover-click">
                             <h2 class="margin-top-md--2">
-                                <a href="/buttons/">Buttons and links</a>
+                                <a href="buttons">Buttons and links</a>
                             </h2>
                             <p class="margin-top-sm--0 margin-top-md--0 margin-bottom-sm--2 margin-bottom-md--0">Button text, button alignment, creating buttons.</p>
                         </li>
@@ -57,13 +57,13 @@ type: home
                         </li>
                         <li class="col col--md-22 col--lg-18 margin-right-md--1 margin-bottom-md--2 padding-left-md--1 padding-right-md--1 height-sm--20 height-md--20 height-lg--20 background--white js-hover-click">
                             <h2 class="margin-top-md--2">
-                                <a href="/patterns/">Patterns</a>
+                                <a href="patterns">Patterns</a>
                             </h2>
                             <p class="margin-top-sm--0 margin-top-md--0 margin-bottom-sm--2 margin-bottom-md--0">Description</p>
                         </li>
                        <li class="col col--md-22 col--lg-18 margin-right-md--1 margin-bottom-md--2 padding-left-md--1 padding-right-md--1 height-sm--20 height-md--20 height-lg--20 background--white js-hover-click">
                             <h2 class="margin-top-md--2">
-                                <a href="/utilities/">Utilities</a>
+                                <a href="utilities">Utilities</a>
                             </h2>
                             <p class="margin-top-sm--0 margin-top-md--0 margin-bottom-sm--2 margin-bottom-md--0">Description</p>
                         </li>
