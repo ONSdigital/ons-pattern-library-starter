@@ -2,12 +2,16 @@
 title: Print
 template: test.html
 type: partial
-order: 2
+order: 1
 show-snippet: true
 ---
 [snippet]
-<span class="icon icon-print--dark"></span>
-<span class="icon icon-print--dark-small"></span>
-<span class="icon icon-print--light"></span>
-<span class="icon icon-print--light-small"></span>
+<div class="background--iron-light">
+    <span class="icon icon-print--dark"></span>
+    <span class="icon icon-print--dark-small"></span>
+</div>
+<div class="background--ship-gray">
+    <span class="icon icon-print--light"></span>
+    <span class="icon icon-print--light-small"></span>
+</div>
 [/snippet]
