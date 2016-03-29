@@ -10,7 +10,7 @@ show-snippet: true
     Primary button
 </button>
 
-<button class="btn btn--primary btn--primary--disabled">
+<button class="btn btn--primary btn--primary-disabled">
     Primary button (disabled)
 </button>
 [/snippet]

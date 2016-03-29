@@ -70,6 +70,19 @@ body {
 	/*overflow: hidden;*/
 }
 
+.pl-example__rendered--buttons .btn {
+	margin-bottom: 16px;
+}
+
+.pl-example__rendered--layout .col {
+	background-color: #DDDDDD;
+	margin-bottom: 16px;
+}
+
+.pl-example__rendered--layout .col .col {
+	margin-bottom: 0;
+}
+
 .pl-example__rendered:before {
 	position: absolute;
 	top: -40px;
