@@ -14,12 +14,12 @@ show-snippet: true
     Padded box only on small screens
 </div>
 
-<div class="background--abbey margin-top-md--4 margin-left-md--5">
-    Margin top and left on medium and up
+<div class="background--abbey padding-bottom-md--2">
+    Padding on bottom for medium and up
 </div>
 
-<div class="background--iron-light margin-top-lg--2 margin-left-lg--5 margin-right-lg--5">
-    Margin top, left and right on large
+<div class="background--iron-light padding-left-md--17">
+    Padding left on large screens
 </div>
 [/snippet]
 
