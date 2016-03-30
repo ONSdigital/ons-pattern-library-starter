@@ -15,6 +15,12 @@ type: home
                     <ul class="col-wrap padding-left-sm--0 ">
                         <li class="col col--md-22 col--lg-18 margin-right-md--1 margin-bottom-md--2 padding-left-md--1 padding-right-md--1 height-sm--20 height-md--20 height-lg--20 background--white js-hover-click">
                             <h2 class="margin-top-md--2">
+                                <a href="gettingstarted">Getting started</a>
+                            </h2>
+                            <p class="margin-top-sm--0 margin-top-md--0 margin-bottom-sm--2 margin-bottom-md--0">How to use the ONS pattern library.</p>
+                        </li>
+                        <li class="col col--md-22 col--lg-18 margin-right-md--1 margin-bottom-md--2 padding-left-md--1 padding-right-md--1 height-sm--20 height-md--20 height-lg--20 background--white js-hover-click">
+                            <h2 class="margin-top-md--2">
                                 <a href="layout">Layout</a>
                             </h2>
                             <p class="margin-top-sm--0 margin-top-md--0 margin-bottom-sm--2 margin-bottom-md--0">Grid unit proportions, gutters and spacing.</p>
@@ -43,12 +49,12 @@ type: home
                             </h2>
                             <p class="margin-top-sm--0 margin-top-md--0 margin-bottom-sm--2 margin-bottom-md--0">Button text, button alignment, creating buttons.</p>
                         </li>
-                        <li class="col col--md-22 col--lg-18 margin-right-md--1 margin-bottom-md--2 padding-left-md--1 padding-right-md--1 height-sm--20 height-md--20 height-lg--20 background--white js-hover-click">
+                        <!-- <li class="col col--md-22 col--lg-18 margin-right-md--1 margin-bottom-md--2 padding-left-md--1 padding-right-md--1 height-sm--20 height-md--20 height-lg--20 background--white js-hover-click">
                             <h2 class="margin-top-md--2">
                                 <a href="#">Tables and data</a>
                             </h2>
                             <p class="margin-top-sm--0 margin-top-md--0 margin-bottom-sm--2 margin-bottom-md--0">Description</p>
-                        </li>
+                        </li> -->
                         <li class="col col--md-22 col--lg-18 margin-right-md--1 margin-bottom-md--2 padding-left-md--1 padding-right-md--1 height-sm--20 height-md--20 height-lg--20 background--white js-hover-click">
                             <h2 class="margin-top-md--2">
                                 <a href="#">Forms</a>

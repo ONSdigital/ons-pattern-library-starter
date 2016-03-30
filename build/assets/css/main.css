@@ -63,6 +63,10 @@ body {
 	margin: 47px 0 -1px 0;
 }
 
+.pl-example:last-of-type {
+	margin-bottom: 80px;
+}
+
 .pl-example__rendered {
 	background: #FFFFFF;
 	/*border-bottom: 1px solid #ECE8E6;*/
