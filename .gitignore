@@ -3,4 +3,5 @@
 *.idea
 
 node_modules/
+sixteens/
 npm-debug.log.*
