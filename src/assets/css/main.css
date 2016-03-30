@@ -149,3 +149,14 @@ body {
 	height: 200px;
 	float: left;
 }*/
+
+.pl-colour-circle {
+	-webkit-border-radius: 32px;
+	-moz-border-radius: 32px;
+	border-radius: 32px;
+	margin: 0 auto;
+}
+
+.pl-colour-circle--border {
+	border: 1px solid #DDDDDD;
+}
