@@ -5,7 +5,7 @@ type: partial
 order: 1
 show-snippet: false
 ---
-<div class="">
+<div class="pl-wrap__inner">
 <p>Greys are used to create the core building blocks - banding, tiles, etc. - which allows colour to be added to give consistent and specific meaning.</p>
     <div class="col col--md-6 col--lg-6 margin-right-md--3 margin-bottom-md--1">
         <h3 class="text-center margin-bottom-sm--1 margin-bottom-md--1">Thunder</h3>
