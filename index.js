@@ -1,10 +1,12 @@
-var Metalsmith = require('metalsmith'),
-	markdown   = require('metalsmith-markdown'),
-	templates  = require('metalsmith-templates'),
+var Metalsmith 	= require('metalsmith'),
+	markdown	= require('metalsmith-markdown'),
+	templates  	= require('metalsmith-templates'),
 	collections = require('metalsmith-collections'),
 	permalinks  = require('metalsmith-permalinks'),
-	Handlebars = require('handlebars'),
-	fs         = require('fs');
+	Handlebars 	= require('handlebars'),
+	fs          = require('fs'),
+    shell       = require('shelljs'),
+	mkdirp 		= require('mkdirp');
 
 
 var deletePartialMarkdownFiles = function(files, metalsmith, done) {
@@ -62,6 +64,45 @@ var parseContentForSnippet = function (files, metalsmith, done) {
 	done();
 };
 
+// Add sixteens to pattern library
+function pullSixteens() {
+
+    // Check if git is installed
+    if (!shell.which('git')) {
+        shell.echo('Sorry, you need to install Git first');
+        shell.exit(1);
+    }
+
+    // Get sixteens latest code and build it
+    if (!shell.test('-d', 'sixteens')) { // Clone in sixteens if it doesn't exist already
+        shell.echo("Sixteens doesn't exists yet. It'll now be cloned from Github");
+        shell.exec('git clone https://github.com/onsdigital/sixteens');
+        shell.cd('sixteens');
+        shell.exec('git checkout live');
+        shell.exec('npm install')
+    } else { // Pull the latest code if sixteens already exists
+        shell.cd('sixteens');
+        shell.exec('git checkout live');
+        shell.exec('git pull');
+        shell.exec('npm run build');
+    }
+
+    // Copy the sixteens dist contents into build folder
+    shell.cd('../');
+    mkdirp('build/sixteens', function(err) {
+        if (err) {
+            console.log('Error: ', err);
+        }
+        shell.cp('-R', 'sixteens/dist/', 'build/sixteens');
+    });
+}
+
+
+/*
+ * Handlebars
+ */
+
+// Handlebars partials
 Handlebars.registerPartial('header', fs.readFileSync(__dirname + '/templates/partials/header.html').toString());
 Handlebars.registerPartial('footer', fs.readFileSync(__dirname + '/templates/partials/footer.html').toString());
 Handlebars.registerPartial('listpagebreadcrumb', fs.readFileSync(__dirname + '/templates/partials/listpagebreadcrumb.html').toString());
@@ -103,6 +144,10 @@ Handlebars.registerHelper('if_eq', function(a, b, opts) {
 		return opts.inverse(this);
 });
 
+
+/*
+* Metalsmith build process
+ */
 Metalsmith(__dirname)
 	.use(parseContentForSnippet)
 	.use(collections({
@@ -143,4 +188,5 @@ Metalsmith(__dirname)
 	.use(templates('handlebars'))
 	.use(deletePartialMarkdownFiles)
 	.destination('./build')
-	.build(function (err) { if(err) console.log(err) })
+    .use(pullSixteens)
+	.build(function (err) { if(err) console.log(err) });

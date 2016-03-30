@@ -4,4 +4,4 @@ template: gettingstarted.html
 type: listpage
 ---
 
-<p class="page-intro__content">Github and things</p>
+<p class="page-intro__content">How to use the ONS pattern library</p>
