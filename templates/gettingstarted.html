@@ -7,13 +7,61 @@
     </div>
 </div>
 <div class="pl-wrap__inner">
-    <h2>Using the pattern library</h2>
-    <ol>
-        <li>Put a link to the main CSS file on ons.gov.uk (<a target="_blank" href="https://www.ons.gov.uk/assets/css/main.css">https://www.ons.gov.uk/assets/css/main.css</a>) in the head of your page.</li>
-        <li>Put a link to the pattern library JS file from ons.gov.uk (<a href=""></a>)</li>
-    </ol>
-    <h2>How is the pattern library built?</h2>
-    <p>The patterns are built in the <a href="https://github.com/onsdigital/sixteens/tree/live">'Sixteens' repository on the
-        ONSDigital Github</a>. To have a play around with the original code follow the instructions in the README to install and use the pattern library.</p>
+    <div class="col-wrap">
+        <div class="col col--md-one col--lg-two-thirds markdown">
+            <article>
+                <h2>Using the pattern library</h2>
+                <p>The pattern library comes with one Javascript file and three CSS files (old IE, IE9 and main -
+                    these'll
+                    be
+                    explained in more detail).</p>
+
+                <p>Download or link to the files from:</p>
+                <ul>
+                    <li><a href="https://onsdigital.github.io/sixteens/css/old-ie.css">https://onsdigital.github.io/sixteens/css/old-ie.css</a></li>
+                    <li><a href="https://onsdigital.github.io/sixteens/css/ie-9.css">https://onsdigital.github.io/sixteens/css/ie-9.css</a></li>
+                    <li><a href="https://onsdigital.github.io/sixteens/css/main.css">https://onsdigital.github.io/sixteens/css/main.css</a></li>
+                    <li><a href="https://onsdigital.github.io/sixteens/js/main.js">https://onsdigital.github.io/sixteens/js/main.js</a></li>
+                </ul>
+
+                <p>These files should be wrapped in conditional statements. So, in the end it should look like this:</p>
+
+                <pre>
+                    <code>&lt;!--[if lte IE 8]&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://onsdigital.github.io/sixteens/css/old-ie.css&quot;&gt;&lt;![endif]--&gt;
+                        <br>
+                        &lt;!--[if IE 9]&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://onsdigital.github.io/sixteens/css/ie-9.css&quot;&gt;&lt;![endif]--&gt;
+                    </code>
+                </pre>
+
+                <h3>CSS</h3>
+                Each of the three CSS file should be included in the head of your page. There are three CSS files
+                because:
+                <ul>
+                    <li><strong>old-ie.css</strong> removes media queries so that styling doesn't break in IE8.</li>
+                    <li><strong>ie9.css</strong> is split into two files to get around the <a
+                            href="http://stackoverflow.com/questions/9906794/internet-explorers-css-rules-limits">IE9
+                        CSS
+                        selector
+                        limit</a>.
+                    </li>
+                    <li><strong>main.css</strong> is the ordinary CSS which will be applied to all modern browsers.</li>
+                </ul>
+
+                <h3>Javascript</h3>
+                Add a link (or download to your own project) the main CSS file - <a target="_blank"
+                                                                                    href="https://onsdigital.github.io/ons-pattern-library-starter/css/main.css">https://onsdigital.github.io/ons-pattern-library-starter/css/main.css</a>)
+                in the head of your page.
+                Put a link to the pattern library JS file from ons.gov.uk (<a href=""></a>)
+
+                <h2>How is the pattern library built?</h2>
+                <p>The patterns are built in the <a href="https://github.com/onsdigital/sixteens/tree/live">'Sixteens'
+                    repository on
+                    the
+                    ONSDigital Github</a>. To have a play around with the original code follow the instructions in the
+                    README to
+                    install and use the pattern library.</p>
+            </article>
+        </div>
+    </div>
 </div>
 {{> footer}}
