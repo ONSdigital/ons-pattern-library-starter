@@ -11,10 +11,7 @@
         <div class="col col--md-one col--lg-two-thirds markdown">
             <article>
                 <h2>Using the pattern library</h2>
-                <p>The pattern library comes with one Javascript file and three CSS files (old IE, IE9 and main -
-                    these'll
-                    be
-                    explained in more detail).</p>
+                <p>The pattern library comes with one Javascript file and three CSS files (old IE, IE9 and main - these'll be explained in more detail). </p>
 
                 <p>Download or link to the files from:</p>
                 <ul>
@@ -24,17 +21,24 @@
                     <li><a href="https://onsdigital.github.io/sixteens/js/main.js">https://onsdigital.github.io/sixteens/js/main.js</a></li>
                 </ul>
 
-                <p>These files should be wrapped in conditional statements. So, in the end it should look like this:</p>
+                <p>These files should be wrapped in conditional statements. So, it should look like:</p>
 
                 <pre>
-                    <code>&lt;!--[if lte IE 8]&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://onsdigital.github.io/sixteens/css/old-ie.css&quot;&gt;&lt;![endif]--&gt;
-                        <br>
-                        &lt;!--[if IE 9]&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://onsdigital.github.io/sixteens/css/ie-9.css&quot;&gt;&lt;![endif]--&gt;
+                    <code>
+                        &lt;!--[if lte IE 8]&gt;
+                            &lt;link rel=&quot;stylesheet&quot; href=&quot;https://onsdigital.github.io/sixteens/css/old-ie.css&quot;&gt;
+                        &lt;![endif]--&gt;
+                        &lt;!--[if IE 9]&gt;
+                            &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://onsdigital.github.io/sixteens/css/ie-9.css&quot;&gt;
+                        &lt;![endif]--&gt;
+                        &lt;!--[if gt IE 9]&gt;&lt;!--&gt;
+                            &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://onsdigital.github.io/sixteens/css/main.css&quot;&gt;
+                        &lt;![endif]--&gt;
                     </code>
                 </pre>
 
                 <h3>CSS</h3>
-                Each of the three CSS file should be included in the head of your page. There are three CSS files
+                Include each of the CSS files in the head of your page. There are three CSS files
                 because:
                 <ul>
                     <li><strong>old-ie.css</strong> removes media queries so that styling doesn't break in IE8.</li>
@@ -48,12 +52,11 @@
                 </ul>
 
                 <h3>Javascript</h3>
-                Add a link (or download to your own project) the main CSS file - <a target="_blank"
-                                                                                    href="https://onsdigital.github.io/ons-pattern-library-starter/css/main.css">https://onsdigital.github.io/ons-pattern-library-starter/css/main.css</a>)
-                in the head of your page.
-                Put a link to the pattern library JS file from ons.gov.uk (<a href=""></a>)
+                <p>Include a link to the pattern library JS file in the footer of your page.</p>
 
                 <h2>How is the pattern library built?</h2>
+                <p>All styling and Javascript has been built as <a href="https://www.gov.uk/service-manual/making-software/progressive-enhancement.html">progressive enhancement</a>, meaning that every user, regardless of browser or device, can get an equal access to the fundamental information on a web page.</p>
+
                 <p>The patterns are built in the <a href="https://github.com/onsdigital/sixteens/tree/live">'Sixteens'
                     repository on
                     the
