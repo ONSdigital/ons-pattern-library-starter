@@ -23,17 +23,38 @@
 
                 <p>These files should be wrapped in conditional statements. So, it should look like:</p>
 
-                <pre>
-                    <code>
-                        &lt;!--[if lte IE 8]&gt;
-                            &lt;link rel=&quot;stylesheet&quot; href=&quot;https://onsdigital.github.io/sixteens/css/old-ie.css&quot;&gt;
-                        &lt;![endif]--&gt;
-                        &lt;!--[if IE 9]&gt;
-                            &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://onsdigital.github.io/sixteens/css/ie-9.css&quot;&gt;
-                        &lt;![endif]--&gt;
-                        &lt;!--[if gt IE 9]&gt;&lt;!--&gt;
-                            &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://onsdigital.github.io/sixteens/css/main.css&quot;&gt;
-                        &lt;![endif]--&gt;
+                <pre class="pl-pre">
+                    <code class="">
+<span class="token comment">&lt;!--[if lte IE 8]&gt;</span>
+    <span class="token tag"><span class="token punctuation">&lt;</span>link <span class="token attr-name">rel</span><span
+            class="token punctuation">=&quot;</span><span class="token attr-value">stylesheet</span><span class="token punctuation">&quot;</span> <span
+            class="token attr-name">type</span><span
+            class="token punctuation">=&quot;</span><span class="token attr-value">text/css</span><span class="token punctuation">&quot;</span> <span
+            class="token attr-name">href</span><span
+            class="token punctuation">=&quot;</span><span class="token attr-value">https://onsdigital.github.io/sixteens/css/old-ie.css</span><span
+            class="token punctuation">&quot;</span><span
+            class="token punctuation">&gt;</span></span>
+<span class="token comment">&lt;![endif]--&gt;</span>
+<span class="token comment">&lt;!--[if IE 9]&gt;</span>
+    <span class="token tag"><span class="token punctuation">&lt;</span>link <span class="token attr-name">rel</span><span
+            class="token punctuation">=&quot;</span><span class="token attr-value">stylesheet</span><span class="token punctuation">&quot;</span> <span
+            class="token attr-name">type</span><span
+            class="token punctuation">=&quot;</span><span class="token attr-value">text/css</span><span class="token punctuation">&quot;</span> <span
+            class="token attr-name">href</span><span
+            class="token punctuation">=&quot;</span><span class="token attr-value">https://onsdigital.github.io/sixteens/css/ie-9.css</span><span
+            class="token punctuation">&quot;</span><span
+            class="token punctuation">&gt;</span></span>
+<span class="token comment">&lt;![endif]--&gt;</span>
+<span class="token comment">&lt;!--[if gt IE 9]&gt;&lt;!--&gt;</span>
+    <span class="token tag"><span class="token punctuation">&lt;</span>link <span class="token attr-name">rel</span><span
+            class="token punctuation">=&quot;</span><span class="token attr-value">stylesheet</span><span class="token punctuation">&quot;</span> <span
+            class="token attr-name">type</span><span
+            class="token punctuation">=&quot;</span><span class="token attr-value">text/css</span><span class="token punctuation">&quot;</span> <span
+            class="token attr-name">href</span><span
+            class="token punctuation">=&quot;</span><span class="token attr-value">https://onsdigital.github.io/sixteens/css/main.css</span><span
+            class="token punctuation">&quot;</span><span
+            class="token punctuation">&gt;</span></span>
+<span class="token comment">&lt;![endif]--&gt;</span>
                     </code>
                 </pre>
 
@@ -63,6 +84,14 @@
                     ONSDigital Github</a>. To have a play around with the original code follow the instructions in the
                     README to
                     install and use the pattern library.</p>
+                <h2>Browser support</h2>
+                The pattern library has been tested on:
+                <ul>
+                    <li>Internet Explorer 8 (not Javascript enhanced)</li>
+                    <li>Internet Explorer 9, 10 and 11</li>
+                    <li>Edge</li>
+                    <li>Chrome </li>
+                </ul>
             </article>
         </div>
     </div>

@@ -36,9 +36,9 @@ Force example code to height that is on 8px baseline
  */
 
 $(function () {
-    var $pre = $('pre.language-html');
+    var $el = $('.on-grid');
 
-    $pre.each(function() {
+    $el.each(function() {
         var $this = $(this),
             preHeight = $this.height(),
             baselineHeight;
