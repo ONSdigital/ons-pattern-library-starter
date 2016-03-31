@@ -111,6 +111,11 @@ body {
 	padding-top: 48px;
 }
 
+.pl-example__rendered--typography a {
+	display: block;
+	margin: 8px 0;
+}
+
 .pl-example:before {
 	position: absolute;
 	top: -40px;
