@@ -5,8 +5,8 @@
 		<link href="../assets/css/main.css" rel="stylesheet" type="text/css" />
 		<link href="../assets/css/prism.css" rel="stylesheet" type="text/css" />
 		<link href="../assets/css/prismCustom.css" rel="stylesheet" type="text/css" />
-		<!--<link href="../sixteens/css/main.css" rel="stylesheet" type="text/css" />-->
-		<link href="http://localhost:9000/dist/css/main.css" rel="stylesheet" type="text/css" />
+		<link href="../sixteens/css/main.css" rel="stylesheet" type="text/css" />
+		<!--<link href="http://localhost:9000/dist/css/main.css" rel="stylesheet" type="text/css" />-->
 	</head>
 	<body class="pl-listpage">
 		<div class="beta-banner">
@@ -58,6 +58,9 @@
 							<li class="table-of-contents__item">
 								<a href="#headings" class="js-scroll">Headings</a>
 							</li>
+							<li class="table-of-contents__item">
+								<a href="#links" class="js-scroll">Links</a>
+							</li>
 						</ol>
 					</div>
 					<div class="page-content__main-content pl-page-content__main-content js-sticky-toc__trigger">
@@ -65,8 +68,8 @@
 							<h2>Baseline (vertical rhythm)</h2>
 							<p>All text is on an 8px vertical baseline and uses a 24px line height. This helps achieve consistent vertical spacing between text and patterns. Zell Liew discusses the <a href="http://zellwk.com/blog/why-vertical-rhythms/">benefits of implementing a baseline</a>.</p>
 							<div class="pl-example">
-								<div class="pl-example__rendered">
-									<div class="margin-left-md--1">
+								<div class="pl-example__rendered pl-example__rendered--typography">
+									<div class="pl-wrapper">
 										
 <h1 class="margin-bottom-md--0">How does a baseline work?</h1>
 <p>All elements are on the 8px baseline. For example:</p>
@@ -77,8 +80,8 @@
 </ul>
 
 									</div>
+									<button class="pl-btn pl-btn--show-grid btn btn--primary js-show-grid">Show grid</button>
 								</div>
-								<button class="pl-btn pl-btn--show-grid btn btn--primary js-show-grid">Show grid</button>
 								<div class="pl-example__code">
 									<pre class="on-grid"><code class="language-html">
 &lt;h1 class&#x3D;&quot;margin-bottom-md--0&quot;&gt;How does a baseline work?&lt;/h1&gt;
@@ -101,8 +104,8 @@
 							<h2>Headings</h2>
 							
 							<div class="pl-example">
-								<div class="pl-example__rendered">
-									<div class="margin-left-md--1">
+								<div class="pl-example__rendered pl-example__rendered--typography">
+									<div class="pl-wrapper">
 										
 <h1>Heading 1</h1>
 <h2>Heading 2</h2>
@@ -112,8 +115,8 @@
 <h6>Heading 6</h6>
 
 									</div>
+									<button class="pl-btn pl-btn--show-grid btn btn--primary js-show-grid">Show grid</button>
 								</div>
-								<button class="pl-btn pl-btn--show-grid btn btn--primary js-show-grid">Show grid</button>
 								<div class="pl-example__code">
 									<pre class="on-grid"><code class="language-html">
 &lt;h1&gt;Heading 1&lt;/h1&gt;
@@ -126,13 +129,48 @@
 								</div>
 							</div>
 						</div>
+						<div class="pl-item js-sticky-toc__section" id="links">
+							<h2>Links</h2>
+							<p>Links have no underline and use the <a href="../colour/#colours">‘matisse’ colour</a>. Underlining is used in cases where a link needs to stand out.</p>
+<p>External links should be followed by the <a href="../icons/#external-link">external icon</a>. Any links with the attribute &quot;target=&#39;_blank&#39;&quot; will get an external link icon automatically.</p>
+
+							<div class="pl-example">
+								<div class="pl-example__rendered pl-example__rendered--typography">
+									<div class="pl-wrapper">
+										
+<!--Normal link-->
+<a href="https://www.ons.gov.uk">ONS website</a>
+
+<!--External link with icon-->
+<a href="https://bbc.co.uk">BBC<span class="icon icon-external--dark-small"></span></a>
+
+<!--External link with '_blank' target attribute-->
+<a href="https://www.gov.uk" target="_blank">GOV.UK</a>
+
+									</div>
+									<button class="pl-btn pl-btn--show-grid btn btn--primary js-show-grid">Show grid</button>
+								</div>
+								<div class="pl-example__code">
+									<pre class="on-grid"><code class="language-html">
+&lt;!--Normal link--&gt;
+&lt;a href&#x3D;&quot;https://www.ons.gov.uk&quot;&gt;ONS website&lt;/a&gt;
+
+&lt;!--External link with icon--&gt;
+&lt;a href&#x3D;&quot;https://bbc.co.uk&quot;&gt;BBC&lt;span class&#x3D;&quot;icon icon-external--dark-small&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+
+&lt;!--External link with &#x27;_blank&#x27; target attribute--&gt;
+&lt;a href&#x3D;&quot;https://www.gov.uk&quot; target&#x3D;&quot;_blank&quot;&gt;GOV.UK&lt;/a&gt;
+</code></pre>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 
 		<script type="text/javascript" src="../assets/js/prism.js"></script>
-		<script type="text/javascript" src="http://localhost:9000/dist/js/main.js"></script>
-		<!--<script type="text/javascript" src="../sixteens/js/main.js"></script>-->
+		<!--<script type="text/javascript" src="http://localhost:9000/dist/js/main.js"></script>-->
+		<script type="text/javascript" src="../sixteens/js/main.js"></script>
 		<script type="text/javascript" src="../assets/js/main.js"></script>
 		<!--<script type="text/javascript" src="../assets/js/jquery.js"></script>
 		<script type="text/javascript" src="../assets/js/main.js"></script>-->
