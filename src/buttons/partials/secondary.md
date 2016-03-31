@@ -21,5 +21,3 @@ show-snippet: true
     Disabled secondary button
 </button>
 [/snippet]
-
-CTA buttons

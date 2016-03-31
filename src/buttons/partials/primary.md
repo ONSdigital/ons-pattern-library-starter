@@ -14,5 +14,3 @@ show-snippet: true
     Primary button (disabled)
 </button>
 [/snippet]
-
-CTA buttons

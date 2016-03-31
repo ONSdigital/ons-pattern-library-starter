@@ -43,5 +43,3 @@ show-snippet: true
     Full width button
 </button>
 [/snippet]
-
-CTA buttons

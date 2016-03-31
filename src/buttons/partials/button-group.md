@@ -37,4 +37,4 @@ show-snippet: true
 </div>
 [/snippet]
 
-CTA buttons
+Any buttons in a button group will float left and be separated by a 1px border.
