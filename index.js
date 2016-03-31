@@ -146,7 +146,7 @@ Handlebars.registerHelper('if_eq', function(a, b, opts) {
 
 
 /*
-* Metalsmith build process
+ * Metalsmith build process
  */
 Metalsmith(__dirname)
 	.use(parseContentForSnippet)
