@@ -2,7 +2,7 @@
 title: Complex grid
 template: test.html
 type: partial
-order: 2
+order: 3
 show-snippet: true
 ---
 [snippet]

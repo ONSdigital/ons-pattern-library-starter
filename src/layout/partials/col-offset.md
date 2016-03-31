@@ -2,7 +2,7 @@
 title: Column offset
 template: test.html
 type: partial
-order: 3
+order: 4
 show-snippet: true
 ---
 [snippet]

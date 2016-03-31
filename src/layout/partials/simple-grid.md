@@ -2,7 +2,7 @@
 title: Simple grid
 template: test.html
 type: partial
-order: 1
+order: 2
 show-snippet: true
 ---
 [snippet]
