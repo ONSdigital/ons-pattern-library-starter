@@ -25,12 +25,12 @@
 							{{{ this.contents }}}
 							{{#if this.show-snippet}}
 							<div class="pl-example">
-								<div class="pl-example__rendered">
-									<div class="margin-left-md--1">
+								<div class="pl-example__rendered pl-example__rendered--{{collection}}">
+									<div class="pl-wrapper">
 										{{{ this.snippet }}}
 									</div>
+									<button class="pl-btn pl-btn--show-grid btn btn--primary js-show-grid">Show grid</button>
 								</div>
-								<button class="pl-btn pl-btn--show-grid btn btn--primary js-show-grid">Show grid</button>
 								<div class="pl-example__code">
 									<pre class="on-grid"><code class="language-html">{{ this.snippet }}</code></pre>
 								</div>
