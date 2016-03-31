@@ -5,13 +5,13 @@
 		<link href="../assets/css/main.css" rel="stylesheet" type="text/css" />
 		<link href="../assets/css/prism.css" rel="stylesheet" type="text/css" />
 		<link href="../assets/css/prismCustom.css" rel="stylesheet" type="text/css" />
-		<link href="../sixteens/css/main.css" rel="stylesheet" type="text/css" />
-		<!--<link href="http://localhost:9000/dist/css/main.css" rel="stylesheet" type="text/css" />-->
+		<!--<link href="../sixteens/css/main.css" rel="stylesheet" type="text/css" />-->
+		<link href="http://localhost:9000/dist/css/main.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body class="pl-listpage">
 		<div class="beta-banner">
 			<div class="pl-wrap__inner">
-				<p class="margin-top-md--0">Updated on: 30 March 2016</p>
+				<p class="margin-top-md--0">Updated on: 31 March 2016</p>
 			</div>
 		</div>
 		<div class="pl-head">
@@ -45,24 +45,112 @@
     </div>
 </div>
 <div class="pl-wrap__inner">
-    <h2>Using the pattern library</h2>
-    <ol>
-        <li>Put a link to the main CSS file on ons.gov.uk (<a target="_blank" href="https://www.ons.gov.uk/assets/css/main.css">https://www.ons.gov.uk/assets/css/main.css</a>) in the head of your page.</li>
-        <li>Put a link to the pattern library JS file from ons.gov.uk (<a href=""></a>)</li>
-    </ol>
-    <h2>How is the pattern library built?</h2>
-    <p>The patterns are built in the <a href="https://github.com/onsdigital/sixteens/tree/live">'Sixteens' repository on the
-        ONSDigital Github</a>. To have a play around with the original code follow the instructions in the README to install and use the pattern library.</p>
+    <div class="col-wrap">
+        <div class="col col--md-one col--lg-two-thirds markdown">
+            <article>
+                <h2>Using the pattern library</h2>
+                <p>The pattern library comes with one Javascript file and three CSS files (old IE, IE9 and main - these'll be explained in more detail). </p>
+
+                <p>Download or link to the files from:</p>
+                <ul>
+                    <li><a href="https://onsdigital.github.io/sixteens/css/old-ie.css">https://onsdigital.github.io/sixteens/css/old-ie.css</a></li>
+                    <li><a href="https://onsdigital.github.io/sixteens/css/ie-9.css">https://onsdigital.github.io/sixteens/css/ie-9.css</a></li>
+                    <li><a href="https://onsdigital.github.io/sixteens/css/main.css">https://onsdigital.github.io/sixteens/css/main.css</a></li>
+                    <li><a href="https://onsdigital.github.io/sixteens/js/main.js">https://onsdigital.github.io/sixteens/js/main.js</a></li>
+                </ul>
+
+                <p>These files should be wrapped in conditional statements. So, it should look like:</p>
+
+                <pre class="pl-pre">
+                    <code class="">
+<span class="token comment">&lt;!--[if lte IE 8]&gt;</span>
+    <span class="token tag"><span class="token punctuation">&lt;</span>link <span class="token attr-name">rel</span><span
+            class="token punctuation">=&quot;</span><span class="token attr-value">stylesheet</span><span class="token punctuation">&quot;</span> <span
+            class="token attr-name">type</span><span
+            class="token punctuation">=&quot;</span><span class="token attr-value">text/css</span><span class="token punctuation">&quot;</span> <span
+            class="token attr-name">href</span><span
+            class="token punctuation">=&quot;</span><span class="token attr-value">https://onsdigital.github.io/sixteens/css/old-ie.css</span><span
+            class="token punctuation">&quot;</span><span
+            class="token punctuation">&gt;</span></span>
+<span class="token comment">&lt;![endif]--&gt;</span>
+<span class="token comment">&lt;!--[if IE 9]&gt;</span>
+    <span class="token tag"><span class="token punctuation">&lt;</span>link <span class="token attr-name">rel</span><span
+            class="token punctuation">=&quot;</span><span class="token attr-value">stylesheet</span><span class="token punctuation">&quot;</span> <span
+            class="token attr-name">type</span><span
+            class="token punctuation">=&quot;</span><span class="token attr-value">text/css</span><span class="token punctuation">&quot;</span> <span
+            class="token attr-name">href</span><span
+            class="token punctuation">=&quot;</span><span class="token attr-value">https://onsdigital.github.io/sixteens/css/ie-9.css</span><span
+            class="token punctuation">&quot;</span><span
+            class="token punctuation">&gt;</span></span>
+<span class="token comment">&lt;![endif]--&gt;</span>
+<span class="token comment">&lt;!--[if gt IE 9]&gt;&lt;!--&gt;</span>
+    <span class="token tag"><span class="token punctuation">&lt;</span>link <span class="token attr-name">rel</span><span
+            class="token punctuation">=&quot;</span><span class="token attr-value">stylesheet</span><span class="token punctuation">&quot;</span> <span
+            class="token attr-name">type</span><span
+            class="token punctuation">=&quot;</span><span class="token attr-value">text/css</span><span class="token punctuation">&quot;</span> <span
+            class="token attr-name">href</span><span
+            class="token punctuation">=&quot;</span><span class="token attr-value">https://onsdigital.github.io/sixteens/css/main.css</span><span
+            class="token punctuation">&quot;</span><span
+            class="token punctuation">&gt;</span></span>
+<span class="token comment">&lt;![endif]--&gt;</span>
+                    </code>
+                </pre>
+
+                <h3>CSS</h3>
+                Include each of the CSS files in the head of your page. There are three CSS files
+                because:
+                <ul>
+                    <li><strong>old-ie.css</strong> removes media queries so that styling doesn't break in IE8.</li>
+                    <li><strong>ie9.css</strong> is split into two files to get around the <a
+                            href="http://stackoverflow.com/questions/9906794/internet-explorers-css-rules-limits">IE9
+                        CSS
+                        selector
+                        limit</a>.
+                    </li>
+                    <li><strong>main.css</strong> is the ordinary CSS which will be applied to all modern browsers.</li>
+                </ul>
+
+                <h3>Javascript</h3>
+                <p>Include a link to the pattern library JS file in the footer of your page.</p>
+
+                <h2>How is the pattern library built?</h2>
+                <p>All styling and Javascript has been built as <a href="https://www.gov.uk/service-manual/making-software/progressive-enhancement.html">progressive enhancement</a>, meaning that every user, regardless of browser or device, can get an equal access to the fundamental information on a web page.</p>
+
+                <p>The patterns are built in the <a href="https://github.com/onsdigital/sixteens/tree/live">'Sixteens'
+                    repository on
+                    the
+                    ONSDigital Github</a>. To have a play around with the original code follow the instructions in the
+                    README to
+                    install and use the pattern library.</p>
+                <h2>Browser support</h2>
+                The pattern library has been tested on:
+                <h3>Desktop</h3>
+                <ul>
+                    <li>Internet Explorer 8 (not Javascript enhanced)</li>
+                    <li>Internet Explorer 9, 10 and 11</li>
+                    <li>Edge (latest)</li>
+                    <li>Google Chrome (latest)</li>
+                    <li>Mozilla Firefox (latest)</li>
+                    <li>Safari (latest)</li>
+                </ul>
+                <h3>Mobile</h3>
+                <ul>
+                    <li>Google Chrome (latest)</li>
+                    <li>Safari (latest)</li>
+                </ul>
+            </article>
+        </div>
+    </div>
 </div>
 
 		<script type="text/javascript" src="../assets/js/prism.js"></script>
-		<!--<script type="text/javascript" src="http://localhost:9000/dist/js/main.js"></script>-->
-		<script type="text/javascript" src="../sixteens/js/main.js"></script>
+		<script type="text/javascript" src="http://localhost:9000/dist/js/main.js"></script>
+		<!--<script type="text/javascript" src="../sixteens/js/main.js"></script>-->
 		<script type="text/javascript" src="../assets/js/main.js"></script>
 		<!--<script type="text/javascript" src="../assets/js/jquery.js"></script>
 		<script type="text/javascript" src="../assets/js/main.js"></script>-->
 
-		<div class="pl-footer background--ship-gray">
+		<div class="pl-footer background--ship-grey">
 			<div class="pl-wrap__inner">
 				<p class="margin-top-md--0">A footer</p>
 			</div>
