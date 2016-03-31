@@ -6,7 +6,7 @@ order: 5
 show-snippet: true
 ---
 [snippet]
-<div class="background--ship-gray padding-top-md--1">
+<div class="background--ship-grey padding-top-md--1">
     <nav class="tabs--js">
         <ul class="list--neutral flush">
             <li class="tab__item width-sm--6">

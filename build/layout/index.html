@@ -5,8 +5,8 @@
 		<link href="../assets/css/main.css" rel="stylesheet" type="text/css" />
 		<link href="../assets/css/prism.css" rel="stylesheet" type="text/css" />
 		<link href="../assets/css/prismCustom.css" rel="stylesheet" type="text/css" />
-		<!--<link href="../sixteens/css/main.css" rel="stylesheet" type="text/css" />-->
-		<link href="http://localhost:9000/dist/css/main.css" rel="stylesheet" type="text/css" />
+		<link href="../sixteens/css/main.css" rel="stylesheet" type="text/css" />
+		<!--<link href="http://localhost:9000/dist/css/main.css" rel="stylesheet" type="text/css" />-->
 	</head>
 	<body class="pl-listpage">
 		<div class="beta-banner">
@@ -41,7 +41,7 @@
 						</li>
 					</ol>
 				</nav>				<h1 class="page-intro__title">Layout</h1>
-				<p class="page-intro__content">Use white space to create a visual hierarchy on the page.</p>
+				<p class="page-intro__content">A grid of 16px columns.</p>
 
 
 
@@ -52,6 +52,9 @@
 				<div class="table-of-contents js-sticky-toc padding-bottom-md--3">
 					<h2 class="table-of-contents__title">Table of contents</h2>
 					<ol id="toc" class="table-of-contents__list">
+						<li class="table-of-contents__item">
+							<a href="#breakpoints-and-screen-widths" class="js-scroll">Breakpoints and screen widths</a>
+						</li>
 						<li class="table-of-contents__item">
 							<a href="#simple-grid" class="js-scroll">Simple grid</a>
 						</li>
@@ -64,91 +67,110 @@
 					</ol>
 				</div>
 				<div class="page-content__main-content pl-page-content__main-content js-sticky-toc__trigger">
+					<div class="pl-item js-sticky-toc__section" id="breakpoints-and-screen-widths">
+						<h2>Breakpoints and screen widths</h2>
+						<p>There are three breakpoints for different screen widths:</p>
+<ul>
+<li>Desktop (992px and up) there are 59 x 16px columns</li>
+<li>Tablet (768px to 991px) there are 47 x 16px columns</li>
+<li>Mobile (up to 767px) are 100% wide</li>
+</ul>
+
+					</div>
 					<div class="pl-item js-sticky-toc__section" id="simple-grid">
 						<h2>Simple grid</h2>
-						<p>Description here...</p>
+						<p>For simpler page structures, you can create elements at halves, thirds or quarters. Each column has a left margin of 16px and should use a column wrap to group columns into a row.</p>
+<p>A simple column cannot be nested within another column. Eg putting a half column inside another half column won&#39;t result in a quarter column.</p>
 
 						<div class="pl-example">
 							<div class="pl-example__rendered pl-example__rendered--layout">
-								<div class="margin-left-md--1">
+								<div class="pl-wrapper">
 									
-<!-- full column -->
-<div class="col-wrap">
-    <div class="col col--md-one col--lg-one">
-        <p>full column</p>
-    </div>
-</div>
+<div class="wrapper">
 
-<!-- half columns -->
-<div class="col-wrap">
-    <div class="col col--md-half col--lg-half">
-        <p>half column</p>
+    <!-- full column -->
+    <div class="col-wrap">
+        <div class="col col--md-one col--lg-one">
+            <p>full column</p>
+        </div>
     </div>
-    <div class="col col--md-half col--lg-half">
-        <p>half column</p>
+    
+    <!-- half columns -->
+    <div class="col-wrap">
+        <div class="col col--md-half col--lg-half">
+            <p>half column</p>
+        </div>
+        <div class="col col--md-half col--lg-half">
+            <p>half column</p>
+        </div>
     </div>
-</div>
+    
+    <!-- third columns -->
+    <div class="col-wrap">
+        <div class="col col--md-two-thirds col--lg-two-thirds">
+            <p>two thirds column</p>
+        </div>
+        <div class="col col--md-one-third col--lg-one-third">
+            <p>one third column</p>
+        </div>
+    </div>
+    
+    <!-- quarter columns -->
+    <div class="col-wrap">
+        <div class="col col--md-three-quarters col--lg-three-quarters">
+            <p>three quarters column</p>
+        </div>
+        <div class="col col--md-one-quarter col--lg-one-quarter">
+            <p>one quarter column</p>
+        </div>
+    </div>
 
-<!-- third columns -->
-<div class="col-wrap">
-    <div class="col col--md-two-thirds col--lg-two-thirds">
-        <p>two thirds column</p>
-    </div>
-    <div class="col col--md-one-third col--lg-one-third">
-        <p>one third column</p>
-    </div>
-</div>
-
-<!-- quarter columns -->
-<div class="col-wrap">
-    <div class="col col--md-three-quarters col--lg-three-quarters">
-        <p>three quarters column</p>
-    </div>
-    <div class="col col--md-one-quarter col--lg-one-quarter">
-        <p>one quarter column</p>
-    </div>
 </div>
 
 								</div>
+								<button class="pl-btn pl-btn--show-grid btn btn--primary js-show-grid">Show grid</button>
 							</div>
-							<button class="pl-btn pl-btn--show-grid btn btn--primary js-show-grid">Show grid</button>
 							<div class="pl-example__code">
 								<pre class="on-grid"><code class="language-html">
-&lt;!-- full column --&gt;
-&lt;div class&#x3D;&quot;col-wrap&quot;&gt;
-    &lt;div class&#x3D;&quot;col col--md-one col--lg-one&quot;&gt;
-        &lt;p&gt;full column&lt;/p&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
+&lt;div class&#x3D;&quot;wrapper&quot;&gt;
 
-&lt;!-- half columns --&gt;
-&lt;div class&#x3D;&quot;col-wrap&quot;&gt;
-    &lt;div class&#x3D;&quot;col col--md-half col--lg-half&quot;&gt;
-        &lt;p&gt;half column&lt;/p&gt;
+    &lt;!-- full column --&gt;
+    &lt;div class&#x3D;&quot;col-wrap&quot;&gt;
+        &lt;div class&#x3D;&quot;col col--md-one col--lg-one&quot;&gt;
+            &lt;p&gt;full column&lt;/p&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class&#x3D;&quot;col col--md-half col--lg-half&quot;&gt;
-        &lt;p&gt;half column&lt;/p&gt;
+    
+    &lt;!-- half columns --&gt;
+    &lt;div class&#x3D;&quot;col-wrap&quot;&gt;
+        &lt;div class&#x3D;&quot;col col--md-half col--lg-half&quot;&gt;
+            &lt;p&gt;half column&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col col--md-half col--lg-half&quot;&gt;
+            &lt;p&gt;half column&lt;/p&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
-&lt;/div&gt;
+    
+    &lt;!-- third columns --&gt;
+    &lt;div class&#x3D;&quot;col-wrap&quot;&gt;
+        &lt;div class&#x3D;&quot;col col--md-two-thirds col--lg-two-thirds&quot;&gt;
+            &lt;p&gt;two thirds column&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col col--md-one-third col--lg-one-third&quot;&gt;
+            &lt;p&gt;one third column&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;!-- quarter columns --&gt;
+    &lt;div class&#x3D;&quot;col-wrap&quot;&gt;
+        &lt;div class&#x3D;&quot;col col--md-three-quarters col--lg-three-quarters&quot;&gt;
+            &lt;p&gt;three quarters column&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col col--md-one-quarter col--lg-one-quarter&quot;&gt;
+            &lt;p&gt;one quarter column&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 
-&lt;!-- third columns --&gt;
-&lt;div class&#x3D;&quot;col-wrap&quot;&gt;
-    &lt;div class&#x3D;&quot;col col--md-two-thirds col--lg-two-thirds&quot;&gt;
-        &lt;p&gt;two thirds column&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class&#x3D;&quot;col col--md-one-third col--lg-one-third&quot;&gt;
-        &lt;p&gt;one third column&lt;/p&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;!-- quarter columns --&gt;
-&lt;div class&#x3D;&quot;col-wrap&quot;&gt;
-    &lt;div class&#x3D;&quot;col col--md-three-quarters col--lg-three-quarters&quot;&gt;
-        &lt;p&gt;three quarters column&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class&#x3D;&quot;col col--md-one-quarter col--lg-one-quarter&quot;&gt;
-        &lt;p&gt;one quarter column&lt;/p&gt;
-    &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
 							</div>
@@ -156,89 +178,97 @@
 					</div>
 					<div class="pl-item js-sticky-toc__section" id="complex-grid">
 						<h2>Complex grid</h2>
-						<p>Description here...</p>
+						<p>To make detailed layouts you can use the full 59 columns individually (or 47 columns on tablet). A column is 16px wide and should use a column wrap to group the columns into a row. Unlike simple columns, complex columns do not have a built in 16px gutter.</p>
 
 						<div class="pl-example">
 							<div class="pl-example__rendered pl-example__rendered--layout">
-								<div class="margin-left-md--1">
+								<div class="pl-wrapper">
 									
-<div class="col-wrap">
-    <div class="col col--md-10 col--lg-14 margin-left--1">
-        <p>10 on medium, 14 on large</p>
-    </div>
-    <div class="col col--md-36 col--lg-45">
-        <p>36 on medium, 45 on large</p>
-    </div>
-</div>
+<div class="wrapper">
 
-<!-- spaced using margin utilities -->
-<div class="col-wrap">
-    <div class="col col--md-10 col--lg-14 margin-left--1">
-        <p>10 on medium, 14 on large</p>
-    </div>
-    <div class="col col--md-35 col--lg-44 margin-left--1">
-        <p>35 on medium, 44 on large</p>
-    </div>
-</div>
-
-<!-- nesting complex columns -->
-<div class="col-wrap">
-    <div class="col col--md-15 col--lg-15 margin-left--1">
-        <p>10 on medium, 15 on large</p>
-    </div>
-    <div class="col col--md-22 col--lg-29">
-        <div class="col col--md-11 col--lg-14">
-            <p>15 on medium and  large</p>
+    <div class="col-wrap">
+        <div class="col col--md-10 col--lg-14 margin-left--1">
+            <p>10 on medium, 14 on large</p>
         </div>
-        <div class="col col--md-11 col--lg-15">
-            <p>15 on medium and  large</p>
+        <div class="col col--md-36 col--lg-45">
+            <p>36 on medium, 45 on large</p>
         </div>
     </div>
-    <div class="col col--md-10 col--lg-15">
-        <p>22 on medium, 29 on large</p>
+    
+    <!-- spaced using margin utilities -->
+    <div class="col-wrap">
+        <div class="col col--md-10 col--lg-14 margin-left--1">
+            <p>10 on medium, 14 on large</p>
+        </div>
+        <div class="col col--md-35 col--lg-44 margin-left--1">
+            <p>35 on medium, 44 on large</p>
+        </div>
     </div>
+    
+    <!-- nesting complex columns -->
+    <div class="col-wrap">
+        <div class="col col--md-15 col--lg-15 margin-left--1">
+            <p>10 on medium, 15 on large</p>
+        </div>
+        <div class="col col--md-22 col--lg-29">
+            <div class="col col--md-11 col--lg-14">
+                <p>15 on medium and  large</p>
+            </div>
+            <div class="col col--md-11 col--lg-15">
+                <p>15 on medium and  large</p>
+            </div>
+        </div>
+        <div class="col col--md-10 col--lg-15">
+            <p>22 on medium, 29 on large</p>
+        </div>
+    </div>
+
 </div>
 
 								</div>
+								<button class="pl-btn pl-btn--show-grid btn btn--primary js-show-grid">Show grid</button>
 							</div>
-							<button class="pl-btn pl-btn--show-grid btn btn--primary js-show-grid">Show grid</button>
 							<div class="pl-example__code">
 								<pre class="on-grid"><code class="language-html">
-&lt;div class&#x3D;&quot;col-wrap&quot;&gt;
-    &lt;div class&#x3D;&quot;col col--md-10 col--lg-14 margin-left--1&quot;&gt;
-        &lt;p&gt;10 on medium, 14 on large&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class&#x3D;&quot;col col--md-36 col--lg-45&quot;&gt;
-        &lt;p&gt;36 on medium, 45 on large&lt;/p&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
+&lt;div class&#x3D;&quot;wrapper&quot;&gt;
 
-&lt;!-- spaced using margin utilities --&gt;
-&lt;div class&#x3D;&quot;col-wrap&quot;&gt;
-    &lt;div class&#x3D;&quot;col col--md-10 col--lg-14 margin-left--1&quot;&gt;
-        &lt;p&gt;10 on medium, 14 on large&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class&#x3D;&quot;col col--md-35 col--lg-44 margin-left--1&quot;&gt;
-        &lt;p&gt;35 on medium, 44 on large&lt;/p&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;!-- nesting complex columns --&gt;
-&lt;div class&#x3D;&quot;col-wrap&quot;&gt;
-    &lt;div class&#x3D;&quot;col col--md-15 col--lg-15 margin-left--1&quot;&gt;
-        &lt;p&gt;10 on medium, 15 on large&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class&#x3D;&quot;col col--md-22 col--lg-29&quot;&gt;
-        &lt;div class&#x3D;&quot;col col--md-11 col--lg-14&quot;&gt;
-            &lt;p&gt;15 on medium and  large&lt;/p&gt;
+    &lt;div class&#x3D;&quot;col-wrap&quot;&gt;
+        &lt;div class&#x3D;&quot;col col--md-10 col--lg-14 margin-left--1&quot;&gt;
+            &lt;p&gt;10 on medium, 14 on large&lt;/p&gt;
         &lt;/div&gt;
-        &lt;div class&#x3D;&quot;col col--md-11 col--lg-15&quot;&gt;
-            &lt;p&gt;15 on medium and  large&lt;/p&gt;
+        &lt;div class&#x3D;&quot;col col--md-36 col--lg-45&quot;&gt;
+            &lt;p&gt;36 on medium, 45 on large&lt;/p&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class&#x3D;&quot;col col--md-10 col--lg-15&quot;&gt;
-        &lt;p&gt;22 on medium, 29 on large&lt;/p&gt;
+    
+    &lt;!-- spaced using margin utilities --&gt;
+    &lt;div class&#x3D;&quot;col-wrap&quot;&gt;
+        &lt;div class&#x3D;&quot;col col--md-10 col--lg-14 margin-left--1&quot;&gt;
+            &lt;p&gt;10 on medium, 14 on large&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col col--md-35 col--lg-44 margin-left--1&quot;&gt;
+            &lt;p&gt;35 on medium, 44 on large&lt;/p&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
+    
+    &lt;!-- nesting complex columns --&gt;
+    &lt;div class&#x3D;&quot;col-wrap&quot;&gt;
+        &lt;div class&#x3D;&quot;col col--md-15 col--lg-15 margin-left--1&quot;&gt;
+            &lt;p&gt;10 on medium, 15 on large&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col col--md-22 col--lg-29&quot;&gt;
+            &lt;div class&#x3D;&quot;col col--md-11 col--lg-14&quot;&gt;
+                &lt;p&gt;15 on medium and  large&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;col col--md-11 col--lg-15&quot;&gt;
+                &lt;p&gt;15 on medium and  large&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;col col--md-10 col--lg-15&quot;&gt;
+            &lt;p&gt;22 on medium, 29 on large&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
 &lt;/div&gt;
 </code></pre>
 							</div>
@@ -246,52 +276,57 @@
 					</div>
 					<div class="pl-item js-sticky-toc__section" id="column-offset">
 						<h2>Column offset</h2>
-						<p>Description here...</p>
-
+						
 						<div class="pl-example">
 							<div class="pl-example__rendered pl-example__rendered--layout">
-								<div class="margin-left-md--1">
+								<div class="pl-wrapper">
 									
-<!-- single column with offset -->
-<div class="col-wrap">
-    <div class="col col--md-offset-30 col--lg-offset-40 col--md-17 col--lg-19">
-        <p>30 offset on medium, 40 offset on large</p>
-    </div>
-</div>
+<div class="wrapper">
 
-<!-- multiple columns with offset -->
-<div class="col-wrap">
-    <div class="col col--md-offset-1 col--lg-offset-1 col--md-15 col--lg-15">
-        <p>10 on medium, 14 on large</p>
+    <!-- single column with offset -->
+    <div class="col-wrap">
+        <div class="col col--md-offset-30 col--lg-offset-40 col--md-17 col--lg-19">
+            <p>30 offset on medium, 40 offset on large</p>
+        </div>
     </div>
-     <div class="col col--md-offset-16 col--lg-offset-29 col--md-15 col--lg-15">
-        <p>36 on medium, 45 on large</p>
+    
+    <!-- multiple columns with offset -->
+    <div class="col-wrap">
+        <div class="col col--md-offset-1 col--lg-offset-1 col--md-15 col--lg-15">
+            <p>10 on medium, 14 on large</p>
+        </div>
+         <div class="col col--md-offset-16 col--lg-offset-29 col--md-15 col--lg-15">
+            <p>36 on medium, 45 on large</p>
+        </div>
     </div>
-</div>
 
+</div>
 
 								</div>
+								<button class="pl-btn pl-btn--show-grid btn btn--primary js-show-grid">Show grid</button>
 							</div>
-							<button class="pl-btn pl-btn--show-grid btn btn--primary js-show-grid">Show grid</button>
 							<div class="pl-example__code">
 								<pre class="on-grid"><code class="language-html">
-&lt;!-- single column with offset --&gt;
-&lt;div class&#x3D;&quot;col-wrap&quot;&gt;
-    &lt;div class&#x3D;&quot;col col--md-offset-30 col--lg-offset-40 col--md-17 col--lg-19&quot;&gt;
-        &lt;p&gt;30 offset on medium, 40 offset on large&lt;/p&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
+&lt;div class&#x3D;&quot;wrapper&quot;&gt;
 
-&lt;!-- multiple columns with offset --&gt;
-&lt;div class&#x3D;&quot;col-wrap&quot;&gt;
-    &lt;div class&#x3D;&quot;col col--md-offset-1 col--lg-offset-1 col--md-15 col--lg-15&quot;&gt;
-        &lt;p&gt;10 on medium, 14 on large&lt;/p&gt;
+    &lt;!-- single column with offset --&gt;
+    &lt;div class&#x3D;&quot;col-wrap&quot;&gt;
+        &lt;div class&#x3D;&quot;col col--md-offset-30 col--lg-offset-40 col--md-17 col--lg-19&quot;&gt;
+            &lt;p&gt;30 offset on medium, 40 offset on large&lt;/p&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
-     &lt;div class&#x3D;&quot;col col--md-offset-16 col--lg-offset-29 col--md-15 col--lg-15&quot;&gt;
-        &lt;p&gt;36 on medium, 45 on large&lt;/p&gt;
+    
+    &lt;!-- multiple columns with offset --&gt;
+    &lt;div class&#x3D;&quot;col-wrap&quot;&gt;
+        &lt;div class&#x3D;&quot;col col--md-offset-1 col--lg-offset-1 col--md-15 col--lg-15&quot;&gt;
+            &lt;p&gt;10 on medium, 14 on large&lt;/p&gt;
+        &lt;/div&gt;
+         &lt;div class&#x3D;&quot;col col--md-offset-16 col--lg-offset-29 col--md-15 col--lg-15&quot;&gt;
+            &lt;p&gt;36 on medium, 45 on large&lt;/p&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
-&lt;/div&gt;
 
+&lt;/div&gt;
 </code></pre>
 							</div>
 						</div>
@@ -301,8 +336,8 @@
 		</div>
 
 		<script type="text/javascript" src="../assets/js/prism.js"></script>
-		<script type="text/javascript" src="http://localhost:9000/dist/js/main.js"></script>
-		<!--<script type="text/javascript" src="../sixteens/js/main.js"></script>-->
+		<!--<script type="text/javascript" src="http://localhost:9000/dist/js/main.js"></script>-->
+		<script type="text/javascript" src="../sixteens/js/main.js"></script>
 		<script type="text/javascript" src="../assets/js/main.js"></script>
 		<!--<script type="text/javascript" src="../assets/js/jquery.js"></script>
 		<script type="text/javascript" src="../assets/js/main.js"></script>-->

@@ -70,11 +70,31 @@ body {
 .pl-example__rendered {
 	background: #FFFFFF;
 	/*border-bottom: 1px solid #ECE8E6;*/
-	/*position: relative;*/
+	position: relative;
 	/*overflow: hidden;*/
 }
 
-.pl-example__rendered--buttons .btn {
+.pl-wrapper {
+	margin: 0 auto;
+	position: relative;
+}
+
+@media screen and (min-width: 768px) {
+	.pl-wrapper {
+		width: 752px;
+		padding: 0;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.pl-wrapper {
+		width: 944px;
+		padding: 0;
+	}
+}
+
+.pl-example__rendered--buttons .btn,
+.pl-example__rendered--buttons .btn-group {
 	margin-bottom: 16px;
 }
 
@@ -87,7 +107,17 @@ body {
 	margin-bottom: 0;
 }
 
-.pl-example__rendered:before {
+.pl-example__rendered--typography h1 {
+	margin-top: 0;
+	padding-top: 50px;
+}
+
+.pl-example__rendered--typography a {
+	display: block;
+	margin: 8px 0;
+}
+
+.pl-example:before {
 	position: absolute;
 	top: -40px;
 	left: -1px;
@@ -101,8 +131,9 @@ body {
 	height: 20px;
 }
 
+.pl-wrapper--grid:after,
 .pl-example__rendered--grid:after {
-	background: url(../img/grid.png) 15px -1px repeat-y;
+	background: url(../img/grid.png) 0 -1px repeat-y;
 	content: "";
 	position: absolute;
 	top: 0px;

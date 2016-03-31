@@ -10,7 +10,7 @@ show-snippet: true
     Astral
 </div>
 
-<div class="background--ship-gray">
+<div class="background--ship-grey">
     Ship gray
 </div>
 

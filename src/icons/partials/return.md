@@ -10,7 +10,7 @@ show-snippet: true
     <span class="icon icon-return--dark"></span>
     <span class="icon icon-return--dark-small"></span>
 </div>
-<div class="background--ship-gray">
+<div class="background--ship-grey">
     <span class="icon icon-return--light"></span>
     <span class="icon icon-return--light-small"></span>
 </div>

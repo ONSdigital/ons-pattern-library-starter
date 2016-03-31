@@ -15,7 +15,7 @@ show-snippet: true
     <span class="icon icon-arrow-left--dark-small"></span>
 </div>
 
-<div class="background--ship-gray">
+<div class="background--ship-grey">
     <span class="icon icon-arrow-up--light-small"></span>
     <span class="icon icon-arrow-down--light-small"></span>
     <span class="icon icon-arrow-right--light"></span>
