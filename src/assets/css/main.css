@@ -93,7 +93,8 @@ body {
 	}
 }
 
-.pl-example__rendered--buttons .btn {
+.pl-example__rendered--buttons .btn,
+.pl-example__rendered--buttons .btn-group {
 	margin-bottom: 16px;
 }
 
@@ -108,7 +109,7 @@ body {
 
 .pl-example__rendered--typography h1 {
 	margin-top: 0;
-	padding-top: 48px;
+	padding-top: 50px;
 }
 
 .pl-example:before {
