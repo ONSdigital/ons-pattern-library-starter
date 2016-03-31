@@ -70,7 +70,7 @@ body {
 .pl-example__rendered {
 	background: #FFFFFF;
 	/*border-bottom: 1px solid #ECE8E6;*/
-	/*position: relative;*/
+	position: relative;
 	/*overflow: hidden;*/
 }
 
