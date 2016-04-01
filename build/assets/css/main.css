@@ -49,6 +49,7 @@ body {
     .pl-wrap__inner {
 		width: auto;
 		margin: 0 auto;
+		padding: 0 16px;
 	}
 }
 
@@ -84,7 +85,7 @@ body {
 		width: 752px;
 		padding: 0;
 	}
-}
+
 
 @media screen and (min-width: 992px) {
 	.pl-wrapper {
