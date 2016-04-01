@@ -12,12 +12,12 @@ show-snippet: true
 </button>
 
 <!-- Active secondary button -->
-<button class="btn btn--secondary btn--secondary--active">
+<button class="btn btn--secondary btn--secondary-active">
     Active secondary button
 </button>
 
 <!-- Disabled secondary button -->
-<button class="btn btn--secondary btn--secondary--disabled">
+<button class="btn btn--secondary btn--secondary-disabled">
     Disabled secondary button
 </button>
 [/snippet]
