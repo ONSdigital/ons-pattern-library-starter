@@ -160,6 +160,7 @@ body {
 }
 
 .pl-pre {
+	width: 100%;
 	margin: 8px 0;
 	padding-left: 24px;
 	background: #272822;
