@@ -9,7 +9,7 @@ show-snippet: true
 <div class="wrapper">
 
     <div class="col-wrap">
-        <div class="col col--md-10 col--lg-14 margin-left--1">
+        <div class="col col--md-10 col--lg-14 margin-left-md--1">
             <p>10 on medium, 14 on large</p>
         </div>
         <div class="col col--md-36 col--lg-45">
@@ -19,17 +19,17 @@ show-snippet: true
     
     <!-- spaced using margin utilities -->
     <div class="col-wrap">
-        <div class="col col--md-10 col--lg-14 margin-left--1">
+        <div class="col col--md-10 col--lg-14 margin-left-md--1">
             <p>10 on medium, 14 on large</p>
         </div>
-        <div class="col col--md-35 col--lg-44 margin-left--1">
+        <div class="col col--md-35 col--lg-44 margin-left-md--1">
             <p>35 on medium, 44 on large</p>
         </div>
     </div>
     
     <!-- nesting complex columns -->
     <div class="col-wrap">
-        <div class="col col--md-15 col--lg-15 margin-left--1">
+        <div class="col col--md-15 col--lg-15 margin-left-md--1">
             <p>10 on medium, 15 on large</p>
         </div>
         <div class="col col--md-22 col--lg-29">
