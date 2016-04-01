@@ -11,7 +11,7 @@
 	<body class="pl-listpage">
 		<div class="beta-banner">
 			<div class="pl-wrap__inner">
-				<p class="margin-top-md--0">Updated on: 31 March 2016</p>
+				<p class="margin-top-md--0">Updated on: 1 April 2016</p>
 			</div>
 		</div>
 		<div class="pl-head">
@@ -59,6 +59,9 @@
 								<a href="#headings" class="js-scroll">Headings</a>
 							</li>
 							<li class="table-of-contents__item">
+								<a href="#body-text" class="js-scroll">Body text</a>
+							</li>
+							<li class="table-of-contents__item">
 								<a href="#links" class="js-scroll">Links</a>
 							</li>
 						</ol>
@@ -80,7 +83,7 @@
 </ul>
 
 									</div>
-									<button class="pl-btn pl-btn--show-grid btn btn--primary js-show-grid">Show grid</button>
+									    <button class="pl-btn pl-btn--show-grid btn btn--primary js-show-grid">Show grid</button>
 								</div>
 								<div class="pl-example__code">
 									<pre class="on-grid"><code class="language-html">
@@ -115,7 +118,7 @@
 <h6>Heading 6</h6>
 
 									</div>
-									<button class="pl-btn pl-btn--show-grid btn btn--primary js-show-grid">Show grid</button>
+									    <button class="pl-btn pl-btn--show-grid btn btn--primary js-show-grid">Show grid</button>
 								</div>
 								<div class="pl-example__code">
 									<pre class="on-grid"><code class="language-html">
@@ -125,6 +128,44 @@
 &lt;h4&gt;Heading 4&lt;/h4&gt;
 &lt;h5&gt;Heading 5&lt;/h5&gt;
 &lt;h6&gt;Heading 6&lt;/h6&gt;
+</code></pre>
+								</div>
+							</div>
+						</div>
+						<div class="pl-item js-sticky-toc__section" id="body-text">
+							<h2>Body text</h2>
+							<p>Body text can be written as standard markup, without the need for extra classes. However, if there are large blocks of text (for example, in <a href="https://www.ons.gov.uk/economy/nationalaccounts/uksectoraccounts/articles/quarterlysectoraccounts/latest">an article</a>) the class &#39;markdown&#39; will help to remove extra space and bunch the text up.</p>
+
+							<div class="pl-example">
+								<div class="pl-example__rendered pl-example__rendered--typography">
+									<div class="pl-wrapper">
+										
+<!-- Text with extra space removed -->
+<div class="markdown">
+    <p>Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt. Sed porttitor lectus nibh. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+    <ul>
+        <li>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</li>
+        <li>Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula</li>
+        <li>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien massa, convallis a pellentesque
+            nec, egestas non nisi.</li>
+    </ul>
+</div>
+
+									</div>
+									    <button class="pl-btn pl-btn--show-grid btn btn--primary js-show-grid">Show grid</button>
+								</div>
+								<div class="pl-example__code">
+									<pre class="on-grid"><code class="language-html">
+&lt;!-- Text with extra space removed --&gt;
+&lt;div class&#x3D;&quot;markdown&quot;&gt;
+    &lt;p&gt;Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt. Sed porttitor lectus nibh. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.&lt;/li&gt;
+        &lt;li&gt;Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula&lt;/li&gt;
+        &lt;li&gt;Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien massa, convallis a pellentesque
+            nec, egestas non nisi.&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
 </code></pre>
 								</div>
 							</div>
@@ -148,7 +189,6 @@
 <a href="https://www.gov.uk" target="_blank">GOV.UK</a>
 
 									</div>
-									<button class="pl-btn pl-btn--show-grid btn btn--primary js-show-grid">Show grid</button>
 								</div>
 								<div class="pl-example__code">
 									<pre class="on-grid"><code class="language-html">
@@ -176,8 +216,20 @@
 		<script type="text/javascript" src="../assets/js/main.js"></script>-->
 
 		<div class="pl-footer background--ship-grey">
-			<div class="pl-wrap__inner">
-				<p class="margin-top-md--0">A footer</p>
+			<div class="pl-wrap__inner footer">
+				<div class="footer-nav col-wrap">
+					<div class="col col--lg-one-third col--md-one-third">
+						<h3 class="footer-nav__heading">Related</h3>
+						<ul class="footer-nav__list">
+							<li class="footer-nav__item">
+								<a href="https://www.ons.gov.uk/">ONS website</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="https://github.com/ONSdigital/sixteens">Sixteens on GitHub</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
   </body>

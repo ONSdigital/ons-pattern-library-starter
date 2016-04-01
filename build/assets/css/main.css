@@ -114,7 +114,7 @@ body {
 
 .pl-example__rendered--typography a {
 	display: block;
-	margin: 8px 0;
+	padding: 8px 0;
 }
 
 .pl-example:before {
