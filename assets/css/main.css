@@ -51,6 +51,11 @@ body {
 		margin: 0 auto;
 		padding: 0 16px;
 	}
+
+	.pl-btn--show-grid {
+		display: none !important;
+	}
+
 }
 
 /*.pl-item {*/
