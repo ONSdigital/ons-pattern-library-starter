@@ -54,13 +54,13 @@ type: home
                                 <a href="#">Tables and data</a>
                             </h2>
                             <p class="margin-top-sm--0 margin-top-md--0 margin-bottom-sm--2 margin-bottom-md--0">Description</p>
-                        </li> -->
+                        </li>
                         <li class="col col--md-22 col--lg-18 margin-right-md--1 margin-bottom-md--2 padding-left-md--1 padding-right-md--1 height-sm--20 height-md--20 height-lg--20 background--white js-hover-click">
                             <h2 class="margin-top-md--2">
                                 <a href="#">Forms</a>
                             </h2>
                             <p class="margin-top-sm--0 margin-top-md--0 margin-bottom-sm--2 margin-bottom-md--0">Description</p>
-                        </li>
+                        </li> -->
                         <li class="col col--md-22 col--lg-18 margin-right-md--1 margin-bottom-md--2 padding-left-md--1 padding-right-md--1 height-sm--20 height-md--20 height-lg--20 background--white js-hover-click">
                             <h2 class="margin-top-md--2">
                                 <a href="patterns">Patterns</a>
@@ -71,7 +71,7 @@ type: home
                             <h2 class="margin-top-md--2">
                                 <a href="utilities">Utilities</a>
                             </h2>
-                            <p class="margin-top-sm--0 margin-top-md--0 margin-bottom-sm--2 margin-bottom-md--0">Description</p>
+                            <p class="margin-top-sm--0 margin-top-md--0 margin-bottom-sm--2 margin-bottom-md--0">Classes to add certain styles or build custom blocks</p>
                         </li>
                     </ul>
                 </nav>
