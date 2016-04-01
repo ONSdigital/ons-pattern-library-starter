@@ -4,7 +4,7 @@ template: homepage.html
 type: home
 ---
 <div class="page-intro background--astral padding-top-md--4 padding-bottom-md--3">
-			<div class="pl-wrap__inner">
+			<div class="pl-wrap__inner padding-top-sm--4">
 				<h1 class="page-intro__title page-intro__title--home-big">ONS pattern library</h1>
 				<p class="page-intro__content width-lg--47">A library of visual and interaction patterns for ONS digital interfaces</p>
 			</div>
