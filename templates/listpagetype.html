@@ -29,7 +29,9 @@
 									<div class="pl-wrapper">
 										{{{ this.snippet }}}
 									</div>
-									<button class="pl-btn pl-btn--show-grid btn btn--primary js-show-grid">Show grid</button>
+									{{#if_ne this.title "Links"}}
+									    <button class="pl-btn pl-btn--show-grid btn btn--primary js-show-grid">Show grid</button>
+									{{/if_ne}}
 								</div>
 								<div class="pl-example__code">
 									<pre class="on-grid"><code class="language-html">{{ this.snippet }}</code></pre>

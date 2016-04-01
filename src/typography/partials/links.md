@@ -2,7 +2,7 @@
 title: Links
 template:
 type: partial
-order: 4
+order: 5
 show-snippet: true
 ---
 [snippet]

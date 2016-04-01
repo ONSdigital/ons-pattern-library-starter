@@ -144,6 +144,15 @@ Handlebars.registerHelper('if_eq', function(a, b, opts) {
 		return opts.inverse(this);
 });
 
+// if not equals helpers
+Handlebars.registerHelper('if_ne', function(a, b, opts) {
+    if (a != b) {
+        return opts.fn(this);
+    }  else {
+        return opts.inverse(this);
+    }
+});
+
 
 /*
  * Metalsmith build process
