@@ -10,17 +10,19 @@ show-snippet: true
 	<div class="wrapper">
 		<div class="col-wrap">
 			<div class="col">
-				<nav class="breadcrumb print--hide">
-					<ol class="breadcrumb__list">
-						<li class="breadcrumb__item">
-							<a class="breadcrumb__link" href="/">
-								Home
-							</a>
-						</li>
-						<li class="breadcrumb__item">
-							Economy
-						</li>
-					</ol>
+				<nav>
+				    <div class="breadcrumb print--hide">
+                        <ol class="breadcrumb__list">
+                            <li class="breadcrumb__item">
+                                <a class="breadcrumb__link" href="/">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="breadcrumb__item">
+                                Economy
+                            </li>
+                        </ol>
+                    </div>
 				</nav>
 				<div class="col col--md-47 col--lg-48">
 					<h1 class="page-intro__title ">
