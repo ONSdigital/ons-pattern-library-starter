@@ -10,57 +10,59 @@ show-snippet: true
     <h2 class="visuallyhidden">Footer links</h2>
         <div class="footer">
             <div class="wrapper">
-                <nav class="footer-nav col-wrap">
-                    <div class="col col--lg-one-third col--md-one-third">
-                        <h3 class="footer-nav__heading">Help</h3>
-                        <ul class="footer-nav__list">
-                            <li class="footer-nav__item">
-                                <a href="/help/accessibility">Accessibility</a>
-                            </li>
-                            <li class="footer-nav__item">
-                                <a href="/help/cookiesandprivacy">Cookies and privacy</a>
-                            </li>
-                            <li class="footer-nav__item">
-                                <a href="/help/termsandconditions">Terms and conditions</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col col--lg-one-third col--md-one-third">
-                        <h3 class="footer-nav__heading">About ONS</h3>
-                        <ul class="footer-nav__list">
-                            <li class="footer-nav__item">
-                                <a href="/aboutus/whatwedo">What we do</a>
-                            </li>
-                            <li class="footer-nav__item">
-                                <a href="/aboutus/careers">Careers</a>
-                            </li>
-                            <li class="footer-nav__item">
-                                <a href="/aboutus/contactus">Contact us</a>
-                            </li>
-                            <li class="footer-nav__item">
-                                <a href="/news">News</a>
-                            </li>
-                            <li class="footer-nav__item">
-                                <a href="/aboutus/transparencyandgovernance/freedomofinformationfoi">Freedom of Information</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col col--lg-one-third col--md-one-third">
-                        <h3 class="footer-nav__heading">Connect with us</h3>
-                        <ul class="footer-nav__list">
-                            <li class="footer-nav__item">
-                                <a href="https://twitter.com/ONS" class="icon--hide">Twitter</a>
-                            </li>
-                            <li class="footer-nav__item">
-                                <a href="https://www.facebook.com/ONS" class="icon--hide">Facebook</a>
-                            </li>
-                            <li class="footer-nav__item">
-                                <a href="https://www.linkedin.com/company/office-for-national-statistics" class="icon--hide">LinkedIn</a>
-                            </li>
-                            <li class="footer-nav__item">
-                                <a href="https://public.govdelivery.com/accounts/UKONS/subscribers/new" class="icon--hide">Email alerts</a>
-                            </li>
-                        </ul>
+                <nav>
+                    <div class="footer-nav col-wrap">
+                        <div class="col col--lg-one-third col--md-one-third">
+                            <h3 class="footer-nav__heading">Help</h3>
+                            <ul class="footer-nav__list">
+                                <li class="footer-nav__item">
+                                    <a href="/help/accessibility">Accessibility</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="/help/cookiesandprivacy">Cookies and privacy</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="/help/termsandconditions">Terms and conditions</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col col--lg-one-third col--md-one-third">
+                            <h3 class="footer-nav__heading">About ONS</h3>
+                            <ul class="footer-nav__list">
+                                <li class="footer-nav__item">
+                                    <a href="/aboutus/whatwedo">What we do</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="/aboutus/careers">Careers</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="/aboutus/contactus">Contact us</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="/news">News</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="/aboutus/transparencyandgovernance/freedomofinformationfoi">Freedom of Information</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col col--lg-one-third col--md-one-third">
+                            <h3 class="footer-nav__heading">Connect with us</h3>
+                            <ul class="footer-nav__list">
+                                <li class="footer-nav__item">
+                                    <a href="https://twitter.com/ONS" class="icon--hide">Twitter</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="https://www.facebook.com/ONS" class="icon--hide">Facebook</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="https://www.linkedin.com/company/office-for-national-statistics" class="icon--hide">LinkedIn</a>
+                                </li>
+                                <li class="footer-nav__item">
+                                    <a href="https://public.govdelivery.com/accounts/UKONS/subscribers/new" class="icon--hide">Email alerts</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </nav>
             </div>
