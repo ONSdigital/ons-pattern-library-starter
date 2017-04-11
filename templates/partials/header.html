@@ -5,7 +5,7 @@
 		<link href="{{#if_eq type "listpage"}}../{{/if_eq}}assets/css/main.css" rel="stylesheet" type="text/css" />
 		<link href="{{#if_eq type "listpage"}}../{{/if_eq}}assets/css/prism.css" rel="stylesheet" type="text/css" />
 		<link href="{{#if_eq type "listpage"}}../{{/if_eq}}assets/css/prismCustom.css" rel="stylesheet" type="text/css" />
-		<link href="{{#if_eq type "listpage"}}../{{/if_eq}}sixteens/css/main.css" rel="stylesheet" type="text/css" />
+		<link href="https://cdn.ons.gov.uk/sixteens/1f354a7/css/main.css" rel="stylesheet" type="text/css" />
 		<!--<link href="http://localhost:9000/dist/css/main.css" rel="stylesheet" type="text/css" />-->
 		<meta content="width=device-width,initial-scale=1.0,user-scalable=1" name="viewport">
 	</head>
@@ -17,7 +17,14 @@
 		</div>
 		<div class="pl-head">
 			<div class="pl-wrap__inner">
-				<a href="{{#if_eq type "listpage"}}..{{/if_eq}}/"><img class="pl-logo" src="{{#if_eq type "listpage"}}../{{/if_eq}}assets/img/ons-logo.png" /></a>
+				<a href="{{#if_eq type "listpage"}}..{{/if_eq}}/">
+					<!--[if lte IE 8]>
+						<img class="pl-logo" src="https://cdn.ons.gov.uk/assets/images/ons-logo/v2/ons-logo.png" alt="Office for National Statistics">
+					<![endif]-->
+					<!--[if gte IE 9]><!-->
+						<img class="pl-logo" src="https://cdn.ons.gov.uk/assets/images/ons-logo/v2/ons-logo.svg" alt="Office for National Statistics">
+					<![endif]-->
+				</a>
 			</div>
 		</div>
 
