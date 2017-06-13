@@ -44,4 +44,4 @@ js: true
 </div>
 [/snippet]
 
-Description about the page intro file...
+A list of links that allows a user to jump to different sections of the content.
