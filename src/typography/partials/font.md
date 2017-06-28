@@ -9,4 +9,4 @@ show-snippet: false
 
 [/snippet]
 
-Helvetica is the prioritised font, then Arial will be used if Helvetica is not available on the user’s machine. If neither are available it’ll default to sans serif.
+Open Sans is the prioritised font for the website. If that is not available, Helvetica, Arial or sans serif will be used instead.
