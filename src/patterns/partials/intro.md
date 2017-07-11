@@ -38,4 +38,4 @@ show-snippet: true
 </div>
 [/snippet]
 
-Description about the page intro file...
+Appears at the top of article and dataset pages, it contains important content such as the heading 1 and introductory paragraph.
