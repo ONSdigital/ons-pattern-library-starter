@@ -21,4 +21,4 @@ show-snippet: true
 </div>
 [/snippet]
 
-Description about the header file...
+A larger search component that only appears on the search results page.
