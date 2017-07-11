@@ -21,4 +21,4 @@ show-snippet: true
 </div>
 [/snippet]
 
-A larger search component that only appears on the search results page.
+A larger search box that appears on the search results page.
