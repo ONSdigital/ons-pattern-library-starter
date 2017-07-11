@@ -90,4 +90,4 @@ show-snippet: true
 </div>
 [/snippet]
 
-Description about the header file...
+A drop down menu that allows users to navigate through the main website categories. It is hidden behind a menu button on mobile.
