@@ -27,4 +27,4 @@ show-snippet: true
 </div>
 [/snippet]
 
-Description about the header file...
+Tabs that allow users to quickly filter search results by content type.
