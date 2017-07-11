@@ -35,4 +35,4 @@ show-snippet: true
 </div>
 [/snippet]
 
-Description about the header file...
+The header contains the ONS logo and secondary navigation links.
