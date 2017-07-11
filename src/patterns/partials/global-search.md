@@ -22,4 +22,4 @@ show-snippet: true
 </div>
 [/snippet]
 
-Description about the header file...
+Site wide search bar that appears on most pages across the website. It is hidden behind a search button on mobile.
