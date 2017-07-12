@@ -17,5 +17,4 @@ show-snippet: true
 </div>
 [/snippet]
 
-Set margin on an element
-
+Hide elements at certain screen sizes.

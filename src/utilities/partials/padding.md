@@ -23,5 +23,4 @@ show-snippet: true
 </div>
 [/snippet]
 
-Set margin on an element
-
+Set padding on an element. Padding is applied inside the div.

@@ -7,7 +7,7 @@ show-snippet: true
 ---
 [snippet]
 <div class="background--abbey height--8">
-    10 height
+    8 height
 </div>
 
 <div class="background--iron-light height-sm--7">
@@ -23,5 +23,4 @@ show-snippet: true
 </div>
 [/snippet]
 
-Set how many columns wide an element should be. 
-
+Set the height of an element, in multiples of 8 pixels.

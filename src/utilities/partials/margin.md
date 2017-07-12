@@ -23,5 +23,4 @@ show-snippet: true
 </div>
 [/snippet]
 
-Set margin on an element
-
+Set margin on an element. Margin is spacing applied outside of the div.
