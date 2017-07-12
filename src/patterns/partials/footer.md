@@ -78,4 +78,4 @@ show-snippet: true
  </footer>
 [/snippet]
 
-Description here...
+Appears at the bottom of each page. Links to help, about and contact information.
