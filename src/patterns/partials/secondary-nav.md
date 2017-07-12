@@ -33,4 +33,4 @@ show-snippet: true
 </div>
 [/snippet]
 
-Description about the secondary nav file...
+Appears just below the page intro. Allows users to navigate around the current page and it's related content.
