@@ -14,3 +14,5 @@ show-snippet: true
     Primary button (disabled)
 </button>
 [/snippet]
+
+Buttons should be marked up as buttons. This way, users of screen readers, speech recognition software and keyboards can interact with them.
