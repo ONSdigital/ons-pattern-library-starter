@@ -73,6 +73,7 @@ var parseContentForSnippet = function (files, metalsmith, done) {
 Handlebars.registerPartial('header', fs.readFileSync(__dirname + '/templates/partials/header.html').toString());
 Handlebars.registerPartial('footer', fs.readFileSync(__dirname + '/templates/partials/footer.html').toString());
 Handlebars.registerPartial('listpagebreadcrumb', fs.readFileSync(__dirname + '/templates/partials/listpagebreadcrumb.html').toString());
+Handlebars.registerPartial('statuses', fs.readFileSync(__dirname + '/templates/partials/statuses.html').toString());
 
 // helper to slugify strings
 Handlebars.registerHelper('slug', function(content){

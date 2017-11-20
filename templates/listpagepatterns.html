@@ -21,7 +21,8 @@
 					<div class="page-content__main-content pl-page-content__main-content js-sticky-toc__trigger">
 						{{#each collections.patterns}}
 						<div class="pl-item js-sticky-toc__section" id="{{ slug this.title }}">
-							<h2>{{ this.title }}</h2> {{#if js}}JS{{/if}}
+                            <h2 class="inline-block">{{ this.title }}</h2>
+                            {{> statuses}}
 							{{{ this.contents }}}
 							{{#if this.show-snippet}}
 							<div class="pl-example">
