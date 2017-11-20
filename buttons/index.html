@@ -5,14 +5,16 @@
 		<link href="../assets/css/main.css" rel="stylesheet" type="text/css" />
 		<link href="../assets/css/prism.css" rel="stylesheet" type="text/css" />
 		<link href="../assets/css/prismCustom.css" rel="stylesheet" type="text/css" />
-		<link href="https://cdn.ons.gov.uk/sixteens/1f354a7/css/main.css" rel="stylesheet" type="text/css" />
-		<!--<link href="http://localhost:9000/dist/css/main.css" rel="stylesheet" type="text/css" />-->
+		<!-- <link href="https://cdn.ons.gov.uk/sixteens/b3c7947/css/main.css" rel="stylesheet" type="text/css" />
+		<link href="https://cdn.ons.gov.uk/sixteens/f4cdc04/css/work-in-progress.css" rel="stylesheet" type="text/css" /> -->
+		<link href="http://localhost:9000/dist/css/main.css" rel="stylesheet" type="text/css" />
+		<link href="http://localhost:9000/dist/css/work-in-progress.css" rel="stylesheet" type="text/css" />
 		<meta content="width=device-width,initial-scale=1.0,user-scalable=1" name="viewport">
 	</head>
 	<body class="pl-listpage">
-		<div class="beta-banner">
+		<div class="banner">
 			<div class="pl-wrap__inner">
-				<p class="margin-top-md--0">Updated on: 23 October 2017</p>
+				<p class="margin-top-md--0">Updated on: 20 November 2017</p>
 			</div>
 		</div>
 		<div class="pl-head">
@@ -64,6 +66,9 @@
                     <a href="#secondary" class="js-scroll">Secondary</a>
                 </li>
                 <li class="table-of-contents__item">
+                    <a href="#alternatives" class="js-scroll">Alternatives</a>
+                </li>
+                <li class="table-of-contents__item">
                     <a href="#sizes" class="js-scroll">Sizes</a>
                 </li>
                 <li class="table-of-contents__item">
@@ -73,7 +78,8 @@
         </div>
         <div class="page-content__main-content pl-page-content__main-content js-sticky-toc__trigger">
             <div class="pl-item js-sticky-toc__section" id="primary">
-                <h2>Primary</h2>
+                <h2 class="inline-block">Primary</h2>
+                
                 <p>Buttons should be marked up as buttons. This way, users of screen readers, speech recognition software and keyboards can interact with them.</p>
 
                 <div class="pl-example">
@@ -104,7 +110,8 @@
                 </div>
             </div>
             <div class="pl-item js-sticky-toc__section" id="secondary">
-                <h2>Secondary</h2>
+                <h2 class="inline-block">Secondary</h2>
+                
                 
                 <div class="pl-example">
                     <div class="pl-example__rendered pl-example__rendered--buttons">
@@ -147,8 +154,80 @@
                     </div>
                 </div>
             </div>
+            <div class="pl-item js-sticky-toc__section" id="alternatives">
+                <h2 class="inline-block">Alternatives</h2>
+                    <span class="pl-status pl-status--draft margin-left-md--1">Work in progress</span>
+                
+                <p>An alternative call-to-action. Useful when you need an obvious call-to-action but not one that looks like it is part of the website&#39;s navigation (for example within a visualisation).</p>
+<p>All of the usual size modifiers can be applied to these buttons (for example custom width buttons).</p>
+<p>This work also add some font weight and size modifiers to the button pattern.</p>
+
+                <div class="pl-example">
+                    <div class="pl-example__rendered pl-example__rendered--buttons">
+                        <div class="pl-wrapper margin-top-md--2">
+                            
+<!-- Alternative primary buttons -->
+<button class="btn btn--primary-alternative btn--bold btn--large">
+    Alternative primary button
+</button>
+<button class="btn btn--primary-alternative btn--bold btn--small">
+    Small alternative primary button
+</button>
+<br>
+
+<!-- Alternative secondary buttons -->
+<button class="btn btn--secondary-alternative btn--bold btn--large">
+    Alternative secondary button
+</button>
+<button class="btn btn--secondary-alternative btn--bold btn--small">
+    Small alternative secondary button
+</button>
+<br>
+
+<!-- Neutral button -->
+<button class="btn btn--neutral btn--bold btn--large">
+    Neutral button
+</button>
+<button class="btn btn--neutral btn--bold btn--small">
+    Small neutral button
+</button>
+
+                        </div>
+                    </div>
+                    <div class="pl-example__code">
+                        <pre class="on-grid"><code class="language-html">
+&lt;!-- Alternative primary buttons --&gt;
+&lt;button class&#x3D;&quot;btn btn--primary-alternative btn--bold btn--large&quot;&gt;
+    Alternative primary button
+&lt;/button&gt;
+&lt;button class&#x3D;&quot;btn btn--primary-alternative btn--bold btn--small&quot;&gt;
+    Small alternative primary button
+&lt;/button&gt;
+&lt;br&gt;
+
+&lt;!-- Alternative secondary buttons --&gt;
+&lt;button class&#x3D;&quot;btn btn--secondary-alternative btn--bold btn--large&quot;&gt;
+    Alternative secondary button
+&lt;/button&gt;
+&lt;button class&#x3D;&quot;btn btn--secondary-alternative btn--bold btn--small&quot;&gt;
+    Small alternative secondary button
+&lt;/button&gt;
+&lt;br&gt;
+
+&lt;!-- Neutral button --&gt;
+&lt;button class&#x3D;&quot;btn btn--neutral btn--bold btn--large&quot;&gt;
+    Neutral button
+&lt;/button&gt;
+&lt;button class&#x3D;&quot;btn btn--neutral btn--bold btn--small&quot;&gt;
+    Small neutral button
+&lt;/button&gt;
+</code></pre>
+                    </div>
+                </div>
+            </div>
             <div class="pl-item js-sticky-toc__section" id="sizes">
-                <h2>Sizes</h2>
+                <h2 class="inline-block">Sizes</h2>
+                
                 
                 <div class="pl-example">
                     <div class="pl-example__rendered pl-example__rendered--buttons">
@@ -236,7 +315,8 @@
                 </div>
             </div>
             <div class="pl-item js-sticky-toc__section" id="button-groups">
-                <h2>Button groups</h2>
+                <h2 class="inline-block">Button groups</h2>
+                
                 <p>Any buttons in a button group will float left and be separated by a 1px border.</p>
 
                 <div class="pl-example">
@@ -316,7 +396,7 @@
 
 		<script type="text/javascript" src="../assets/js/prism.js"></script>
 		<!--<script type="text/javascript" src="http://localhost:9000/dist/js/main.js"></script>-->
-		<script type="text/javascript" src="https://cdn.ons.gov.uk/sixteens/1f354a7/js/main.js"></script>
+		<script type="text/javascript" src="https://cdn.ons.gov.uk/sixteens/b3c7947/js/main.js"></script>
 		<script type="text/javascript" src="https://www.ons.gov.uk/js/app.js"></script>
 		<script type="text/javascript" src="../assets/js/main.js"></script>
 		<!--<script type="text/javascript" src="../assets/js/jquery.js"></script>
