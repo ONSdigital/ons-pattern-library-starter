@@ -222,3 +222,15 @@ body {
 .pl-colour-circle--border {
 	border: 1px solid #DDDDDD;
 }
+
+.pl-status {
+    background-color: #EAEAEA;
+    padding: 5px 8px 3px 8px;
+    font-weight: 600;
+    white-space: nowrap;
+    border-radius: 3px;
+}
+
+.pl-status--draft {
+    background-color: #FF9933;
+}
