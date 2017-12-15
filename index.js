@@ -140,6 +140,10 @@ Metalsmith(__dirname)
 			pattern: 'elements/partials/*.md',
 			sortBy: 'order'
 		},
+        formelements: {
+			pattern: 'formelements/partials/*.md',
+			sortBy: 'order'
+		},
 		layout: {
 			pattern: 'layout/partials/*.md',
 			sortBy: 'order'
