@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>ONS Pattern Library - Elements</title>
+		<title>ONS Pattern Library - Form elements</title>
 		<link href="../assets/css/main.css" rel="stylesheet" type="text/css" />
 		<link href="../assets/css/prism.css" rel="stylesheet" type="text/css" />
 		<link href="../assets/css/prismCustom.css" rel="stylesheet" type="text/css" />
@@ -47,10 +47,10 @@
         			<a class="breadcrumb__link" href="../">Home</a>
         		</li>
         		<li class="breadcrumb__item">
-        			Elements
+        			Form elements
         		</li>
         	</ol>
-        </nav>        <h1 class="page-intro__title">Elements</h1>
+        </nav>        <h1 class="page-intro__title">Form elements</h1>
         
     </div>
 </div>
@@ -59,9 +59,56 @@
         <div class="table-of-contents js-sticky-toc padding-bottom-md--3">
             <h2 class="table-of-contents__title">Table of contents</h2>
             <ol id="toc" class="table-of-contents__list">
+                <li class="table-of-contents__item">
+                    <a href="#select" class="js-scroll">Select</a>
+                </li>
             </ol>
         </div>
         <div class="page-content__main-content pl-page-content__main-content js-sticky-toc__trigger">
+            <div class="pl-item js-sticky-toc__section" id="select">
+                <h2 class="inline-block">Select</h2>
+                    <span class="pl-status pl-status--draft margin-left-md--1">Work in progress</span>
+                
+                <p>An alternative to checkboxes and radio buttons. Useful when selcting from a long pre populated list 
+(ie. when selecting a <!-- <a href="https://cmd.onsdigital.co.uk/filters/d0eeba0d-febb-4235-8376-d0729e6778fe/dimensions/time"> -->date range</a>)</p>
+
+                <div class="pl-example">
+                    <div class="pl-example__rendered pl-example__rendered--formelements">
+                        <div class="pl-wrapper margin-top-md--2">
+                            
+
+<label for="select-1" class="block margin-bottom--1">Select an option</label>
+<div class="select-alt margin-bottom--2">
+    <select name="select-1" id="select-1" class="select">
+        <option value="value-1">First option</option>
+        <option value="value-2">Second option</option>
+        <option value="value-3">Third option</option>
+        <option value="value-4">Fourth option</option>
+        <option value="value-5">Fifth option</option>
+        <option value="value-6">Sixth option</option>
+    </select>
+</div>
+
+                        </div>
+                    </div>
+                    <div class="pl-example__code">
+                        <pre class="on-grid"><code class="language-html">
+
+&lt;label for&#x3D;&quot;select-1&quot; class&#x3D;&quot;block margin-bottom--1&quot;&gt;Select an option&lt;/label&gt;
+&lt;div class&#x3D;&quot;select-alt margin-bottom--2&quot;&gt;
+    &lt;select name&#x3D;&quot;select-1&quot; id&#x3D;&quot;select-1&quot; class&#x3D;&quot;select&quot;&gt;
+        &lt;option value&#x3D;&quot;value-1&quot;&gt;First option&lt;/option&gt;
+        &lt;option value&#x3D;&quot;value-2&quot;&gt;Second option&lt;/option&gt;
+        &lt;option value&#x3D;&quot;value-3&quot;&gt;Third option&lt;/option&gt;
+        &lt;option value&#x3D;&quot;value-4&quot;&gt;Fourth option&lt;/option&gt;
+        &lt;option value&#x3D;&quot;value-5&quot;&gt;Fifth option&lt;/option&gt;
+        &lt;option value&#x3D;&quot;value-6&quot;&gt;Sixth option&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/div&gt;
+</code></pre>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
